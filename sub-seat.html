@@ -1,0 +1,885 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>infomind 무인발권기</title>
+        <link href="source/css/boxicons.css" rel="stylesheet">
+        <link href="source/css/style.css" rel="stylesheet">
+        <!-- javaScript -->
+        <script src="source/js/jquery-3.5.1.min.js"></script>
+        <script src="source/js/slick.min.js"></script>
+        <script src="source/js/common.js"></script>
+
+
+    </head>
+
+    <body class="sub">
+
+        <div class="outline">
+
+
+            <!-- S:header -->
+            <header id="header">
+                <div class="container">
+                    <h1><a href="/">무인발권시스템</a></h1>
+
+                    <a class="home" href="">처음으로</a>
+                    <a class="admin" href="">관리자</a>
+                </div>
+            </header>
+            <!-- E:header -->
+            
+
+
+
+            <!-- S:mainContent -->
+            <div id="content" class="sub">
+
+
+
+
+                <section class="sub-seat">
+                    <div class="container">
+
+                        <h2>좌석 확인</h2>
+
+                        <article class="messages alert">
+                            <p>정보확인이 필요한 좌석이 존재합니다.</p>
+                            <p>매표소에 문의해 주십시오</p>
+                        </article>
+
+                        <article class="program">
+                            <h3>
+                                공연명 공연명 공연명
+
+                                <small>일시 : 2021년 03월 04일 오후 2:00</small>
+                            </h3>
+                            <p class="image">
+                                <img src="source/images/sample.png" alt="">
+                            </p>
+
+                            <ul class="info">
+                                <li><span>예약자명 :</span> <strong>문경환</strong></li>
+                                <li><span>예약인원 :</span> <strong>3명</strong></li>
+                            </ul>
+
+                            <p class="price"><span>결제금액 :</span> <strong>6,000원</strong></p>
+                        </article>
+
+                        <article class="seatmap hall01">
+                            <h3>대극장 1층</h3>
+                            <div class="legend">
+                                <span class="legend01">선택좌석</span>
+                            </div>
+
+                            <div class="map-outline">
+                                <ul id="seatsView" class="f1">
+                                    <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_A33" class="tileview-content">33</li>
+                                    <li id="concert_seat_A32" class="tileview-content">32</li>
+                                    <li id="concert_seat_A31" class="tileview-content">31</li>
+                                    <li id="concert_seat_A30" class="tileview-content">30</li>
+                                    <li id="concert_seat_A29" class="tileview-content">29</li>
+                                    <li id="concert_seat_A28" class="tileview-content">28</li>
+                                    <li id="concert_seat_A27" class="tileview-content">27</li>
+                                    <li id="concert_seat_A26" class="tileview-content">26</li>
+                                    <li id="concert_seat_A" class="tileview-content  m_blank">A</li>
+                                    <li id="concert_seat_A25" class="tileview-content">25</li>
+                                    <li id="concert_seat_A24" class="tileview-content">24</li>
+                                    <li id="concert_seat_A23" class="tileview-content">23</li>
+                                    <li id="concert_seat_A22" class="tileview-content">22</li>
+                                    <li id="concert_seat_A21" class="tileview-content">21</li>
+                                    <li id="concert_seat_A20" class="tileview-content">20</li>
+                                    <li id="concert_seat_A19" class="tileview-content">19</li>
+                                    <li id="concert_seat_A18" class="tileview-content">18</li>
+                                    <li id="concert_seat_A17" class="tileview-content">17</li>
+                                    <li id="concert_seat_A16" class="tileview-content">16</li>
+                                    <li id="concert_seat_A15" class="tileview-content">15</li>
+                                    <li id="concert_seat_A14" class="tileview-content">14</li>
+                                    <li id="concert_seat_A13" class="tileview-content">13</li>
+                                    <li id="concert_seat_A12" class="tileview-content">12</li>
+                                    <li id="concert_seat_A11" class="tileview-content">11</li>
+                                    <li id="concert_seat_A10" class="tileview-content">10</li>
+                                    <li id="concert_seat_A9" class="tileview-content">9</li>
+                                    <li id="concert_seat_A" class="tileview-content  m_blank">A</li>
+                                    <li id="concert_seat_A8" class="tileview-content">8</li>
+                                    <li id="concert_seat_A7" class="tileview-content">7</li>
+                                    <li id="concert_seat_A6" class="tileview-content">6</li>
+                                    <li id="concert_seat_A5" class="tileview-content">5</li>
+                                    <li id="concert_seat_A4" class="tileview-content">4</li>
+                                    <li id="concert_seat_A3" class="tileview-content">3</li>
+                                    <li id="concert_seat_A2" class="tileview-content">2</li>
+                                    <li id="concert_seat_A1" class="tileview-content">1</li>
+                                    <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_B_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_B_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_B_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_B_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_B35" class="tileview-content ">35</li>
+                                    <li id="concert_seat_B34" class="tileview-content">34</li>
+                                    <li id="concert_seat_B33" class="tileview-content">33</li>
+                                    <li id="concert_seat_B32" class="tileview-content">32</li>
+                                    <li id="concert_seat_B31" class="tileview-content">31</li>
+                                    <li id="concert_seat_B30" class="tileview-content">30</li>
+                                    <li id="concert_seat_B29" class="tileview-content">29</li>
+                                    <li id="concert_seat_B28" class="tileview-content">28</li>
+                                    <li id="concert_seat_B27" class="tileview-content">27</li>
+                                    <li id="concert_seat_B" class="tileview-content  m_blank">B</li>
+                                    <li id="concert_seat_B26" class="tileview-content">26</li>
+                                    <li id="concert_seat_B25" class="tileview-content">25</li>
+                                    <li id="concert_seat_B24" class="tileview-content">24</li>
+                                    <li id="concert_seat_B23" class="tileview-content">23</li>
+                                    <li id="concert_seat_B22" class="tileview-content">22</li>
+                                    <li id="concert_seat_B21" class="tileview-content">21</li>
+                                    <li id="concert_seat_B20" class="tileview-content">20</li>
+                                    <li id="concert_seat_B19" class="tileview-content">19</li>
+                                    <li id="concert_seat_B18" class="tileview-content">18</li>
+                                    <li id="concert_seat_B17" class="tileview-content">17</li>
+                                    <li id="concert_seat_B16" class="tileview-content">16</li>
+                                    <li id="concert_seat_B15" class="tileview-content">15</li>
+                                    <li id="concert_seat_B14" class="tileview-content">14</li>
+                                    <li id="concert_seat_B13" class="tileview-content">13</li>
+                                    <li id="concert_seat_B12" class="tileview-content">12</li>
+                                    <li id="concert_seat_B11" class="tileview-content">11</li>
+                                    <li id="concert_seat_B10" class="tileview-content">10</li>
+                                    <li id="concert_seat_B" class="tileview-content  m_blank">B</li>
+                                    <li id="concert_seat_B9" class="tileview-content">9</li>
+                                    <li id="concert_seat_B8" class="tileview-content">8</li>
+                                    <li id="concert_seat_B7" class="tileview-content">7</li>
+                                    <li id="concert_seat_B6" class="tileview-content">6</li>
+                                    <li id="concert_seat_B5" class="tileview-content">5</li>
+                                    <li id="concert_seat_B4" class="tileview-content">4</li>
+                                    <li id="concert_seat_B3" class="tileview-content">3</li>
+                                    <li id="concert_seat_B2" class="tileview-content">2</li>
+                                    <li id="concert_seat_B1" class="tileview-content">1</li>
+                                    <li id="concert_seat_B_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_B_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_B_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_B_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_C_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_C_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_C_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_C37" class="tileview-content ">37</li>
+                                    <li id="concert_seat_C36" class="tileview-content">36</li>
+                                    <li id="concert_seat_C35" class="tileview-content">35</li>
+                                    <li id="concert_seat_C34" class="tileview-content">34</li>
+                                    <li id="concert_seat_C33" class="tileview-content">33</li>
+                                    <li id="concert_seat_C32" class="tileview-content">32</li>
+                                    <li id="concert_seat_C31" class="tileview-content">31</li>
+                                    <li id="concert_seat_C30" class="tileview-content">30</li>
+                                    <li id="concert_seat_C29" class="tileview-content">29</li>
+                                    <li id="concert_seat_C28" class="tileview-content">28</li>
+                                    <li id="concert_seat_C" class="tileview-content  m_blank">C</li>
+                                    <li id="concert_seat_C27" class="tileview-content">27</li>
+                                    <li id="concert_seat_C26" class="tileview-content">26</li>
+                                    <li id="concert_seat_C25" class="tileview-content">25</li>
+                                    <li id="concert_seat_C24" class="tileview-content">24</li>
+                                    <li id="concert_seat_C23" class="tileview-content">23</li>
+                                    <li id="concert_seat_C22" class="tileview-content">22</li>
+                                    <li id="concert_seat_C21" class="tileview-content">21</li>
+                                    <li id="concert_seat_C20" class="tileview-content">20</li>
+                                    <li id="concert_seat_C19" class="tileview-content">19</li>
+                                    <li id="concert_seat_C18" class="tileview-content">18</li>
+                                    <li id="concert_seat_C17" class="tileview-content">17</li>
+                                    <li id="concert_seat_C16" class="tileview-content">16</li>
+                                    <li id="concert_seat_C15" class="tileview-content">15</li>
+                                    <li id="concert_seat_C14" class="tileview-content">14</li>
+                                    <li id="concert_seat_C13" class="tileview-content">13</li>
+                                    <li id="concert_seat_C12" class="tileview-content">12</li>
+                                    <li id="concert_seat_C11" class="tileview-content">11</li>
+                                    <li id="concert_seat_C" class="tileview-content  m_blank">C</li>
+                                    <li id="concert_seat_C10" class="tileview-content">10</li>
+                                    <li id="concert_seat_C9" class="tileview-content">9</li>
+                                    <li id="concert_seat_C8" class="tileview-content">8</li>
+                                    <li id="concert_seat_C7" class="tileview-content">7</li>
+                                    <li id="concert_seat_C6" class="tileview-content">6</li>
+                                    <li id="concert_seat_C5" class="tileview-content">5</li>
+                                    <li id="concert_seat_C4" class="tileview-content">4</li>
+                                    <li id="concert_seat_C3" class="tileview-content">3</li>
+                                    <li id="concert_seat_C2" class="tileview-content">2</li>
+                                    <li id="concert_seat_C1" class="tileview-content">1</li>
+                                    <li id="concert_seat_C_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_C_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_C_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_D_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_D_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_D39" class="tileview-content">39</li>
+                                    <li id="concert_seat_D38" class="tileview-content">38</li>
+                                    <li id="concert_seat_D37" class="tileview-content">37</li>
+                                    <li id="concert_seat_D36" class="tileview-content">36</li>
+                                    <li id="concert_seat_D35" class="tileview-content">35</li>
+                                    <li id="concert_seat_D34" class="tileview-content">34</li>
+                                    <li id="concert_seat_D33" class="tileview-content">33</li>
+                                    <li id="concert_seat_D32" class="tileview-content">32</li>
+                                    <li id="concert_seat_D31" class="tileview-content">31</li>
+                                    <li id="concert_seat_D30" class="tileview-content">30</li>
+                                    <li id="concert_seat_D29" class="tileview-content">29</li>
+                                    <li id="concert_seat_D" class="tileview-content  m_blank">D</li>
+                                    <li id="concert_seat_D28" class="tileview-content">28</li>
+                                    <li id="concert_seat_D27" class="tileview-content">27</li>
+                                    <li id="concert_seat_D26" class="tileview-content">26</li>
+                                    <li id="concert_seat_D25" class="tileview-content">25</li>
+                                    <li id="concert_seat_D24" class="tileview-content ">24</li>
+                                    <li id="concert_seat_D23" class="tileview-content">23</li>
+                                    <li id="concert_seat_D22" class="tileview-content">22</li>
+                                    <li id="concert_seat_D21" class="tileview-content">21</li>
+                                    <li id="concert_seat_D20" class="tileview-content">20</li>
+                                    <li id="concert_seat_D19" class="tileview-content">19</li>
+                                    <li id="concert_seat_D18" class="tileview-content">18</li>
+                                    <li id="concert_seat_D17" class="tileview-content">17</li>
+                                    <li id="concert_seat_D16" class="tileview-content">16</li>
+                                    <li id="concert_seat_D15" class="tileview-content">15</li>
+                                    <li id="concert_seat_D14" class="tileview-content">14</li>
+                                    <li id="concert_seat_D13" class="tileview-content">13</li>
+                                    <li id="concert_seat_D12" class="tileview-content">12</li>
+                                    <li id="concert_seat_D" class="tileview-content  m_blank">D</li>
+                                    <li id="concert_seat_D11" class="tileview-content">11</li>
+                                    <li id="concert_seat_D10" class="tileview-content">10</li>
+                                    <li id="concert_seat_D9" class="tileview-content">9</li>
+                                    <li id="concert_seat_D8" class="tileview-content">8</li>
+                                    <li id="concert_seat_D7" class="tileview-content ">7</li>
+                                    <li id="concert_seat_D6" class="tileview-content">6</li>
+                                    <li id="concert_seat_D5" class="tileview-content">5</li>
+                                    <li id="concert_seat_D4" class="tileview-content">4</li>
+                                    <li id="concert_seat_D3" class="tileview-content">3</li>
+                                    <li id="concert_seat_D2" class="tileview-content">2</li>
+                                    <li id="concert_seat_D1" class="tileview-content">1</li>
+                                    <li id="concert_seat_D_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_D_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_E_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_E_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_E39" class="tileview-content">39</li>
+                                    <li id="concert_seat_E38" class="tileview-content">38</li>
+                                    <li id="concert_seat_E37" class="tileview-content">37</li>
+                                    <li id="concert_seat_E36" class="tileview-content">36</li>
+                                    <li id="concert_seat_E35" class="tileview-content">35</li>
+                                    <li id="concert_seat_E34" class="tileview-content">34</li>
+                                    <li id="concert_seat_E33" class="tileview-content">33</li>
+                                    <li id="concert_seat_E32" class="tileview-content">32</li>
+                                    <li id="concert_seat_E31" class="tileview-content">31</li>
+                                    <li id="concert_seat_E30" class="tileview-content">30</li>
+                                    <li id="concert_seat_E29" class="tileview-content">29</li>
+                                    <li id="concert_seat_E" class="tileview-content  m_blank">E</li>
+                                    <li id="concert_seat_E28" class="tileview-content">28</li>
+                                    <li id="concert_seat_E27" class="tileview-content">27</li>
+                                    <li id="concert_seat_E26" class="tileview-content">26</li>
+                                    <li id="concert_seat_E25" class="tileview-content">25</li>
+                                    <li id="concert_seat_E24" class="tileview-content">24</li>
+                                    <li id="concert_seat_E23" class="tileview-content">23</li>
+                                    <li id="concert_seat_E22" class="tileview-content">22</li>
+                                    <li id="concert_seat_E21" class="tileview-content">21</li>
+                                    <li id="concert_seat_E20" class="tileview-content">20</li>
+                                    <li id="concert_seat_E19" class="tileview-content">19</li>
+                                    <li id="concert_seat_E18" class="tileview-content">18</li>
+                                    <li id="concert_seat_E17" class="tileview-content">17</li>
+                                    <li id="concert_seat_E16" class="tileview-content">16</li>
+                                    <li id="concert_seat_E15" class="tileview-content">15</li>
+                                    <li id="concert_seat_E14" class="tileview-content">14</li>
+                                    <li id="concert_seat_E13" class="tileview-content">13</li>
+                                    <li id="concert_seat_E12" class="tileview-content">12</li>
+                                    <li id="concert_seat_E" class="tileview-content  m_blank">E</li>
+                                    <li id="concert_seat_E11" class="tileview-content">11</li>
+                                    <li id="concert_seat_E10" class="tileview-content">10</li>
+                                    <li id="concert_seat_E9" class="tileview-content">9</li>
+                                    <li id="concert_seat_E8" class="tileview-content">8</li>
+                                    <li id="concert_seat_E7" class="tileview-content">7</li>
+                                    <li id="concert_seat_E6" class="tileview-content">6</li>
+                                    <li id="concert_seat_E5" class="tileview-content">5</li>
+                                    <li id="concert_seat_E4" class="tileview-content">4</li>
+                                    <li id="concert_seat_E3" class="tileview-content">3</li>
+                                    <li id="concert_seat_E2" class="tileview-content">2</li>
+                                    <li id="concert_seat_E1" class="tileview-content">1</li>
+                                    <li id="concert_seat_E_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_E_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_F_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_F41" class="tileview-content">41</li>
+                                    <li id="concert_seat_F40" class="tileview-content">40</li>
+                                    <li id="concert_seat_F39" class="tileview-content">39</li>
+                                    <li id="concert_seat_F38" class="tileview-content">38</li>
+                                    <li id="concert_seat_F37" class="tileview-content">37</li>
+                                    <li id="concert_seat_F36" class="tileview-content">36</li>
+                                    <li id="concert_seat_F35" class="tileview-content">35</li>
+                                    <li id="concert_seat_F34" class="tileview-content">34</li>
+                                    <li id="concert_seat_F33" class="tileview-content">33</li>
+                                    <li id="concert_seat_F32" class="tileview-content ">32</li>
+                                    <li id="concert_seat_F31" class="tileview-content">31</li>
+                                    <li id="concert_seat_F30" class="tileview-content">30</li>
+                                    <li id="concert_seat_F" class="tileview-content  m_blank">F</li>
+                                    <li id="concert_seat_F29" class="tileview-content">29</li>
+                                    <li id="concert_seat_F28" class="tileview-content">28</li>
+                                    <li id="concert_seat_F27" class="tileview-content">27</li>
+                                    <li id="concert_seat_F26" class="tileview-content">26</li>
+                                    <li id="concert_seat_F25" class="tileview-content">25</li>
+                                    <li id="concert_seat_F24" class="tileview-content">24</li>
+                                    <li id="concert_seat_F23" class="tileview-content">23</li>
+                                    <li id="concert_seat_F22" class="tileview-content">22</li>
+                                    <li id="concert_seat_F21" class="tileview-content">21</li>
+                                    <li id="concert_seat_F20" class="tileview-content">20</li>
+                                    <li id="concert_seat_F19" class="tileview-content">19</li>
+                                    <li id="concert_seat_F18" class="tileview-content">18</li>
+                                    <li id="concert_seat_F17" class="tileview-content">17</li>
+                                    <li id="concert_seat_F16" class="tileview-content">16</li>
+                                    <li id="concert_seat_F15" class="tileview-content">15</li>
+                                    <li id="concert_seat_F14" class="tileview-content">14</li>
+                                    <li id="concert_seat_F13" class="tileview-content">13</li>
+                                    <li id="concert_seat_F" class="tileview-content  m_blank">F</li>
+                                    <li id="concert_seat_F12" class="tileview-content">12</li>
+                                    <li id="concert_seat_F11" class="tileview-content">11</li>
+                                    <li id="concert_seat_F10" class="tileview-content">10</li>
+                                    <li id="concert_seat_F9" class="tileview-content">9</li>
+                                    <li id="concert_seat_F8" class="tileview-content">8</li>
+                                    <li id="concert_seat_F7" class="tileview-content">7</li>
+                                    <li id="concert_seat_F6" class="tileview-content">6</li>
+                                    <li id="concert_seat_F5" class="tileview-content">5</li>
+                                    <li id="concert_seat_F4" class="tileview-content">4</li>
+                                    <li id="concert_seat_F3" class="tileview-content">3</li>
+                                    <li id="concert_seat_F2" class="tileview-content">2</li>
+                                    <li id="concert_seat_F1" class="tileview-content">1</li>
+                                    <li id="concert_seat_F_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_G_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_G41" class="tileview-content ">41</li>
+                                    <li id="concert_seat_G40" class="tileview-content">40</li>
+                                    <li id="concert_seat_G39" class="tileview-content">39</li>
+                                    <li id="concert_seat_G38" class="tileview-content">38</li>
+                                    <li id="concert_seat_G37" class="tileview-content ">37</li>
+                                    <li id="concert_seat_G36" class="tileview-content">36</li>
+                                    <li id="concert_seat_G35" class="tileview-content">35</li>
+                                    <li id="concert_seat_G34" class="tileview-content">34</li>
+                                    <li id="concert_seat_G33" class="tileview-content ">33</li>
+                                    <li id="concert_seat_G32" class="tileview-content">32</li>
+                                    <li id="concert_seat_G31" class="tileview-content ">31</li>
+                                    <li id="concert_seat_G30" class="tileview-content">30</li>
+                                    <li id="concert_seat_G" class="tileview-content  m_blank">G</li>
+                                    <li id="concert_seat_G29" class="tileview-content">29</li>
+                                    <li id="concert_seat_G28" class="tileview-content">28</li>
+                                    <li id="concert_seat_G27" class="tileview-content">27</li>
+                                    <li id="concert_seat_G26" class="tileview-content">26</li>
+                                    <li id="concert_seat_G25" class="tileview-content">25</li>
+                                    <li id="concert_seat_G24" class="tileview-content">24</li>
+                                    <li id="concert_seat_G23" class="tileview-content">23</li>
+                                    <li id="concert_seat_G22" class="tileview-content">22</li>
+                                    <li id="concert_seat_G21" class="tileview-content">21</li>
+                                    <li id="concert_seat_G20" class="tileview-content">20</li>
+                                    <li id="concert_seat_G19" class="tileview-content">19</li>
+                                    <li id="concert_seat_G18" class="tileview-content">18</li>
+                                    <li id="concert_seat_G17" class="tileview-content">17</li>
+                                    <li id="concert_seat_G16" class="tileview-content">16</li>
+                                    <li id="concert_seat_G15" class="tileview-content">15</li>
+                                    <li id="concert_seat_G14" class="tileview-content">14</li>
+                                    <li id="concert_seat_G13" class="tileview-content">13</li>
+                                    <li id="concert_seat_G" class="tileview-content  m_blank">G</li>
+                                    <li id="concert_seat_G12" class="tileview-content">12</li>
+                                    <li id="concert_seat_G11" class="tileview-content">11</li>
+                                    <li id="concert_seat_G10" class="tileview-content">10</li>
+                                    <li id="concert_seat_G9" class="tileview-content">9</li>
+                                    <li id="concert_seat_G8" class="tileview-content">8</li>
+                                    <li id="concert_seat_G7" class="tileview-content">7</li>
+                                    <li id="concert_seat_G6" class="tileview-content">6</li>
+                                    <li id="concert_seat_G5" class="tileview-content">5</li>
+                                    <li id="concert_seat_G4" class="tileview-content">4</li>
+                                    <li id="concert_seat_G3" class="tileview-content">3</li>
+                                    <li id="concert_seat_G2" class="tileview-content">2</li>
+                                    <li id="concert_seat_G1" class="tileview-content">1</li>
+                                    <li id="concert_seat_G_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_H43" class="tileview-content">43</li>
+                                    <li id="concert_seat_H42" class="tileview-content">42</li>
+                                    <li id="concert_seat_H41" class="tileview-content">41</li>
+                                    <li id="concert_seat_H40" class="tileview-content">40</li>
+                                    <li id="concert_seat_H39" class="tileview-content">39</li>
+                                    <li id="concert_seat_H38" class="tileview-content">38</li>
+                                    <li id="concert_seat_H37" class="tileview-content">37</li>
+                                    <li id="concert_seat_H36" class="tileview-content">36</li>
+                                    <li id="concert_seat_H35" class="tileview-content">35</li>
+                                    <li id="concert_seat_H34" class="tileview-content">34</li>
+                                    <li id="concert_seat_H33" class="tileview-content">33</li>
+                                    <li id="concert_seat_H32" class="tileview-content">32</li>
+                                    <li id="concert_seat_H31" class="tileview-content">31</li>
+                                    <li id="concert_seat_H" class="tileview-content  m_blank">H</li>
+                                    <li id="concert_seat_H30" class="tileview-content">30</li>
+                                    <li id="concert_seat_H29" class="tileview-content">29</li>
+                                    <li id="concert_seat_H28" class="tileview-content">28</li>
+                                    <li id="concert_seat_H27" class="tileview-content">27</li>
+                                    <li id="concert_seat_H26" class="tileview-content">26</li>
+                                    <li id="concert_seat_H25" class="tileview-content">25</li>
+                                    <li id="concert_seat_H24" class="tileview-content">24</li>
+                                    <li id="concert_seat_H23" class="tileview-content">23</li>
+                                    <li id="concert_seat_H22" class="tileview-content">22</li>
+                                    <li id="concert_seat_H21" class="tileview-content">21</li>
+                                    <li id="concert_seat_H20" class="tileview-content">20</li>
+                                    <li id="concert_seat_H19" class="tileview-content">19</li>
+                                    <li id="concert_seat_H18" class="tileview-content">18</li>
+                                    <li id="concert_seat_H17" class="tileview-content">17</li>
+                                    <li id="concert_seat_H16" class="tileview-content">16</li>
+                                    <li id="concert_seat_H15" class="tileview-content">15</li>
+                                    <li id="concert_seat_H14" class="tileview-content">14</li>
+                                    <li id="concert_seat_H" class="tileview-content  m_blank">H</li>
+                                    <li id="concert_seat_H13" class="tileview-content">13</li>
+                                    <li id="concert_seat_H12" class="tileview-content">12</li>
+                                    <li id="concert_seat_H11" class="tileview-content">11</li>
+                                    <li id="concert_seat_H10" class="tileview-content">10</li>
+                                    <li id="concert_seat_H9" class="tileview-content">9</li>
+                                    <li id="concert_seat_H8" class="tileview-content">8</li>
+                                    <li id="concert_seat_H7" class="tileview-content">7</li>
+                                    <li id="concert_seat_H6" class="tileview-content">6</li>
+                                    <li id="concert_seat_H5" class="tileview-content">5</li>
+                                    <li id="concert_seat_H4" class="tileview-content">4</li>
+                                    <li id="concert_seat_H3" class="tileview-content">3</li>
+                                    <li id="concert_seat_H2" class="tileview-content">2</li>
+                                    <li id="concert_seat_H1" class="tileview-content">1</li>
+                                    <li id="concert_seat_I43" class="tileview-content">43</li>
+                                    <li id="concert_seat_I42" class="tileview-content ">42</li>
+                                    <li id="concert_seat_I41" class="tileview-content">41</li>
+                                    <li id="concert_seat_I40" class="tileview-content">40</li>
+                                    <li id="concert_seat_I39" class="tileview-content">39</li>
+                                    <li id="concert_seat_I38" class="tileview-content">38</li>
+                                    <li id="concert_seat_I37" class="tileview-content">37</li>
+                                    <li id="concert_seat_I36" class="tileview-content ">36</li>
+                                    <li id="concert_seat_I35" class="tileview-content">35</li>
+                                    <li id="concert_seat_I34" class="tileview-content">34</li>
+                                    <li id="concert_seat_I33" class="tileview-content">33</li>
+                                    <li id="concert_seat_I32" class="tileview-content">32</li>
+                                    <li id="concert_seat_I31" class="tileview-content">31</li>
+                                    <li id="concert_seat_I" class="tileview-content  m_blank">I</li>
+                                    <li id="concert_seat_I30" class="tileview-content">30</li>
+                                    <li id="concert_seat_I29" class="tileview-content">29</li>
+                                    <li id="concert_seat_I28" class="tileview-content">28</li>
+                                    <li id="concert_seat_I27" class="tileview-content">27</li>
+                                    <li id="concert_seat_I26" class="tileview-content">26</li>
+                                    <li id="concert_seat_I25" class="tileview-content">25</li>
+                                    <li id="concert_seat_I24" class="tileview-content">24</li>
+                                    <li id="concert_seat_I23" class="tileview-content">23</li>
+                                    <li id="concert_seat_I22" class="tileview-content">22</li>
+                                    <li id="concert_seat_I21" class="tileview-content">21</li>
+                                    <li id="concert_seat_I20" class="tileview-content">20</li>
+                                    <li id="concert_seat_I19" class="tileview-content">19</li>
+                                    <li id="concert_seat_I18" class="tileview-content">18</li>
+                                    <li id="concert_seat_I17" class="tileview-content">17</li>
+                                    <li id="concert_seat_I16" class="tileview-content">16</li>
+                                    <li id="concert_seat_I15" class="tileview-content">15</li>
+                                    <li id="concert_seat_I14" class="tileview-content">14</li>
+                                    <li id="concert_seat_I" class="tileview-content  m_blank">I</li>
+                                    <li id="concert_seat_I13" class="tileview-content">13</li>
+                                    <li id="concert_seat_I12" class="tileview-content">12</li>
+                                    <li id="concert_seat_I11" class="tileview-content">11</li>
+                                    <li id="concert_seat_I10" class="tileview-content">10</li>
+                                    <li id="concert_seat_I9" class="tileview-content">9</li>
+                                    <li id="concert_seat_I8" class="tileview-content">8</li>
+                                    <li id="concert_seat_I7" class="tileview-content">7</li>
+                                    <li id="concert_seat_I6" class="tileview-content">6</li>
+                                    <li id="concert_seat_I5" class="tileview-content">5</li>
+                                    <li id="concert_seat_I4" class="tileview-content">4</li>
+                                    <li id="concert_seat_I3" class="tileview-content">3</li>
+                                    <li id="concert_seat_I2" class="tileview-content">2</li>
+                                    <li id="concert_seat_I1" class="tileview-content">1</li>
+                                    <li id="concert_seat_J43" class="tileview-content">43</li>
+                                    <li id="concert_seat_J42" class="tileview-content">42</li>
+                                    <li id="concert_seat_J41" class="tileview-content">41</li>
+                                    <li id="concert_seat_J40" class="tileview-content">40</li>
+                                    <li id="concert_seat_J39" class="tileview-content">39</li>
+                                    <li id="concert_seat_J38" class="tileview-content">38</li>
+                                    <li id="concert_seat_J37" class="tileview-content">37</li>
+                                    <li id="concert_seat_J36" class="tileview-content">36</li>
+                                    <li id="concert_seat_J35" class="tileview-content">35</li>
+                                    <li id="concert_seat_J34" class="tileview-content">34</li>
+                                    <li id="concert_seat_J33" class="tileview-content">33</li>
+                                    <li id="concert_seat_J32" class="tileview-content">32</li>
+                                    <li id="concert_seat_J31" class="tileview-content">31</li>
+                                    <li id="concert_seat_J" class="tileview-content  m_blank">J</li>
+                                    <li id="concert_seat_J30" class="tileview-content">30</li>
+                                    <li id="concert_seat_J29" class="tileview-content">29</li>
+                                    <li id="concert_seat_J28" class="tileview-content">28</li>
+                                    <li id="concert_seat_J27" class="tileview-content">27</li>
+                                    <li id="concert_seat_J26" class="tileview-content">26</li>
+                                    <li id="concert_seat_J25" class="tileview-content">25</li>
+                                    <li id="concert_seat_J24" class="tileview-content">24</li>
+                                    <li id="concert_seat_J23" class="tileview-content">23</li>
+                                    <li id="concert_seat_J22" class="tileview-content">22</li>
+                                    <li id="concert_seat_J21" class="tileview-content">21</li>
+                                    <li id="concert_seat_J20" class="tileview-content">20</li>
+                                    <li id="concert_seat_J19" class="tileview-content">19</li>
+                                    <li id="concert_seat_J18" class="tileview-content">18</li>
+                                    <li id="concert_seat_J17" class="tileview-content">17</li>
+                                    <li id="concert_seat_J16" class="tileview-content">16</li>
+                                    <li id="concert_seat_J15" class="tileview-content">15</li>
+                                    <li id="concert_seat_J14" class="tileview-content">14</li>
+                                    <li id="concert_seat_J" class="tileview-content  m_blank">J</li>
+                                    <li id="concert_seat_J13" class="tileview-content">13</li>
+                                    <li id="concert_seat_J12" class="tileview-content">12</li>
+                                    <li id="concert_seat_J11" class="tileview-content">11</li>
+                                    <li id="concert_seat_J10" class="tileview-content">10</li>
+                                    <li id="concert_seat_J9" class="tileview-content">9</li>
+                                    <li id="concert_seat_J8" class="tileview-content">8</li>
+                                    <li id="concert_seat_J7" class="tileview-content">7</li>
+                                    <li id="concert_seat_J6" class="tileview-content">6</li>
+                                    <li id="concert_seat_J5" class="tileview-content">5</li>
+                                    <li id="concert_seat_J4" class="tileview-content">4</li>
+                                    <li id="concert_seat_J3" class="tileview-content">3</li>
+                                    <li id="concert_seat_J2" class="tileview-content">2</li>
+                                    <li id="concert_seat_J1" class="tileview-content ">1</li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K" class="tileview-content  seat-line"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K" class="tileview-content  seat-line"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_K43" class="tileview-content ">43</li>
+                                    <li id="concert_seat_K42" class="tileview-content">42</li>
+                                    <li id="concert_seat_K41" class="tileview-content">41</li>
+                                    <li id="concert_seat_K40" class="tileview-content">40</li>
+                                    <li id="concert_seat_K39" class="tileview-content">39</li>
+                                    <li id="concert_seat_K38" class="tileview-content">38</li>
+                                    <li id="concert_seat_K37" class="tileview-content">37</li>
+                                    <li id="concert_seat_K36" class="tileview-content">36</li>
+                                    <li id="concert_seat_K35" class="tileview-content">35</li>
+                                    <li id="concert_seat_K34" class="tileview-content">34</li>
+                                    <li id="concert_seat_K33" class="tileview-content">33</li>
+                                    <li id="concert_seat_K32" class="tileview-content">32</li>
+                                    <li id="concert_seat_K31" class="tileview-content">31</li>
+                                    <li id="concert_seat_K" class="tileview-content  m_blank">K</li>
+                                    <li id="concert_seat_K30" class="tileview-content">30</li>
+                                    <li id="concert_seat_K29" class="tileview-content">29</li>
+                                    <li id="concert_seat_K28" class="tileview-content">28</li>
+                                    <li id="concert_seat_K27" class="tileview-content">27</li>
+                                    <li id="concert_seat_K26" class="tileview-content">26</li>
+                                    <li id="concert_seat_K25" class="tileview-content">25</li>
+                                    <li id="concert_seat_K24" class="tileview-content">24</li>
+                                    <li id="concert_seat_K23" class="tileview-content">23</li>
+                                    <li id="concert_seat_K22" class="tileview-content">22</li>
+                                    <li id="concert_seat_K21" class="tileview-content">21</li>
+                                    <li id="concert_seat_K20" class="tileview-content">20</li>
+                                    <li id="concert_seat_K19" class="tileview-content">19</li>
+                                    <li id="concert_seat_K18" class="tileview-content">18</li>
+                                    <li id="concert_seat_K17" class="tileview-content">17</li>
+                                    <li id="concert_seat_K16" class="tileview-content">16</li>
+                                    <li id="concert_seat_K15" class="tileview-content">15</li>
+                                    <li id="concert_seat_K14" class="tileview-content">14</li>
+                                    <li id="concert_seat_K" class="tileview-content  m_blank">K</li>
+                                    <li id="concert_seat_K13" class="tileview-content">13</li>
+                                    <li id="concert_seat_K12" class="tileview-content">12</li>
+                                    <li id="concert_seat_K11" class="tileview-content">11</li>
+                                    <li id="concert_seat_K10" class="tileview-content">10</li>
+                                    <li id="concert_seat_K9" class="tileview-content">9</li>
+                                    <li id="concert_seat_K8" class="tileview-content">8</li>
+                                    <li id="concert_seat_K7" class="tileview-content">7</li>
+                                    <li id="concert_seat_K6" class="tileview-content">6</li>
+                                    <li id="concert_seat_K5" class="tileview-content">5</li>
+                                    <li id="concert_seat_K4" class="tileview-content">4</li>
+                                    <li id="concert_seat_K3" class="tileview-content">3</li>
+                                    <li id="concert_seat_K2" class="tileview-content">2</li>
+                                    <li id="concert_seat_K1" class="tileview-content ">1</li>
+                                    <li id="concert_seat_L43" class="tileview-content">43</li>
+                                    <li id="concert_seat_L42" class="tileview-content">42</li>
+                                    <li id="concert_seat_L41" class="tileview-content">41</li>
+                                    <li id="concert_seat_L40" class="tileview-content">40</li>
+                                    <li id="concert_seat_L39" class="tileview-content">39</li>
+                                    <li id="concert_seat_L38" class="tileview-content ">38</li>
+                                    <li id="concert_seat_L37" class="tileview-content">37</li>
+                                    <li id="concert_seat_L36" class="tileview-content ">36</li>
+                                    <li id="concert_seat_L35" class="tileview-content">35</li>
+                                    <li id="concert_seat_L34" class="tileview-content">34</li>
+                                    <li id="concert_seat_L33" class="tileview-content">33</li>
+                                    <li id="concert_seat_L32" class="tileview-content active">32</li>
+                                    <li id="concert_seat_L31" class="tileview-content active">31</li>
+                                    <li id="concert_seat_L" class="tileview-content  m_blank">L</li>
+                                    <li id="concert_seat_L30" class="tileview-content">30</li>
+                                    <li id="concert_seat_L29" class="tileview-content">29</li>
+                                    <li id="concert_seat_L28" class="tileview-content">28</li>
+                                    <li id="concert_seat_L27" class="tileview-content">27</li>
+                                    <li id="concert_seat_L26" class="tileview-content">26</li>
+                                    <li id="concert_seat_L25" class="tileview-content">25</li>
+                                    <li id="concert_seat_L24" class="tileview-content">24</li>
+                                    <li id="concert_seat_L23" class="tileview-content">23</li>
+                                    <li id="concert_seat_L22" class="tileview-content">22</li>
+                                    <li id="concert_seat_L21" class="tileview-content">21</li>
+                                    <li id="concert_seat_L20" class="tileview-content">20</li>
+                                    <li id="concert_seat_L19" class="tileview-content">19</li>
+                                    <li id="concert_seat_L18" class="tileview-content">18</li>
+                                    <li id="concert_seat_L17" class="tileview-content">17</li>
+                                    <li id="concert_seat_L16" class="tileview-content">16</li>
+                                    <li id="concert_seat_L15" class="tileview-content">15</li>
+                                    <li id="concert_seat_L14" class="tileview-content">14</li>
+                                    <li id="concert_seat_L" class="tileview-content  m_blank">L</li>
+                                    <li id="concert_seat_L13" class="tileview-content">13</li>
+                                    <li id="concert_seat_L12" class="tileview-content ">12</li>
+                                    <li id="concert_seat_L11" class="tileview-content">11</li>
+                                    <li id="concert_seat_L10" class="tileview-content">10</li>
+                                    <li id="concert_seat_L9" class="tileview-content">9</li>
+                                    <li id="concert_seat_L8" class="tileview-content">8</li>
+                                    <li id="concert_seat_L7" class="tileview-content">7</li>
+                                    <li id="concert_seat_L6" class="tileview-content">6</li>
+                                    <li id="concert_seat_L5" class="tileview-content">5</li>
+                                    <li id="concert_seat_L4" class="tileview-content">4</li>
+                                    <li id="concert_seat_L3" class="tileview-content">3</li>
+                                    <li id="concert_seat_L2" class="tileview-content ">2</li>
+                                    <li id="concert_seat_L1" class="tileview-content">1</li>
+                                    <li id="concert_seat_M43" class="tileview-content">43</li>
+                                    <li id="concert_seat_M42" class="tileview-content">42</li>
+                                    <li id="concert_seat_M41" class="tileview-content">41</li>
+                                    <li id="concert_seat_M40" class="tileview-content">40</li>
+                                    <li id="concert_seat_M39" class="tileview-content">39</li>
+                                    <li id="concert_seat_M38" class="tileview-content">38</li>
+                                    <li id="concert_seat_M37" class="tileview-content">37</li>
+                                    <li id="concert_seat_M36" class="tileview-content">36</li>
+                                    <li id="concert_seat_M35" class="tileview-content">35</li>
+                                    <li id="concert_seat_M34" class="tileview-content">34</li>
+                                    <li id="concert_seat_M33" class="tileview-content ">33</li>
+                                    <li id="concert_seat_M32" class="tileview-content">32</li>
+                                    <li id="concert_seat_M31" class="tileview-content">31</li>
+                                    <li id="concert_seat_M" class="tileview-content  m_blank">M</li>
+                                    <li id="concert_seat_M30" class="tileview-content">30</li>
+                                    <li id="concert_seat_M29" class="tileview-content">29</li>
+                                    <li id="concert_seat_M28" class="tileview-content">28</li>
+                                    <li id="concert_seat_M27" class="tileview-content">27</li>
+                                    <li id="concert_seat_M26" class="tileview-content">26</li>
+                                    <li id="concert_seat_M25" class="tileview-content">25</li>
+                                    <li id="concert_seat_M24" class="tileview-content">24</li>
+                                    <li id="concert_seat_M23" class="tileview-content">23</li>
+                                    <li id="concert_seat_M22" class="tileview-content">22</li>
+                                    <li id="concert_seat_M21" class="tileview-content">21</li>
+                                    <li id="concert_seat_M20" class="tileview-content">20</li>
+                                    <li id="concert_seat_M19" class="tileview-content">19</li>
+                                    <li id="concert_seat_M18" class="tileview-content">18</li>
+                                    <li id="concert_seat_M17" class="tileview-content">17</li>
+                                    <li id="concert_seat_M16" class="tileview-content">16</li>
+                                    <li id="concert_seat_M15" class="tileview-content">15</li>
+                                    <li id="concert_seat_M14" class="tileview-content">14</li>
+                                    <li id="concert_seat_M" class="tileview-content  m_blank">M</li>
+                                    <li id="concert_seat_M13" class="tileview-content">13</li>
+                                    <li id="concert_seat_M12" class="tileview-content">12</li>
+                                    <li id="concert_seat_M11" class="tileview-content">11</li>
+                                    <li id="concert_seat_M10" class="tileview-content">10</li>
+                                    <li id="concert_seat_M9" class="tileview-content">9</li>
+                                    <li id="concert_seat_M8" class="tileview-content">8</li>
+                                    <li id="concert_seat_M7" class="tileview-content">7</li>
+                                    <li id="concert_seat_M6" class="tileview-content">6</li>
+                                    <li id="concert_seat_M5" class="tileview-content">5</li>
+                                    <li id="concert_seat_M4" class="tileview-content">4</li>
+                                    <li id="concert_seat_M3" class="tileview-content">3</li>
+                                    <li id="concert_seat_M2" class="tileview-content">2</li>
+                                    <li id="concert_seat_M1" class="tileview-content ">1</li>
+                                    <li id="concert_seat_N43" class="tileview-content">43</li>
+                                    <li id="concert_seat_N42" class="tileview-content ">42</li>
+                                    <li id="concert_seat_N41" class="tileview-content">41</li>
+                                    <li id="concert_seat_N40" class="tileview-content ">40</li>
+                                    <li id="concert_seat_N39" class="tileview-content">39</li>
+                                    <li id="concert_seat_N38" class="tileview-content ">38</li>
+                                    <li id="concert_seat_N37" class="tileview-content">37</li>
+                                    <li id="concert_seat_N36" class="tileview-content ">36</li>
+                                    <li id="concert_seat_N35" class="tileview-content">35</li>
+                                    <li id="concert_seat_N34" class="tileview-content">34</li>
+                                    <li id="concert_seat_N33" class="tileview-content">33</li>
+                                    <li id="concert_seat_N32" class="tileview-content">32</li>
+                                    <li id="concert_seat_N31" class="tileview-content">31</li>
+                                    <li id="concert_seat_N" class="tileview-content  m_blank">N</li>
+                                    <li id="concert_seat_N30" class="tileview-content">30</li>
+                                    <li id="concert_seat_N29" class="tileview-content">29</li>
+                                    <li id="concert_seat_N28" class="tileview-content">28</li>
+                                    <li id="concert_seat_N27" class="tileview-content">27</li>
+                                    <li id="concert_seat_N26" class="tileview-content">26</li>
+                                    <li id="concert_seat_N25" class="tileview-content">25</li>
+                                    <li id="concert_seat_N24" class="tileview-content">24</li>
+                                    <li id="concert_seat_N23" class="tileview-content">23</li>
+                                    <li id="concert_seat_N22" class="tileview-content">22</li>
+                                    <li id="concert_seat_N21" class="tileview-content">21</li>
+                                    <li id="concert_seat_N20" class="tileview-content">20</li>
+                                    <li id="concert_seat_N19" class="tileview-content">19</li>
+                                    <li id="concert_seat_N18" class="tileview-content">18</li>
+                                    <li id="concert_seat_N17" class="tileview-content">17</li>
+                                    <li id="concert_seat_N16" class="tileview-content">16</li>
+                                    <li id="concert_seat_N15" class="tileview-content">15</li>
+                                    <li id="concert_seat_N14" class="tileview-content">14</li>
+                                    <li id="concert_seat_N" class="tileview-content  m_blank">N</li>
+                                    <li id="concert_seat_N13" class="tileview-content">13</li>
+                                    <li id="concert_seat_N12" class="tileview-content">12</li>
+                                    <li id="concert_seat_N11" class="tileview-content">11</li>
+                                    <li id="concert_seat_N10" class="tileview-content">10</li>
+                                    <li id="concert_seat_N9" class="tileview-content">9</li>
+                                    <li id="concert_seat_N8" class="tileview-content ">8</li>
+                                    <li id="concert_seat_N7" class="tileview-content">7</li>
+                                    <li id="concert_seat_N6" class="tileview-content ">6</li>
+                                    <li id="concert_seat_N5" class="tileview-content">5</li>
+                                    <li id="concert_seat_N4" class="tileview-content">4</li>
+                                    <li id="concert_seat_N3" class="tileview-content">3</li>
+                                    <li id="concert_seat_N2" class="tileview-content">2</li>
+                                    <li id="concert_seat_N1" class="tileview-content">1</li>
+                                    <li id="concert_seat_O_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_O41" class="tileview-content">41</li>
+                                    <li id="concert_seat_O40" class="tileview-content ">40</li>
+                                    <li id="concert_seat_O39" class="tileview-content">39</li>
+                                    <li id="concert_seat_O38" class="tileview-content ">38</li>
+                                    <li id="concert_seat_O37" class="tileview-content">37</li>
+                                    <li id="concert_seat_O36" class="tileview-content ">36</li>
+                                    <li id="concert_seat_O35" class="tileview-content">35</li>
+                                    <li id="concert_seat_O34" class="tileview-content ">34</li>
+                                    <li id="concert_seat_O33" class="tileview-content">33</li>
+                                    <li id="concert_seat_JO32" class="tileview-content wheel ">32</li>
+                                    <li id="concert_seat_JO31" class="tileview-content wheel">31</li>
+                                    <li id="concert_seat_JO30" class="tileview-content wheel ">30</li>
+                                    <li id="concert_seat_O" class="tileview-content  m_blank">O</li>
+                                    <li id="concert_seat_O29" class="tileview-content">29</li>
+                                    <li id="concert_seat_O28" class="tileview-content">28</li>
+                                    <li id="concert_seat_O27" class="tileview-content">27</li>
+                                    <li id="concert_seat_O26" class="tileview-content">26</li>
+                                    <li id="concert_seat_O_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_O_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_O_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_O_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_O_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_O_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_O_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_O_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_O_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_O16" class="tileview-content">16</li>
+                                    <li id="concert_seat_O15" class="tileview-content">15</li>
+                                    <li id="concert_seat_O14" class="tileview-content">14</li>
+                                    <li id="concert_seat_O13" class="tileview-content">13</li>
+                                    <li id="concert_seat_O" class="tileview-content  m_blank">O</li>
+                                    <li id="concert_seat_JO12" class="tileview-content wheel ">12</li>
+                                    <li id="concert_seat_JO11" class="tileview-content wheel">11</li>
+                                    <li id="concert_seat_JO10" class="tileview-content wheel ">10</li>
+                                    <li id="concert_seat_O9" class="tileview-content">9</li>
+                                    <li id="concert_seat_O8" class="tileview-content">8</li>
+                                    <li id="concert_seat_O7" class="tileview-content">7</li>
+                                    <li id="concert_seat_O6" class="tileview-content ">6</li>
+                                    <li id="concert_seat_O5" class="tileview-content">5</li>
+                                    <li id="concert_seat_O4" class="tileview-content ">4</li>
+                                    <li id="concert_seat_O3" class="tileview-content">3</li>
+                                    <li id="concert_seat_O2" class="tileview-content ">2</li>
+                                    <li id="concert_seat_O1" class="tileview-content">1</li>
+                                    <li id="concert_seat_O_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P39" class="tileview-content">39</li>
+                                    <li id="concert_seat_P38" class="tileview-content ">38</li>
+                                    <li id="concert_seat_P37" class="tileview-content">37</li>
+                                    <li id="concert_seat_JP8" class="tileview-content wheel2 ">8</li>
+                                    <li id="concert_seat_JP7" class="tileview-content wheel2 ">7</li>
+                                    <li id="concert_seat_JP6" class="tileview-content wheel2 ">6</li>
+                                    <li id="concert_seat_JP5" class="tileview-content wheel2 ">5</li>
+                                    <li id="concert_seat_P" class="tileview-content  m_blank">P</li>
+                                    <li id="concert_seat_P28" class="tileview-content">28</li>
+                                    <li id="concert_seat_P27" class="tileview-content">27</li>
+                                    <li id="concert_seat_P26" class="tileview-content">26</li>
+                                    <li id="concert_seat_P25" class="tileview-content">25</li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P15" class="tileview-content">15</li>
+                                    <li id="concert_seat_P14" class="tileview-content">14</li>
+                                    <li id="concert_seat_P13" class="tileview-content">13</li>
+                                    <li id="concert_seat_P12" class="tileview-content">12</li>
+                                    <li id="concert_seat_P" class="tileview-content  m_blank">P</li>
+                                    <li id="concert_seat_JP4" class="tileview-content wheel2 ">4</li>
+                                    <li id="concert_seat_JP3" class="tileview-content wheel2 ">3</li>
+                                    <li id="concert_seat_JP2" class="tileview-content wheel2 ">2</li>
+                                    <li id="concert_seat_JP1" class="tileview-content wheel2 ">1</li>
+                                    <li id="concert_seat_P3" class="tileview-content">3</li>
+                                    <li id="concert_seat_P2" class="tileview-content ">2</li>
+                                    <li id="concert_seat_P1" class="tileview-content">1</li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
+                                    <li id="concert_seat_P_000" class="tileview-content  l_blank"></li></ul>
+                            </div>
+
+
+                        </article>
+
+                        <article class="ticket-print">
+                            <button>티켓인쇄</button>
+                        </article>
+
+                        <article class="ticket-info">
+                            <ul>
+                                <li>본 공연은 음악회로, 음료 외 반입 금지입니다.</li>
+                                <li>티켓출력 가능시간은 공연 시작 후 10분 까지 입니다.</li>
+                                <li>기타 문의사항은 매표소에 문의 해주세요</li>
+                            </ul>
+                        </article>
+
+                    </div>
+                </section>
+
+            </div>
+            <!-- E:mainContent -->
+
+
+
+
+            <!-- S:footer -->
+            <footer id="footer">
+
+
+                    <div class="container">
+
+
+                        <h2>무인발권 시스템</h2>
+
+                        <p class="copyright">© Infomind</p>
+                        
+
+
+                    </div>
+            </footer>
+            <!-- E:footer -->
+
+
+        </div>
+
+    </body>
+
+</html>
