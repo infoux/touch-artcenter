@@ -551,6 +551,23 @@ body {
                                 
                             }
 
+                            div.message {
+
+                                background:transparent;
+                                color:transparent;
+                                text-align:center;
+                                padding:50px 0;
+                                font-size:40px;
+                                font-weight:600;
+                                margin-bottom:30px;
+                                border-radius:20px;
+
+                                &.on {
+                                    background:#FF6600;
+                                    color:#000;
+                                }
+                            }
+
                             button.submit {
                                 height:80px;
                                 border-radius:20px;

@@ -1838,6 +1838,22 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset i.i
   margin-bottom: 20px;
 }
 
+body div.outline div#content.sub section.sub-numcheck div.container fieldset div.message {
+  background: transparent;
+  color: transparent;
+  text-align: center;
+  padding: 50px 0;
+  font-size: 40px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  border-radius: 20px;
+}
+
+body div.outline div#content.sub section.sub-numcheck div.container fieldset div.message.on {
+  background: #FF6600;
+  color: #000;
+}
+
 body div.outline div#content.sub section.sub-numcheck div.container fieldset button.submit {
   height: 80px;
   border-radius: 20px;
