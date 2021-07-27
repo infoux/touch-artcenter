@@ -1,3 +1,6 @@
+
+
+
 $(function () {
 
 
@@ -7,24 +10,21 @@ $(function () {
 
 
 
-
-
-
-    var $mainSlider = $("section.main-slider div.slider");
-    $mainSlider.slick({
-        arrows:false,
-        autoplay:true,
-        speed: 1000,
-        dots: false,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-
-    
+    var swiper = new Swiper(".main-slider", {
+        autoplay: {
+            delay: 4000,
+        },
+        speed: 500,
+        loop:true,
+        spaceBetween: 80,
+        centeredSlides: true,
+        slidesPerView: "auto",
+        effect: "coverflow",
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+        }
     });
-
-
-
 
 
 

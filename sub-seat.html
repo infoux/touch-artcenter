@@ -7,12 +7,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>infomind 무인발권기</title>
         <link href="source/css/boxicons.css" rel="stylesheet">
+        <link href="source/css/swiper.min.css" rel="stylesheet">
         <link href="source/css/style.css" rel="stylesheet">
         <!-- javaScript -->
         <script src="source/js/jquery-3.5.1.min.js"></script>
-        <script src="source/js/slick.min.js"></script>
+        <script src="source/js/swiper.min.js"></script>
         <script src="source/js/common.js"></script>
-
 
     </head>
 
@@ -20,36 +20,25 @@
 
         <div class="outline">
 
-
             <!-- S:header -->
             <header id="header">
                 <div class="container">
-                    <h1><a href="/">무인발권시스템</a></h1>
+                    <h1>
+                        <a href="/">무인발권시스템</a>
+                    </h1>
 
-                    <a class="home" href="">처음으로</a>
                     <a class="admin" href="">관리자</a>
                 </div>
             </header>
             <!-- E:header -->
-            
-
-
 
             <!-- S:mainContent -->
             <div id="content" class="sub">
-
-
-
 
                 <section class="sub-seat">
                     <div class="container">
 
                         <h2>좌석 확인</h2>
-
-                        <article class="messages alert">
-                            <p>정보확인이 필요한 좌석이 존재합니다.</p>
-                            <p>매표소에 문의해 주십시오</p>
-                        </article>
 
                         <article class="program">
                             <h3>
@@ -58,25 +47,591 @@
                                 <small>일시 : 2021년 03월 04일 오후 2:00</small>
                             </h3>
                             <p class="image">
-                                <img src="source/images/sample.png" alt="">
+                                <img src="source/images/tmp-poster03.png" alt="">
                             </p>
 
                             <ul class="info">
-                                <li><span>예약자명 :</span> <strong>문경환</strong></li>
-                                <li><span>예약인원 :</span> <strong>3명</strong></li>
+                                <li>
+                                    <span>예약자명 :</span>
+                                    <strong>문경환</strong>
+                                </li>
+                                <li>
+                                    <span>예약인원 :</span>
+                                    <strong>3명</strong>
+                                </li>
                             </ul>
 
-                            <p class="price"><span>결제금액 :</span> <strong>6,000원</strong></p>
+                            <p class="price">
+                                <span>결제금액 :</span>
+                                <strong>296,000원</strong>
+                            </p>
                         </article>
 
-                        <article class="seatmap hall01">
-                            <h3>대극장 1층</h3>
+                        <article class="messages alert on">
+                            <!-- 메시지 유무에 따라 클래스 on 토글-->
+
+                            <h3>좌석정보</h3>
+                            <p>정보확인이 필요한 좌석이 존재합니다. 매표소에 문의해 주십시오</p>
+                        </article>
+
+                        <!-- <article class="seatmap hall03">
+                            <h3>소극장</h3>
                             <div class="legend">
                                 <span class="legend01">선택좌석</span>
                             </div>
 
                             <div class="map-outline">
-                                <ul id="seatsView" class="f1">
+
+                                <ul id="seatsView">
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content  m_blank">A</li>
+                                    <li class="tileview-content ">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content  m_blank">A</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content ">11</li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content  m_blank">B</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content ">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content  m_blank">B</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content ">14</li>
+                                    <li class="tileview-content ">13</li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content ">11</li>
+                                    <li class="tileview-content  m_blank">C</li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content ">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content  m_blank">C</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content ">16</li>
+                                    <li class="tileview-content ">15</li>
+                                    <li class="tileview-content ">14</li>
+                                    <li class="tileview-content ">13</li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content  m_blank">D</li>
+                                    <li class="tileview-content ">11</li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content ">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content  m_blank">D</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content ">16</li>
+                                    <li class="tileview-content ">15</li>
+                                    <li class="tileview-content ">14</li>
+                                    <li class="tileview-content ">13</li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content  m_blank">E</li>
+                                    <li class="tileview-content ">11</li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content ">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content  m_blank">E</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content ">16</li>
+                                    <li class="tileview-content ">15</li>
+                                    <li class="tileview-content ">14</li>
+                                    <li class="tileview-content ">13</li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content  m_blank">F</li>
+                                    <li class="tileview-content ">11</li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content ">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content  m_blank">F</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  seat-line"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  seat-line"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content  l_blank"></li>
+                                    <li class="tileview-content ">16</li>
+                                    <li class="tileview-content ">15</li>
+                                    <li class="tileview-content ">14</li>
+                                    <li class="tileview-content ">13</li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content  m_blank">G</li>
+                                    <li class="tileview-content ">11</li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content ">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content  m_blank">G</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content ">16</li>
+                                    <li class="tileview-content ">15</li>
+                                    <li class="tileview-content ">14</li>
+                                    <li class="tileview-content ">13</li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content  m_blank">H</li>
+                                    <li class="tileview-content ">11</li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content ">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content  m_blank">H</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content ">16</li>
+                                    <li class="tileview-content ">15</li>
+                                    <li class="tileview-content ">14</li>
+                                    <li class="tileview-content ">13</li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content  m_blank">I</li>
+                                    <li class="tileview-content ">11</li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content ">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content  m_blank">I</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content ">16</li>
+                                    <li class="tileview-content ">15</li>
+                                    <li class="tileview-content ">14</li>
+                                    <li class="tileview-content ">13</li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content  m_blank">J</li>
+                                    <li class="tileview-content ">11</li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content ">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content  m_blank">J</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content ">16</li>
+                                    <li class="tileview-content ">15</li>
+                                    <li class="tileview-content ">14</li>
+                                    <li class="tileview-content ">13</li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content  m_blank">K</li>
+                                    <li class="tileview-content ">11</li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content ">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content  m_blank">K</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content ">16</li>
+                                    <li class="tileview-content ">15</li>
+                                    <li class="tileview-content ">14</li>
+                                    <li class="tileview-content ">13</li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content  m_blank">L</li>
+                                    <li class="tileview-content ">11</li>
+                                    <li class="tileview-content ">10</li>
+                                    <li class="tileview-content ">9</li>
+                                    <li class="tileview-content  tmp_off">8</li>
+                                    <li class="tileview-content ">7</li>
+                                    <li class="tileview-content ">6</li>
+                                    <li class="tileview-content  m_blank">L</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                    <li class="tileview-content ">16</li>
+                                    <li class="tileview-content ">15</li>
+                                    <li class="tileview-content ">14</li>
+                                    <li class="tileview-content active">13</li>
+                                    <li class="tileview-content ">12</li>
+                                    <li class="tileview-content  m_blank">M</li>
+                                    <li class="tileview-content wheel2 ">3</li>
+                                    <li class="tileview-content wheel2  tmp_off">2</li>
+                                    <li class="tileview-content wheel2 ">1</li>
+                                    <li class="tileview-content  m_blank">M</li>
+                                    <li class="tileview-content ">5</li>
+                                    <li class="tileview-content ">4</li>
+                                    <li class="tileview-content ">3</li>
+                                    <li class="tileview-content ">2</li>
+                                    <li class="tileview-content ">1</li>
+                                </ul>
+
+                            </div>
+
+                        </article> -->
+
+
+
+
+
+
+                        <!-- <article class="seatmap hall02"> <h3>대극장 2층</h3> <div class="legend"> <span
+                        class="legend01">선택좌석</span> </div> <div class="map-outline"> <ul id="seatsView"
+                        class="f2"> <li class="tileview-content ">42</li>
+                                <li class="tileview-content
+                        ">41</li>
+                                <li class="tileview-content ">40</li>
+                                <li class="tileview-content
+                        ">39</li>
+                                <li class="tileview-content ">38</li>
+                                <li class="tileview-content
+                        ">37</li>
+                                <li class="tileview-content ">36</li>
+                                <li class="tileview-content
+                        ">35</li>
+                                <li class="tileview-content ">34</li>
+                                <li class="tileview-content
+                        ">33</li>
+                                <li class="tileview-content ">32</li>
+                                <li class="tileview-content
+                        ">31</li>
+                                <li class="tileview-content ">30</li>
+                                <li class="tileview-content m_blank">Q</li>
+                                <li class="tileview-content ">29</li>
+                                <li class="tileview-content ">28</li>
+                                <li class="tileview-content ">27</li>
+                                <li class="tileview-content ">26</li>
+                                <li class="tileview-content ">25</li>
+                                <li class="tileview-content ">24</li>
+                                <li class="tileview-content ">23</li>
+                                <li class="tileview-content ">22</li>
+                                <li class="tileview-content ">21</li>
+                                <li class="tileview-content ">20</li>
+                                <li class="tileview-content ">19</li>
+                                <li class="tileview-content ">18</li>
+                                <li class="tileview-content ">17</li>
+                                <li class="tileview-content ">16</li>
+                                <li class="tileview-content ">15</li>
+                                <li class="tileview-content ">14</li>
+                                <li class="tileview-content m_blank">Q</li>
+                        <li class="tileview-content ">13</li>
+                                <li class="tileview-content ">12</li>
+                                <li class="tileview-content ">11</li>
+                                <li class="tileview-content ">10</li>
+                                <li class="tileview-content ">9</li>
+                                <li class="tileview-content ">8</li>
+                                <li class="tileview-content ">7</li>
+                                <li class="tileview-content ">6</li>
+                                <li class="tileview-content ">5</li>
+                                <li class="tileview-content ">4</li>
+                                <li class="tileview-content ">3</li>
+                                <li class="tileview-content ">2</li>
+                                <li class="tileview-content ">1</li> <li class=" tileview-content l_blank"></li>
+                                <li class="tileview-content ">40</li>
+                                <li class="tileview-content ">39</li>
+                                <li class="tileview-content ">38</li>
+                                <li class="tileview-content ">37</li>
+                                <li class="tileview-content ">36</li>
+                                <li class="tileview-content ">35</li>
+                                <li class="tileview-content ">34</li>
+                                <li class="tileview-content ">33</li>
+                                <li class="tileview-content ">32</li>
+                                <li class="tileview-content ">31</li>
+                                <li class="tileview-content ">30</li>
+                                <li class="tileview-content ">29</li>
+                                <li class="tileview-content m_blank">R</li>
+                                <li class="tileview-content ">28</li>
+                        <li class="tileview-content ">27</li>
+                                <li class="tileview-content ">26</li>
+                                <li class="tileview-content ">25</li>
+                                <li class="tileview-content ">24</li>
+                                <li class="tileview-content ">23</li>
+                                <li class="tileview-content ">22</li>
+                                <li class="tileview-content ">21</li>
+                                <li class="tileview-content ">20</li>
+                                <li class="tileview-content ">19</li>
+                                <li class="tileview-content ">18</li>
+                                <li class="tileview-content ">17</li>
+                                <li class="tileview-content ">16</li>
+                                <li class="tileview-content ">15</li>
+                                <li class="tileview-content ">14</li>
+                                <li class="tileview-content ">13</li>
+                                <li class="tileview-content m_blank">R</li>
+                        <li class="tileview-content ">12</li>
+                                <li class="tileview-content ">11</li>
+                                <li class="tileview-content ">10</li>
+                                <li class="tileview-content ">9</li>
+                                <li class="tileview-content ">8</li>
+                                <li class="tileview-content ">7</li>
+                                <li class="tileview-content ">6</li>
+                                <li class="tileview-content ">5</li>
+                                <li class="tileview-content ">4</li>
+                                <li class="tileview-content ">3</li>
+                                <li class="tileview-content ">2</li>
+                                <li class="tileview-content ">1</li>
+                                <li class="tileview-content l_blank"></li> <li class=" tileview-content
+                        l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content ">38</li>
+                                <li class="tileview-content ">37</li>
+                                <li class="tileview-content ">36</li>
+                                <li class="tileview-content ">35</li>
+                                <li class="tileview-content ">34</li>
+                                <li class="tileview-content ">33</li>
+                                <li class="tileview-content ">32</li>
+                                <li class="tileview-content ">31</li>
+                                <li class="tileview-content ">30</li>
+                                <li class="tileview-content ">29</li>
+                                <li class="tileview-content ">28</li>
+                                <li class="tileview-content m_blank">S</li>
+                        <li class="tileview-content ">27</li>
+                                <li class="tileview-content ">26</li>
+                                <li class="tileview-content ">25</li>
+                                <li class="tileview-content ">24</li>
+                                <li class="tileview-content ">23</li>
+                                <li class="tileview-content ">22</li>
+                                <li class="tileview-content ">21</li>
+                                <li class="tileview-content ">20</li>
+                                <li class="tileview-content ">19</li>
+                                <li class="tileview-content ">18</li>
+                                <li class="tileview-content ">17</li>
+                                <li class="tileview-content ">16</li>
+                                <li class="tileview-content active">15</li>
+                                <li class="tileview-content
+                        active">14</li>
+                                <li class="tileview-content ">13</li>
+                                <li class="tileview-content ">12</li>
+                                <li class="tileview-content m_blank">S</li>
+                        <li class="tileview-content ">11</li>
+                                <li class="tileview-content ">10</li>
+                                <li class="tileview-content ">9</li>
+                                <li class="tileview-content ">8</li>
+                                <li class="tileview-content ">7</li>
+                                <li class="tileview-content ">6</li>
+                                <li class="tileview-content ">5</li>
+                                <li class="tileview-content ">4</li>
+                                <li class="tileview-content ">3</li>
+                                <li class="tileview-content ">2</li>
+                                <li class="tileview-content ">1</li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content">36</li>
+                                <li class="tileview-content">35</li>
+                                <li class="tileview-content">34</li>
+                                <li class="tileview-content">33</li>
+                                <li class="tileview-content">32</li>
+                                <li class="tileview-content">31</li>
+                                <li class="tileview-content">30</li>
+                                <li class="tileview-content">29</li>
+                                <li class="tileview-content">28</li>
+                                <li class="tileview-content">27</li>
+                                <li class="tileview-content m_blank">T</li>
+                                <li class="tileview-content">26</li>
+                                <li class="tileview-content">25</li>
+                                <li class="tileview-content">24</li>
+                                <li class="tileview-content">23</li>
+                                <li class="tileview-content">22</li>
+                                <li class="tileview-content">21</li>
+                                <li class="tileview-content">20</li>
+                                <li class="tileview-content">19</li>
+                                <li class="tileview-content">18</li>
+                                <li class="tileview-content">17</li>
+                                <li class="tileview-content">16</li>
+                                <li class="tileview-content">15</li>
+                                <li class="tileview-content">14</li>
+                                <li class="tileview-content">13</li>
+                                <li class="tileview-content">12</li>
+                                <li class="tileview-content">11</li>
+                                <li class="tileview-content m_blank">T</li>
+                                <li class="tileview-content">10</li>
+                                <li class="tileview-content">9</li>
+                                <li class="tileview-content">8</li>
+                                <li class="tileview-content">7</li>
+                                <li class="tileview-content">6</li>
+                                <li class="tileview-content">5</li>
+                                <li class="tileview-content">4</li>
+                                <li class="tileview-content">3</li>
+                                <li class="tileview-content">2</li>
+                                <li class="tileview-content">1</li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li> <li class=" tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content">34</li>
+                                <li class="tileview-content">33</li>
+                                <li class="tileview-content">32</li>
+                                <li class="tileview-content">31</li>
+                                <li class="tileview-content">30</li>
+                                <li class="tileview-content">29</li>
+                                <li class="tileview-content">28</li>
+                                <li class="tileview-content">27</li>
+                                <li class="tileview-content">26</li>
+                                <li class="tileview-content m_blank">U</li>
+                                <li class="tileview-content">25</li>
+                                <li class="tileview-content">24</li>
+                                <li class="tileview-content">23</li>
+                                <li class="tileview-content">22</li>
+                                <li class="tileview-content">21</li>
+                                <li class="tileview-content">20</li>
+                                <li class="tileview-content">19</li>
+                                <li class="tileview-content">18</li>
+                                <li class="tileview-content">17</li>
+                                <li class="tileview-content">16</li>
+                                <li class="tileview-content">15</li>
+                                <li class="tileview-content">14</li>
+                                <li class="tileview-content">13</li>
+                                <li class="tileview-content">12</li>
+                                <li class="tileview-content">11</li>
+                                <li class="tileview-content">10</li>
+                                <li class="tileview-content m_blank">U</li>
+                                <li class="tileview-content">9</li>
+                                <li class="tileview-content">8</li>
+                                <li class="tileview-content">7</li>
+                                <li class="tileview-content">6</li>
+                                <li class="tileview-content">5</li>
+                                <li class="tileview-content">4</li>
+                                <li class="tileview-content">3</li>
+                                <li class="tileview-content">2</li>
+                                <li class="tileview-content">1</li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li> <li class=" tileview-content
+                        l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content seat-line"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content seat-line"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li>
+                                <li class="tileview-content l_blank"></li> </ul> </div> </article> -->
+
+
+
+
+
+
+
+                        <article class="seatmap hall01">
+                            <h3>대극장 1층</h3>
+                            
+                            <div class="legend">
+                                <span class="legend01">선택좌석</span>
+                            </div>
+                            
+                            
+                            <div class="map-outline"> 
+                            <ul id="seatsView" class="f1">
                                     <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
                                     <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
                                     <li id="concert_seat_A_000" class="tileview-content  l_blank"></li>
@@ -834,14 +1389,8 @@
                                     <li id="concert_seat_P1" class="tileview-content">1</li>
                                     <li id="concert_seat_P_000" class="tileview-content  l_blank"></li>
                                     <li id="concert_seat_P_000" class="tileview-content  l_blank"></li></ul>
-                            </div>
-
-
-                        </article>
-
-                        <article class="ticket-print">
-                            <button>티켓인쇄</button>
-                        </article>
+                        </div>
+                    </article>
 
                         <article class="ticket-info">
                             <ul>
@@ -851,32 +1400,23 @@
                             </ul>
                         </article>
 
+                        <article class="ticket-print">
+                            <button>티켓인쇄</button>
+                        </article>
+
+                        <!-- <article class="ticket-print"> <button class="check">확인이 필요합니다.</button>
+                        </article> -->
+
                     </div>
                 </section>
 
+                <article class="float-bar">
+                    <a class="home" href="">
+                        <i class='bx bx-home'></i>HOME</a>
+                </article>
+
             </div>
             <!-- E:mainContent -->
-
-
-
-
-            <!-- S:footer -->
-            <footer id="footer">
-
-
-                    <div class="container">
-
-
-                        <h2>무인발권 시스템</h2>
-
-                        <p class="copyright">© Infomind</p>
-                        
-
-
-                    </div>
-            </footer>
-            <!-- E:footer -->
-
 
         </div>
 
