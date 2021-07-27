@@ -1493,6 +1493,7 @@ body div.outline div#content.sub section.sub-admin div.container div.tool-area {
 body div.outline div#content.sub section.sub-admin div.container div.table-area {
   height: 1260px;
   background: #000000;
+  overflow-y: scroll;
 }
 
 body div.outline div#content.sub section.sub-admin div.container ul {
