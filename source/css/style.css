@@ -1350,9 +1350,11 @@ body div.outline div#content.sub section.sub-result.error div.container h2::befo
 
 body div.outline div#content.sub section.sub-admin-login div.container {
   padding: 0;
+  text-align: center;
 }
 
 body div.outline div#content.sub section.sub-admin-login div.container fieldset {
+  text-align: center;
   border: none;
   padding: 0;
   margin: 0;
@@ -1383,11 +1385,11 @@ body div.outline div#content.sub section.sub-admin-login div.container fieldset 
 }
 
 body div.outline div#content.sub section.sub-admin-login div.container fieldset button.submit {
-  display: block;
-  margin: 60px auto 0;
+  display: inline-block;
+  margin: 60px 20px 0 0;
   height: 144px;
   border-radius: 36px;
-  width: 650px;
+  width: 430px;
   border: none;
   background: #F1592A;
   color: #fff;
@@ -1397,6 +1399,27 @@ body div.outline div#content.sub section.sub-admin-login div.container fieldset 
 
 body div.outline div#content.sub section.sub-admin-login div.container fieldset button.submit:active {
   background: #CB4921;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+body div.outline div#content.sub section.sub-admin-login div.container fieldset button.cancle {
+  display: inline-block;
+  margin: 60px 0 0;
+  height: 144px;
+  border-radius: 36px;
+  width: 215px;
+  border: none;
+  background: #18183B;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+body div.outline div#content.sub section.sub-admin-login div.container fieldset button.cancle:active {
+  background: #0D0D26;
   -webkit-transition: all 0s linear;
   transition: all 0s linear;
   -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
