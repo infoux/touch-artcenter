@@ -167,9 +167,12 @@ body {
                             font-size:30px;
                             font-weight:600;
                             word-break:keep-all;
+                            margin-bottom:40px;
                         }
 
-                        ul {
+
+
+                        &>ul {
                             list-style:none;
                             margin:0;
                             padding:0 100px;
@@ -178,23 +181,21 @@ body {
                             li {
                                 display:inline-block;
                                 vertical-align:top;
-                                width:100%;
-
-                                a {
+                                width:50%;
+                                
+                                &>a {
                                     display:block;
-                                    font-size:50px;
+                                    font-size:40px;
                                     font-weight:600;
                                     text-align:center;
-                                    background:#519127;
                                     color:#fff;
-                                    margin:40px;
-                                    line-height:242px;
-                                    border-radius:30px;
+                                    padding:50px 0;
+                                    margin:2px;
+                                    height:266px;
                                     @include drop-shadow($x:0,$y: 10px, $blur: 9px, $spread: 0, $alpha: 0.25);
 
                                     
                                     &:active {
-                                        background:#36720E;
                                         color:#fff;
                                         @include inner-shadow($x:0,$y: 20px, $blur: 0, $spread: 0, $alpha: 0.25);
                                         @include ani(0s);
@@ -202,16 +203,41 @@ body {
                                     }
 
                                     i {
-                                        position:relative;
-                                        top:20px;
+                                        display:block;
                                         font-size:100px;
-                                        margin-right:14px;
+                                        margin:0 0 10px;
                                         opacity:.5;
                                     }
 
                                     
                                     
                                 }
+
+                                &.num {
+                                    a {
+                                        background:#519127;
+                                        border-radius:30px 0 0 30px;
+
+                                        &:active {
+                                            
+                                            background:#36720E;
+                                        }
+                                    }
+                                }
+
+                                &.phone {
+                                    a {
+                                        background:#277291;
+                                        border-radius:0 30px 30px 0;
+
+                                        &:active {
+                                            
+                                            background:#145570;
+                                        }
+                                    }
+                                }
+
+
                             }
                         }
                     }
@@ -225,28 +251,57 @@ body {
                 left:0;
                 right:0;
                 bottom:0;
-                height:140px;
+                height:186px;
+                text-align:left;
+                background:#303030;
+                font-size:0;
 
-                a {
-                    display:block;
-                    position:absolute;
-                    left:0;
-                    top:0;
-                    color:#8D8D8D;
-                    font-size:38px;
+                a.home {
+                    display:inline-block;
+                    vertical-align:top;
+                    font-size:0;
+                    width:162px;
                     font-weight:600;
-                    background:#000000;
-                    line-height:100px;
-                    border-radius:0 36px 36px 0;
-                    padding:0 40px;
+                    background:#333;
+                    line-height:186px;
+                    text-align:center;
+
+                    &:active {
+                        background:#000;
+                        @include ani(0s);
+                        @include inner-shadow($x:0,$y: 10px, $blur: 0, $spread: 0, $alpha: 0.25);
+                    }
 
                     i {
                         position:relative;
-                        top:8px;
-                        color:#FCB034;
-                        font-size:56px;
-                        margin:0 14px 0 0;
+                        top:30px;
+                        color:#fff;
+                        font-size:76px;
+                        margin:0;
                     }
+                }
+
+                button.main-btn {
+                    display:inline-block;
+                    vertical-align:top;
+                    width:calc(100% - 162px);
+                    font-size:50px;
+                    height:186px;
+                    border:none;
+                    margin:0;
+                    padding:0;
+                    background:#F1592A;
+                    color:#fff;
+                    font-size:50px;
+                    font-weight:600;
+
+                    &:active {
+                        background:#B34422;
+                        @include ani(0s);
+                        @include inner-shadow($x:0,$y: 10px, $blur: 0, $spread: 0, $alpha: 0.25);
+                    }
+
+
                 }
             }
 
@@ -622,6 +677,10 @@ body {
                                 background:#15151F;
                                 color:#fff;
 
+                                &#number {
+                                    margin-bottom:100px;
+                                }
+
                             }
 
                             i.information {
@@ -631,6 +690,7 @@ body {
                                 color:#CECECE;
                                 font-size:30px;
                                 margin-bottom:60px;
+                                
                                 
                             }
 

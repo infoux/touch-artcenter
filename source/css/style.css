@@ -700,6 +700,16 @@ html {
 html,
 body {
   font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
+  -webkit-touch-callout: none;
+  /* iOS Safari */
+  -webkit-user-select: none;
+  /* Chrome/Safari/Opera */
+  /* Konqueror */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge*/
+  user-select: none;
 }
 
 body .container {
@@ -814,37 +824,36 @@ body div.outline div#content.main section.main-buttons div.container div.info-te
   font-size: 30px;
   font-weight: 600;
   word-break: keep-all;
+  margin-bottom: 40px;
 }
 
-body div.outline div#content.main section.main-buttons div.container ul {
+body div.outline div#content.main section.main-buttons div.container > ul {
   list-style: none;
   margin: 0;
   padding: 0 100px;
   font-size: 0;
 }
 
-body div.outline div#content.main section.main-buttons div.container ul li {
+body div.outline div#content.main section.main-buttons div.container > ul li {
   display: inline-block;
   vertical-align: top;
-  width: 100%;
+  width: 50%;
 }
 
-body div.outline div#content.main section.main-buttons div.container ul li a {
+body div.outline div#content.main section.main-buttons div.container > ul li > a {
   display: block;
-  font-size: 50px;
+  font-size: 40px;
   font-weight: 600;
   text-align: center;
-  background: #519127;
   color: #fff;
-  margin: 40px;
-  line-height: 242px;
-  border-radius: 30px;
+  padding: 50px 0;
+  margin: 2px;
+  height: 266px;
   -webkit-box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
 }
 
-body div.outline div#content.main section.main-buttons div.container ul li a:active {
-  background: #36720E;
+body div.outline div#content.main section.main-buttons div.container > ul li > a:active {
   color: #fff;
   -webkit-box-shadow: 0 20px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 20px 0 0 rgba(0, 0, 0, 0.25) inset;
@@ -852,12 +861,29 @@ body div.outline div#content.main section.main-buttons div.container ul li a:act
   transition: all 0s linear;
 }
 
-body div.outline div#content.main section.main-buttons div.container ul li a i {
-  position: relative;
-  top: 20px;
+body div.outline div#content.main section.main-buttons div.container > ul li > a i {
+  display: block;
   font-size: 100px;
-  margin-right: 14px;
+  margin: 0 0 10px;
   opacity: .5;
+}
+
+body div.outline div#content.main section.main-buttons div.container > ul li.num a {
+  background: #519127;
+  border-radius: 30px 0 0 30px;
+}
+
+body div.outline div#content.main section.main-buttons div.container > ul li.num a:active {
+  background: #36720E;
+}
+
+body div.outline div#content.main section.main-buttons div.container > ul li.phone a {
+  background: #277291;
+  border-radius: 0 30px 30px 0;
+}
+
+body div.outline div#content.main section.main-buttons div.container > ul li.phone a:active {
+  background: #145570;
 }
 
 body div.outline div#content article.float-bar {
@@ -865,29 +891,60 @@ body div.outline div#content article.float-bar {
   left: 0;
   right: 0;
   bottom: 0;
-  height: 140px;
+  height: 186px;
+  text-align: left;
+  background: #303030;
+  font-size: 0;
 }
 
-body div.outline div#content article.float-bar a {
-  display: block;
-  position: absolute;
-  left: 0;
-  top: 0;
-  color: #8D8D8D;
-  font-size: 38px;
+body div.outline div#content article.float-bar a.home {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 0;
+  width: 162px;
   font-weight: 600;
-  background: #000000;
-  line-height: 100px;
-  border-radius: 0 36px 36px 0;
-  padding: 0 40px;
+  background: #333;
+  line-height: 186px;
+  text-align: center;
 }
 
-body div.outline div#content article.float-bar a i {
+body div.outline div#content article.float-bar a.home:active {
+  background: #000;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+body div.outline div#content article.float-bar a.home i {
   position: relative;
-  top: 8px;
-  color: #FCB034;
-  font-size: 56px;
-  margin: 0 14px 0 0;
+  top: 30px;
+  color: #fff;
+  font-size: 76px;
+  margin: 0;
+}
+
+body div.outline div#content article.float-bar button.main-btn {
+  display: inline-block;
+  vertical-align: top;
+  width: calc(100% - 162px);
+  font-size: 50px;
+  height: 186px;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: #F1592A;
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+}
+
+body div.outline div#content article.float-bar button.main-btn:active {
+  background: #B34422;
+  -webkit-transition: all 0s linear;
+  transition: all 0s linear;
+  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+  box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
 
 body div.outline div#content article.keypad {
@@ -1234,6 +1291,10 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset inp
   outline: none;
   background: #15151F;
   color: #fff;
+}
+
+body div.outline div#content.sub section.sub-numcheck div.container fieldset input[type="text"]#number {
+  margin-bottom: 100px;
 }
 
 body div.outline div#content.sub section.sub-numcheck div.container fieldset i.information {
