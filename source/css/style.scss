@@ -10,6 +10,9 @@ $screen-size-pc: 1200px;
     @include ani(0.3s);
 }
 
+
+
+
 html {
     min-width: $min-width;
     max-width: 100%;
@@ -22,7 +25,13 @@ html,
 body {
 
     font-family: $myfont, "Malgun Gothic", "apple sd gothic neo", sans-serif;
-
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge*/
+    user-select: none; 
+    
 }
 
 body {
