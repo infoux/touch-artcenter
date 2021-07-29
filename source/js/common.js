@@ -10,6 +10,11 @@ $(function () {
 
 
 
+
+    $('ul.list').niceScroll({
+        emulatetouch:true
+      });
+
     var swiper = new Swiper(".main-slider", {
         autoplay: {
             delay: 4000,

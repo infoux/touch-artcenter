@@ -1264,6 +1264,13 @@ body div.outline div#content.sub h2 {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
 
+body div.outline div#content.sub h2 small {
+  display: block;
+  margin: 10px;
+  font-size: 38px;
+  color: #fff;
+}
+
 body div.outline div#content.sub section.sub-numcheck div.container {
   padding: 0;
 }
@@ -1343,6 +1350,115 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset but
   transition: all 0s linear;
   -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
+}
+
+body div.outline div#content.sub section.sub-list div.container p.ticket-text {
+  font-size: 32px;
+  font-weight: 600;
+  margin: 0;
+  text-align: center;
+  color: #FCB834;
+  line-height: 120px;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 1044px;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list::after {
+  content: "";
+  display: block;
+  position: fixed;
+  z-index: 10000;
+  left: -100px;
+  right: -100px;
+  bottom: 185px;
+  height: 120px;
+  -webkit-box-shadow: 0 -60px 50px 0 rgba(0, 0, 0, 0.8) inset;
+  box-shadow: 0 -60px 50px 0 rgba(0, 0, 0, 0.8) inset;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li {
+  position: relative;
+  background: #fff;
+  border-radius: 15px;
+  padding: 30px;
+  margin: 0 45px 15px;
+  font-size: 0;
+  -webkit-box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li:first-child {
+  margin-top: 50px;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li a h3 {
+  font-size: 42px;
+  margin: 0 0 18px;
+  font-weight: 600;
+  padding: 0 240px 0 0;
+  color: #222;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.count,
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.seat {
+  display: block;
+  width: 50%;
+  font-size: 30px;
+  color: #333;
+  margin: 6px 0 0;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.num {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  font-size: 34px;
+  color: #0077A8;
+  margin: 0;
+  text-align: right;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.label {
+  position: absolute;
+  right: 30px;
+  bottom: 30px;
+  margin: 0;
+  background: #519127;
+  border-radius: 12px;
+  font-size: 30px;
+  text-align: center;
+  color: #fff;
+  width: 234px;
+  line-height: 82px;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li.used {
+  background: #C1C1C1;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a h3 {
+  color: #777;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.count,
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.seat {
+  color: #777;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.num {
+  color: #777;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.label {
+  background: #959595;
+  color: #C1C1C1;
 }
 
 body div.outline div#content.sub section.sub-seat div.container {
