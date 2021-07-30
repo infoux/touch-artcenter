@@ -762,7 +762,7 @@ body {
                             list-style:none;
                             margin:0;
                             padding:0;
-                            height:1044px;
+                            height:1228px;
 
                             &::after {
                                 content:"";
@@ -795,31 +795,45 @@ body {
 
                                     h3 {
                                         font-size:42px;
-                                        margin:0 0 18px;
+                                        margin:0 0 0;
                                         font-weight:600;
-                                        padding:0 240px 0 0;
+                                        padding:0;
                                         color:#222;
+
+                                        small {
+                                            display:block;
+                                            font-size:34px;
+                                            font-weight:500;
+                                            margin-top:20px;
+                                            padding-top:20px;
+                                            border-top:1px solid #555;
+                                        }
                                     }
     
                                     p.count,
-                                    p.seat {
-                                        display:block;
-                                        width:50%;
+                                    p.name  {
+                                        display:inline-block;
                                         font-size:30px;
                                         color:#333;
-                                        margin:6px 0 0;
+                                        margin:6px 20px 0 0;
 
                                     }
     
                                     p.num {
-                                        position:absolute;
-                                        right:30px;
-                                        top:30px;
                                         font-size:34px;
                                         color:#0077A8;
                                         margin:0;
-                                        text-align:right;
                                     }
+    
+                                    p.seat {
+                                        display:block;
+                                        font-size:30px;
+                                        color:#333;
+                                        margin:6px 0 0;
+                                        padding:0 240px 0 0;
+
+                                    }
+    
     
                                     p.label {
                                         position:absolute;
@@ -847,13 +861,11 @@ body {
                                     }
     
                                     p.count,
-                                    p.seat {
-                                        color:#777;
-
-                                    }
-    
+                                    p.seat,
+                                    p.name,
                                     p.num {
                                         color:#777;
+
                                     }
     
                                     p.label {

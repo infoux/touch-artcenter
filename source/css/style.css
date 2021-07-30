@@ -1367,7 +1367,7 @@ body div.outline div#content.sub section.sub-list div.container ul.list {
   list-style: none;
   margin: 0;
   padding: 0;
-  height: 1044px;
+  height: 1228px;
 }
 
 body div.outline div#content.sub section.sub-list div.container ul.list::after {
@@ -1400,29 +1400,41 @@ body div.outline div#content.sub section.sub-list div.container ul.list li:first
 
 body div.outline div#content.sub section.sub-list div.container ul.list li a h3 {
   font-size: 42px;
-  margin: 0 0 18px;
+  margin: 0 0 0;
   font-weight: 600;
-  padding: 0 240px 0 0;
+  padding: 0;
   color: #222;
 }
 
-body div.outline div#content.sub section.sub-list div.container ul.list li a p.count,
-body div.outline div#content.sub section.sub-list div.container ul.list li a p.seat {
+body div.outline div#content.sub section.sub-list div.container ul.list li a h3 small {
   display: block;
-  width: 50%;
+  font-size: 34px;
+  font-weight: 500;
+  margin-top: 20px;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.count,
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.name {
+  display: inline-block;
   font-size: 30px;
   color: #333;
-  margin: 6px 0 0;
+  margin: 6px 20px 0 0;
 }
 
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.num {
-  position: absolute;
-  right: 30px;
-  top: 30px;
   font-size: 34px;
   color: #0077A8;
   margin: 0;
-  text-align: right;
+}
+
+body div.outline div#content.sub section.sub-list div.container ul.list li a p.seat {
+  display: block;
+  font-size: 30px;
+  color: #333;
+  margin: 6px 0 0;
+  padding: 0 240px 0 0;
 }
 
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.label {
@@ -1448,10 +1460,8 @@ body div.outline div#content.sub section.sub-list div.container ul.list li.used 
 }
 
 body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.count,
-body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.seat {
-  color: #777;
-}
-
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.seat,
+body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.name,
 body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.num {
   color: #777;
 }
