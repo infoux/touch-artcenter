@@ -1290,23 +1290,38 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset lab
   display: none;
 }
 
+body div.outline div#content.sub section.sub-numcheck div.container fieldset label[for="number"] {
+  display: block;
+  font-size: 0;
+  position: relative;
+}
+
+body div.outline div#content.sub section.sub-numcheck div.container fieldset label[for="number"]::after {
+  content: "T";
+  position: absolute;
+  z-index: 10;
+  left: 50%;
+  margin-left: 260px;
+  top: 18px;
+  font-size: 50px;
+  color: #999;
+}
+
 body div.outline div#content.sub section.sub-numcheck div.container fieldset input[type="text"] {
   display: block;
+  position: relative;
   height: 110px;
   border: 1px solid #645F64;
   border-radius: 36px;
   width: 650px;
   margin: 0 auto 20px;
+  padding: 0 70px;
   text-align: center;
   font-size: 40px;
   font-weight: 400;
   outline: none;
   background: #15151F;
   color: #fff;
-}
-
-body div.outline div#content.sub section.sub-numcheck div.container fieldset input[type="text"]#number {
-  margin-bottom: 100px;
 }
 
 body div.outline div#content.sub section.sub-numcheck div.container fieldset i.information {
