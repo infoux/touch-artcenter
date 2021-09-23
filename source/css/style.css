@@ -1718,6 +1718,60 @@ body div.outline div#content.sub section.sub-admin div.container h2 {
 
 body div.outline div#content.sub section.sub-admin div.container div.tool-area {
   min-height: 120px;
+  padding: 25px 0;
+  color: #fff;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.tool-area label {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 20px 0 0;
+  font-size: 22px;
+  line-height: 70px;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.tool-area input + label {
+  padding-left: 50px;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.tool-area u {
+  display: inline-block;
+  vertical-align: top;
+  padding: 0 10px;
+  font-size: 22px;
+  line-height: 70px;
+  text-decoration: none;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.tool-area input {
+  height: 70px;
+  font-size: 22px;
+  background: #000;
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  padding: 0 10px;
+  text-align: center;
+  width: 180px;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.tool-area input.text {
+  width: 260px;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.tool-area button {
+  height: 70px;
+  width: 70px;
+  vertical-align: top;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #0077A8;
+  font-size: 0;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.tool-area button i {
+  font-size: 32px;
 }
 
 body div.outline div#content.sub section.sub-admin div.container div.table-area {

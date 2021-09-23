@@ -8,10 +8,12 @@
         <title>infomind 무인발권기</title>
         <link href="source/css/boxicons.css" rel="stylesheet">
         <link href="source/css/swiper.min.css" rel="stylesheet">
+        <link href="source/css/datepicker.css" rel="stylesheet">
         <link href="source/css/style.css" rel="stylesheet">
         <!-- javaScript -->
         <script src="source/js/jquery-3.5.1.min.js"></script>
         <script src="source/js/swiper.min.js"></script>
+        <script src="source/js/datepicker.min.js"></script>
         <script src="source/js/common.js"></script>
 
 
@@ -52,7 +54,9 @@
                         </h2>
 
                         <div class="tool-area">
-
+                            <label>기간선택</label><input type="text" class="start-date" placeholder="시작일"><u>~</u><input type="text" class="end-date" placeholder="종료일">
+                            <label for="text">검색어</label><input id="text" class="text" type="text">
+                            <button><i class='bx bx-search'></i>검색</button>
                         </div>
 
                         <div class="table-area">
