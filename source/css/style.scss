@@ -1,10 +1,17 @@
 // out: ./styl.css, compress: true, sourceMap: true
+
+
+
+//기본 적용 해상도 1920 * 1080
+//768 * 1360 해상도 미디어쿼리로 대응
+
+
+
 @import "normalize", "rem", "font", "color", "mixin", "default";
 
 /* basic */
 $min-width: 320px;
 $img-url: "../images";
-$screen-size-pc: 1200px;
 
 * {
     @include ani(0.3s);
@@ -56,9 +63,20 @@ body {
         margin:0 auto;
         background:url(../images/background.png) no-repeat center / 100% 100%;
         
+                
+		@media (max-width: 768px) {
+			min-width:768px;
+            max-width:768px;
+		} 
+        
+        
         /* header */
         header {
             padding:0 45px;
+
+            @media (max-width: 768px) {
+                padding:0 25px;
+            } 
 
             .container {
                 position:relative;
@@ -66,6 +84,11 @@ body {
                 padding-top:60px;
                 border-bottom:3px solid #707070;
         
+                @media (max-width: 768px) {
+                    height:110px;
+                    padding-top:30px;
+                } 
+
 
                 h1 {
                     margin:0;
@@ -76,6 +99,11 @@ body {
                         line-height:62px;
                         font-weight:500;
                         font-size:46px;
+        
+                        @media (max-width: 768px) {
+                            line-height:51px;
+                            font-size:30px;
+                        } 
                     }
                 }
 
@@ -88,6 +116,12 @@ body {
                     height:42.2px;
                     font-size:0;
                     background:url(../images/logo.svg) no-repeat center / 100% auto;
+        
+                    @media (max-width: 768px) {
+                        top:40px;
+                        width:220px;
+                        height:32px;
+                    } 
 
                 }
 
@@ -119,6 +153,11 @@ body {
                 section.main-slider {
                     padding:320px 0 220px;
                     margin:0 0 100px;
+        
+                    @media (max-width: 768px) {
+                        padding:210px 0 160px;
+                        margin:0 0 70px;
+                    } 
 
                         div.swiper-slide {
                             display:inline-block;
@@ -127,6 +166,11 @@ body {
                             width:352px;
                             height:496.77px;
                             opacity:.5;
+        
+                            @media (max-width: 768px) {
+                                width:270px;
+                                height:390px;
+                            } 
 
                             img {
                                 width:100%;
@@ -147,6 +191,12 @@ body {
                                 height:23px;
                                 margin:0 10px;
                                 background:#A7A7A7;
+        
+                                @media (max-width: 768px) {
+                                    width:16px;
+                                    height:16px;
+                                    margin:0 7px;
+                                } 
 
                                 &.swiper-pagination-bullet-active {
                                     background:#FCB034;
@@ -168,6 +218,11 @@ body {
                             font-weight:600;
                             word-break:keep-all;
                             margin-bottom:40px;
+        
+                            @media (max-width: 768px) {
+                                font-size:22px;
+                                margin-bottom:30px;
+                            } 
                         }
 
 
@@ -177,6 +232,11 @@ body {
                             margin:0;
                             padding:0 100px;
                             font-size:0; 
+        
+                            @media (max-width: 768px) {
+                                padding:0 60px;
+                            } 
+
 
                             li {
                                 display:inline-block;
@@ -192,6 +252,13 @@ body {
                                     margin:2px;
                                     height:266px;
                                     @include drop-shadow($x:0,$y: 10px, $blur: 9px, $spread: 0, $alpha: 0.25);
+        
+                                    @media (max-width: 768px) {
+                                        font-size:24px;
+                                        padding:20px 0;
+                                        height:220px;
+                                    } 
+        
 
                                     
                                     &:active {
@@ -206,12 +273,22 @@ body {
                                         font-size:100px;
                                         margin:0 0 10px;
                                         opacity:.5;
+        
+                                        @media (max-width: 768px) {
+                                            font-size:90px;
+                                        } 
+            
                                     }
 
                                     strong {
                                         display:block;
                                         font-weight:600;
                                         font-size:40px;
+        
+                                        @media (max-width: 768px) {
+                                            font-size:30px;
+                                        } 
+            
                                     }
 
                                     
@@ -222,6 +299,10 @@ body {
                                     a {
                                         background:#519127;
                                         border-radius:30px 0 0 30px;
+        
+                                        @media (max-width: 768px) {
+                                            border-radius:20px 0 0 20px;
+                                        } 
 
                                         &:active {
                                             
@@ -234,6 +315,10 @@ body {
                                     a {
                                         background:#277291;
                                         border-radius:0 30px 30px 0;
+        
+                                        @media (max-width: 768px) {
+                                            border-radius:0 20px 20px 0;
+                                        } 
 
                                         &:active {
                                             
@@ -260,6 +345,10 @@ body {
                 text-align:left;
                 background:#303030;
                 font-size:0;
+        
+                @media (max-width: 768px) {
+                    height:120px;
+                } 
 
                 a.home {
                     display:inline-block;
@@ -270,6 +359,11 @@ body {
                     background:#333;
                     line-height:186px;
                     text-align:center;
+        
+                    @media (max-width: 768px) {
+                        width:120px;
+                        line-height:120px;
+                    } 
 
                     &:active {
                         background:#000;
@@ -283,6 +377,11 @@ body {
                         color:#fff;
                         font-size:76px;
                         margin:0;
+        
+                        @media (max-width: 768px) {
+                            top:20px;
+                            font-size:56px;
+                        } 
                     }
                 }
 
@@ -297,8 +396,13 @@ body {
                     padding:0;
                     background:#F1592A;
                     color:#fff;
-                    font-size:50px;
                     font-weight:600;
+        
+                    @media (max-width: 768px) {
+                        width:calc(100% - 120px);
+                        font-size:36px;
+                        height:120px;
+                    } 
 
                     &:active {
                         background:#B34422;
@@ -317,11 +421,16 @@ body {
                 font-size:0;
                 padding:20px 190px;
                 margin-bottom:30px;
+                text-align:center;
+        
+                @media (max-width: 768px) {
+                    padding:12px 118px;
+                } 
+
 
                 p {
                     display:inline-block;
                     vertical-align:top;
-                    text-align:center;
                     margin:0;
 
                     button {
@@ -329,12 +438,20 @@ body {
                         border-radius:36px;
                         margin:10px;
                         padding:0;
-                        width:100%;
                         height:120px;
                         width:120px;
                         font-size:60px;
                         font-weight:600;
                         background:#555;
+        
+                        @media (max-width: 768px) {
+                            border-radius:26px;
+                            margin:8px;
+                            width:90px;
+                            height:90px;
+                            font-size:44px;
+
+                        } 
 
                         &:active {
                             background:#504F57;
@@ -346,15 +463,31 @@ body {
                             background:#8B4242;
                             width:330px;
                             font-size:40px;
+        
+                            @media (max-width: 768px) {
+                                width:248px;
+                                font-size:34px;
+    
+                            } 
                         }
 
                         &.back {
                             background:#4B4759;
                             width:330px;
                             font-size:0;
+        
+                            @media (max-width: 768px) {
+                                width:248px;
+    
+                            } 
 
                             i {
                                 font-size:80px;
+        
+                                @media (max-width: 768px) {
+                                    font-size:60px;
+        
+                                } 
                             }
                         }
                     }
@@ -376,12 +509,23 @@ body {
                     margin:0 0 10px;
                     font-size:40px;
                     color:#CECECE;
+        
+                    @media (max-width: 768px) {
+                        font-size:34px;
+
+                    } 
+
                 }
 
                 &.alert {
                     background:#060610;
                     border-radius:0;
                     padding:30px 0;
+        
+                    @media (max-width: 768px) {
+                        padding:20px 0;
+
+                    } 
 
                     h3 {
                         display:block;
@@ -389,6 +533,11 @@ body {
                         margin:0;
                         font-weight:600;
                         color:#85828F;
+        
+                        @media (max-width: 768px) {
+                            font-size:24px;
+    
+                        } 
                     }
 
                     p {
@@ -407,6 +556,11 @@ body {
                             margin:0;
                             font-size:35px;
                             color:#FCB134;
+        
+                            @media (max-width: 768px) {
+                                font-size:24px;
+        
+                            } 
                         }
 
                     }
@@ -417,6 +571,11 @@ body {
 
                 padding:30px 45px 30px 220px;
                 position:relative;
+        
+                @media (max-width: 768px) {
+                    padding:20px 30px 20px 180px;
+
+                } 
 
                 h3 {
                     margin:0;
@@ -424,6 +583,11 @@ body {
                     word-break:keep-all;
                     font-weight:600;
                     color:#fff;
+        
+                    @media (max-width: 768px) {
+                        font-size:30px;
+
+                    } 
 
                     small {
                         font-weight:400;
@@ -431,6 +595,11 @@ body {
                         font-size:26px;
                         padding:10px 0 0;
                         color:#FCB134;
+        
+                        @media (max-width: 768px) {
+                            font-size:20px;
+    
+                        } 
                     }
                 }
                 
@@ -441,6 +610,13 @@ body {
                     margin:0;
                     width:143px;
                     height:202px;
+        
+                    @media (max-width: 768px) {
+                        left:30px;
+                        width:120px;
+                        height:170px;
+
+                    } 
 
                     img {
                         width:100%;
@@ -455,12 +631,24 @@ body {
                     padding:0;
                     width:456px;
                     vertical-align:top;
+        
+                    @media (max-width: 768px) {
+                        margin:40px 0;
+                        width:320px;
+
+                    } 
 
                     li {
                         display:inline-block;
                         margin-right: 20px;
                         font-size:26px;
                         color:#C7C7C7;
+        
+                        @media (max-width: 768px) {
+                            margin-right:5px;
+                            font-size:20px;
+    
+                        } 
 
                         strong {
                             font-weight:400;
@@ -478,6 +666,13 @@ body {
                     color:#FED432;
                     font-weight:600;
                     width:354px;
+        
+                    @media (max-width: 768px) {
+                        margin:38px 0;
+                        font-size:23px;
+                        width:232px;
+
+                    } 
                 }
             }
 
@@ -486,6 +681,12 @@ body {
                 background:#15151F;
                 position:relative;
                 padding:50px 0 80px;
+        
+                @media (max-width: 768px) {
+                    padding:30px 0 60px;
+
+                } 
+
 
                 h3 {
                     text-align:center;
@@ -493,18 +694,38 @@ body {
                     font-weight:600;
                     margin:0 0 50px;
                     color:#fff;
+        
+                    @media (max-width: 768px) {
+                        font-size:24px;
+                        margin:0 0 40px;
+
+                    } 
+
                 }
 
                 div.legend {
                     position:absolute;
                     right:45px;
                     top:60px;
+        
+                    @media (max-width: 768px) {
+                        right:30px;
+                        top:50px;
+
+                    } 
+
 
                     span {
                         display:inline-block;
                         font-size:26px;
                         color:#C7C7C7;
                         line-height:1;
+        
+                        @media (max-width: 768px) {
+                            font-size:22px;
+    
+                        } 
+
 
                         &::before {
                             display:inline-block;
@@ -515,6 +736,14 @@ body {
                             margin-right:10px;
                             border-radius:5px;
                             background:#F1592A;
+        
+                            @media (max-width: 768px) {
+                                width:20px;
+                                height:20px;
+                                
+        
+                            } 
+
                         }
                     }
 
@@ -523,18 +752,34 @@ body {
                 &.hall01 {
                     div.map-outline {
                         width:1004px;
+        
+                        @media (max-width: 768px) {
+                            width:688px;
+    
+                        } 
+
                     }
                 }
 
                 &.hall02 {
                     div.map-outline {
                         width:988px;
+
+                        @media (max-width: 768px) {
+                            width:666px;
+    
+                        } 
                     }
                 }
 
                 &.hall03 {
                     div.map-outline {
                         width:398px;
+
+                        @media (max-width: 768px) {
+                            width:274px;
+    
+                        } 
                     }
                 }
 
@@ -560,6 +805,15 @@ body {
                             text-align:center;
                             color:#555555;
                             border-radius:3px;
+        
+                            @media (max-width: 768px) {
+                                width:15px;
+                                height:15px;
+                                font-size:9px;
+                                line-height:15px;
+        
+                            } 
+
 
                             &.active {
                                 background:#F1592A;
@@ -580,7 +834,7 @@ body {
                             }
 
                             &.wheel2 {
-                                width:44px;
+                                width:30px;
                             }
                         }
                     }
@@ -630,6 +884,11 @@ body {
                         font-size:26px;
                         color:#fff;
                         line-height:1.6;
+        
+                        @media (max-width: 768px) {
+                            font-size:22px;
+    
+                        } 
                     }
                 }
             }
@@ -647,12 +906,24 @@ body {
                     margin:130px 0;
                     color:#FCB034;
                     @include text-shadow(0 3px 6px rgba(0, 0, 0, 0.25));
+        
+                    @media (max-width: 768px) {
+                        font-size:54px;
+                        margin:90px 0;
+
+                    } 
 
                     small {
                         display:block;
                         margin:10px;
                         font-size:38px;
                         color:#fff;
+        
+                        @media (max-width: 768px) {
+                            margin:8px;
+                            font-size:28px;
+    
+                        } 
                     }
                 }
 
@@ -688,6 +959,12 @@ body {
                                         top:18px;
                                         font-size:50px;
                                         color:#999;
+        
+                                        @media (max-width: 768px) {
+                                            font-size:42px;
+                                            margin-left:210px;
+                    
+                                        } 
                                     }
                                 }
                             }
@@ -707,6 +984,14 @@ body {
                                 outline:none;
                                 background:#15151F;
                                 color:#fff;
+        
+                                @media (max-width: 768px) {
+                                    width:520px;
+                                    height:90px;
+                                    border-radius:20px;
+                                    font-size:32px;
+            
+                                } 
 
 
                             }
@@ -718,6 +1003,11 @@ body {
                                 color:#CECECE;
                                 font-size:30px;
                                 margin-bottom:60px;
+        
+                                @media (max-width: 768px) {
+                                    font-size:24px;
+                                    margin-bottom:50px;
+                                } 
                                 
                                 
                             }
@@ -729,6 +1019,12 @@ body {
                                 text-align:center;
                                 padding:40px 0;
                                 font-size:40px;
+        
+                                @media (max-width: 768px) {
+                                    padding:30px 0;
+                                    font-size:30px;
+            
+                                } 
 
                                 &.on {
                                     background:#000;
@@ -771,6 +1067,11 @@ body {
                             color:#FCB834;
                             line-height:120px;
                             background:rgba(0,0,0,.5);
+        
+                            @media (max-width: 768px) {
+                                font-size:26px;
+        
+                            } 
                         }
 
                         ul.list {
@@ -779,6 +1080,11 @@ body {
                             margin:0;
                             padding:0;
                             height:1228px;
+        
+                            @media (max-width: 768px) {
+                                height:876px;
+        
+                            } 
 
                             &::after {
                                 content:"";
@@ -790,6 +1096,13 @@ body {
                                 bottom:185px;
                                 height:120px;
                                 @include inner-shadow($x:0,$y: -60px, $blur: 50px, $spread: 0, $alpha: 0.8);
+        
+                                @media (max-width: 768px) {
+                                    bottom:120px;
+                                    height:80px;
+                                    @include inner-shadow($x:0,$y: -40px, $blur: 30px, $spread: 0, $alpha: 0.8);
+            
+                                } 
                                 
                             }
                             
@@ -801,10 +1114,24 @@ body {
                                 margin:0 45px 15px;
                                 font-size:0;
                                 @include drop-shadow($x:0,$y: 10px, $blur: 9px, $spread: 0, $alpha: 0.25);
+        
+                                @media (max-width: 768px) {
+                                    border-radius:10px;
+                                    padding:20px;
+                                    margin:0 35px 15px;
+            
+                                } 
+    
 
 
                                 &:first-child {
                                     margin-top:50px;
+        
+                                    @media (max-width: 768px) {
+                                        margin-top:30px;
+                
+                                    } 
+        
                                 }
 
                                 a {
@@ -815,6 +1142,12 @@ body {
                                         font-weight:600;
                                         padding:0;
                                         color:#222;
+        
+                                        @media (max-width: 768px) {
+                                            font-size:36px;
+                    
+                                        } 
+            
 
                                         small {
                                             display:block;
@@ -823,6 +1156,14 @@ body {
                                             margin-top:20px;
                                             padding-top:20px;
                                             border-top:1px solid #555;
+        
+                                            @media (max-width: 768px) {
+                                                font-size:28px;
+                                                margin-top:15px;
+                                                padding-top:15px;
+                        
+                                            } 
+                
                                         }
                                     }
     
@@ -832,6 +1173,12 @@ body {
                                         font-size:30px;
                                         color:#333;
                                         margin:6px 20px 0 0;
+        
+                                        @media (max-width: 768px) {
+                                            font-size:24px;
+                    
+                                        } 
+            
 
                                     }
     
@@ -839,6 +1186,12 @@ body {
                                         font-size:34px;
                                         color:#0077A8;
                                         margin:0;
+        
+                                        @media (max-width: 768px) {
+                                            font-size:24px;
+                    
+                                        } 
+            
                                     }
     
                                     p.seat {
@@ -847,6 +1200,12 @@ body {
                                         color:#333;
                                         margin:6px 0 0;
                                         padding:0 240px 0 0;
+        
+                                        @media (max-width: 768px) {
+                                            font-size:24px;
+                    
+                                        } 
+            
 
                                     }
     
@@ -863,6 +1222,16 @@ body {
                                         color:#fff;
                                         width:234px;
                                         line-height:82px;
+        
+                                        @media (max-width: 768px) {
+                                            right:20px;
+                                            bottom:20px;
+                                            border-radius:10px;
+                                            font-size:24px;
+                                            width:180px;
+                                            line-height:64px;
+                                        } 
+            
                                     }
 
                                 }
@@ -922,10 +1291,20 @@ body {
                             font-size:280px;
                             color:#fff;
                             margin:180px 0 30px;
+        
+                            @media (max-width: 768px) {
+                                font-size:200px;
+        
+                            } 
                         }
                         h2 {
                             font-size:72px;
                             margin:60px 0 0;
+        
+                            @media (max-width: 768px) {
+                                font-size:52px;
+        
+                            } 
 
                             small {
                                 display:block;
@@ -942,6 +1321,11 @@ body {
                         h2 {
                             font-size:72px;
                             margin:512px 0 30px;
+        
+                            @media (max-width: 768px) {
+                                font-size:52px;
+        
+                            } 
 
 
                             &::before {
@@ -966,6 +1350,11 @@ body {
                         p {
                             font-size:40px;
                             color:#CECECE;
+        
+                            @media (max-width: 768px) {
+                                font-size:32px;
+        
+                            } 
                         }
 
 
@@ -1034,6 +1423,14 @@ body {
                                 color:#fff;
                                 font-size:50px;
                                 font-weight:600;
+        
+                                @media (max-width: 768px) {
+                                    width:290px;
+                                    height:100px;
+                                    border-radius:20px;
+                                    font-size:40px;
+            
+                                } 
 
                                 &:active {
                                     background:#CB4921;
@@ -1054,6 +1451,14 @@ body {
                                 color:#fff;
                                 font-size:50px;
                                 font-weight:600;
+        
+                                @media (max-width: 768px) {
+                                    width:190px;
+                                    height:100px;
+                                    border-radius:20px;
+                                    font-size:40px;
+            
+                                } 
 
                                 &:active {
                                     background:#0D0D26;
@@ -1171,6 +1576,11 @@ body {
                             min-height:120px;
                             padding:25px 0;
                             color:#fff;
+        
+                            @media (max-width: 768px) {
+                                padding:20px 0;
+        
+                            } 
 
                             label {
                                 display:inline-block;
@@ -1178,11 +1588,23 @@ body {
                                 padding:0 20px 0 0;
                                 font-size:22px;
                                 line-height:70px;
+        
+                                @media (max-width: 768px) {
+                                    line-height:60px;
+                                    padding:0 15px 0 0;
+                                    font-size:18px;
+            
+                                } 
                                 
                             }
 
                             input + label {
                                 padding-left:50px;
+        
+                                @media (max-width: 768px) {
+                                    padding-left:30px;
+            
+                                } 
                             }
 
                             u {
@@ -1192,6 +1614,13 @@ body {
                                 font-size:22px;
                                 line-height:70px;
                                 text-decoration:none;
+        
+                                @media (max-width: 768px) {
+                                    line-height:60px;
+                                    padding:0 10px;
+                                    font-size:18px;
+            
+                                } 
                                 
                             }
 
@@ -1205,9 +1634,20 @@ body {
                                 padding:0 10px;
                                 text-align:center;
                                 width:180px;
+        
+                                @media (max-width: 768px) {
+                                    width:120px;
+                                    font-size:20px;
+                                    height:60px;
+                                } 
 
                                 &.text {
                                     width:260px;
+        
+                                    @media (max-width: 768px) {
+                                        width:156px;
+                
+                                    } 
                                 }
                             }
 
@@ -1220,6 +1660,13 @@ body {
                                 border:none;
                                 background:#0077A8;
                                 font-size:0;
+        
+                                @media (max-width: 768px) {
+                                    width:50px;
+                                    height:60px;
+            
+                                } 
+                                
                                 i {
                                     font-size:32px;
                                 }

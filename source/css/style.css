@@ -732,8 +732,21 @@ body div.outline {
   /* header */
 }
 
+@media (max-width: 768px) {
+  body div.outline {
+    min-width: 768px;
+    max-width: 768px;
+  }
+}
+
 body div.outline header {
   padding: 0 45px;
+}
+
+@media (max-width: 768px) {
+  body div.outline header {
+    padding: 0 25px;
+  }
 }
 
 body div.outline header .container {
@@ -741,6 +754,13 @@ body div.outline header .container {
   height: 147px;
   padding-top: 60px;
   border-bottom: 3px solid #707070;
+}
+
+@media (max-width: 768px) {
+  body div.outline header .container {
+    height: 110px;
+    padding-top: 30px;
+  }
 }
 
 body div.outline header .container h1 {
@@ -755,6 +775,13 @@ body div.outline header .container h1 a {
   font-size: 46px;
 }
 
+@media (max-width: 768px) {
+  body div.outline header .container h1 a {
+    line-height: 51px;
+    font-size: 30px;
+  }
+}
+
 body div.outline header .container a.admin {
   display: block;
   position: absolute;
@@ -764,6 +791,14 @@ body div.outline header .container a.admin {
   height: 42.2px;
   font-size: 0;
   background: url(../images/logo.svg) no-repeat center/100% auto;
+}
+
+@media (max-width: 768px) {
+  body div.outline header .container a.admin {
+    top: 40px;
+    width: 220px;
+    height: 32px;
+  }
 }
 
 body div.outline div#content {
@@ -783,12 +818,26 @@ body div.outline div#content.main section.main-slider {
   margin: 0 0 100px;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.main section.main-slider {
+    padding: 210px 0 160px;
+    margin: 0 0 70px;
+  }
+}
+
 body div.outline div#content.main section.main-slider div.swiper-slide {
   display: inline-block;
   vertical-align: top;
   width: 352px;
   height: 496.77px;
   opacity: .5;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.main section.main-slider div.swiper-slide {
+    width: 270px;
+    height: 390px;
+  }
 }
 
 body div.outline div#content.main section.main-slider div.swiper-slide img {
@@ -811,6 +860,14 @@ body div.outline div#content.main section.main-slider div.swiper-pagination span
   background: #A7A7A7;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.main section.main-slider div.swiper-pagination span.swiper-pagination-bullet {
+    width: 16px;
+    height: 16px;
+    margin: 0 7px;
+  }
+}
+
 body div.outline div#content.main section.main-slider div.swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #FCB034;
 }
@@ -827,11 +884,24 @@ body div.outline div#content.main section.main-buttons div.container div.info-te
   margin-bottom: 40px;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.main section.main-buttons div.container div.info-text {
+    font-size: 22px;
+    margin-bottom: 30px;
+  }
+}
+
 body div.outline div#content.main section.main-buttons div.container > ul {
   list-style: none;
   margin: 0;
   padding: 0 100px;
   font-size: 0;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.main section.main-buttons div.container > ul {
+    padding: 0 60px;
+  }
 }
 
 body div.outline div#content.main section.main-buttons div.container > ul li {
@@ -852,6 +922,14 @@ body div.outline div#content.main section.main-buttons div.container > ul li > a
   box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.main section.main-buttons div.container > ul li > a {
+    font-size: 24px;
+    padding: 20px 0;
+    height: 220px;
+  }
+}
+
 body div.outline div#content.main section.main-buttons div.container > ul li > a:active {
   color: #fff;
   -webkit-box-shadow: 0 20px 0 0 rgba(0, 0, 0, 0.25) inset;
@@ -867,15 +945,33 @@ body div.outline div#content.main section.main-buttons div.container > ul li > a
   opacity: .5;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.main section.main-buttons div.container > ul li > a i {
+    font-size: 90px;
+  }
+}
+
 body div.outline div#content.main section.main-buttons div.container > ul li > a strong {
   display: block;
   font-weight: 600;
   font-size: 40px;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.main section.main-buttons div.container > ul li > a strong {
+    font-size: 30px;
+  }
+}
+
 body div.outline div#content.main section.main-buttons div.container > ul li.num a {
   background: #519127;
   border-radius: 30px 0 0 30px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.main section.main-buttons div.container > ul li.num a {
+    border-radius: 20px 0 0 20px;
+  }
 }
 
 body div.outline div#content.main section.main-buttons div.container > ul li.num a:active {
@@ -885,6 +981,12 @@ body div.outline div#content.main section.main-buttons div.container > ul li.num
 body div.outline div#content.main section.main-buttons div.container > ul li.phone a {
   background: #277291;
   border-radius: 0 30px 30px 0;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.main section.main-buttons div.container > ul li.phone a {
+    border-radius: 0 20px 20px 0;
+  }
 }
 
 body div.outline div#content.main section.main-buttons div.container > ul li.phone a:active {
@@ -902,6 +1004,12 @@ body div.outline div#content article.float-bar {
   font-size: 0;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.float-bar {
+    height: 120px;
+  }
+}
+
 body div.outline div#content article.float-bar a.home {
   display: inline-block;
   vertical-align: top;
@@ -911,6 +1019,13 @@ body div.outline div#content article.float-bar a.home {
   background: #333;
   line-height: 186px;
   text-align: center;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.float-bar a.home {
+    width: 120px;
+    line-height: 120px;
+  }
 }
 
 body div.outline div#content article.float-bar a.home:active {
@@ -929,6 +1044,13 @@ body div.outline div#content article.float-bar a.home i {
   margin: 0;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.float-bar a.home i {
+    top: 20px;
+    font-size: 56px;
+  }
+}
+
 body div.outline div#content article.float-bar button.main-btn {
   display: inline-block;
   vertical-align: top;
@@ -940,8 +1062,15 @@ body div.outline div#content article.float-bar button.main-btn {
   padding: 0;
   background: #F1592A;
   color: #fff;
-  font-size: 50px;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.float-bar button.main-btn {
+    width: calc(100% - 120px);
+    font-size: 36px;
+    height: 120px;
+  }
 }
 
 body div.outline div#content article.float-bar button.main-btn:active {
@@ -958,12 +1087,18 @@ body div.outline div#content article.keypad {
   font-size: 0;
   padding: 20px 190px;
   margin-bottom: 30px;
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.keypad {
+    padding: 12px 118px;
+  }
 }
 
 body div.outline div#content article.keypad p {
   display: inline-block;
   vertical-align: top;
-  text-align: center;
   margin: 0;
 }
 
@@ -972,12 +1107,21 @@ body div.outline div#content article.keypad p button {
   border-radius: 36px;
   margin: 10px;
   padding: 0;
-  width: 100%;
   height: 120px;
   width: 120px;
   font-size: 60px;
   font-weight: 600;
   background: #555;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.keypad p button {
+    border-radius: 26px;
+    margin: 8px;
+    width: 90px;
+    height: 90px;
+    font-size: 44px;
+  }
 }
 
 body div.outline div#content article.keypad p button:active {
@@ -994,14 +1138,33 @@ body div.outline div#content article.keypad p button.del {
   font-size: 40px;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.keypad p button.del {
+    width: 248px;
+    font-size: 34px;
+  }
+}
+
 body div.outline div#content article.keypad p button.back {
   background: #4B4759;
   width: 330px;
   font-size: 0;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.keypad p button.back {
+    width: 248px;
+  }
+}
+
 body div.outline div#content article.keypad p button.back i {
   font-size: 80px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.keypad p button.back i {
+    font-size: 60px;
+  }
 }
 
 body div.outline div#content article.messages {
@@ -1022,10 +1185,22 @@ body div.outline div#content article.messages p {
   color: #CECECE;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.messages p {
+    font-size: 34px;
+  }
+}
+
 body div.outline div#content article.messages.alert {
   background: #060610;
   border-radius: 0;
   padding: 30px 0;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.messages.alert {
+    padding: 20px 0;
+  }
 }
 
 body div.outline div#content article.messages.alert h3 {
@@ -1034,6 +1209,12 @@ body div.outline div#content article.messages.alert h3 {
   margin: 0;
   font-weight: 600;
   color: #85828F;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.messages.alert h3 {
+    font-size: 24px;
+  }
 }
 
 body div.outline div#content article.messages.alert p {
@@ -1051,9 +1232,21 @@ body div.outline div#content article.messages.alert.on p {
   color: #FCB134;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.messages.alert.on p {
+    font-size: 24px;
+  }
+}
+
 body div.outline div#content article.program {
   padding: 30px 45px 30px 220px;
   position: relative;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.program {
+    padding: 20px 30px 20px 180px;
+  }
 }
 
 body div.outline div#content article.program h3 {
@@ -1064,12 +1257,24 @@ body div.outline div#content article.program h3 {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.program h3 {
+    font-size: 30px;
+  }
+}
+
 body div.outline div#content article.program h3 small {
   font-weight: 400;
   display: block;
   font-size: 26px;
   padding: 10px 0 0;
   color: #FCB134;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.program h3 small {
+    font-size: 20px;
+  }
 }
 
 body div.outline div#content article.program p.image {
@@ -1079,6 +1284,14 @@ body div.outline div#content article.program p.image {
   margin: 0;
   width: 143px;
   height: 202px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.program p.image {
+    left: 30px;
+    width: 120px;
+    height: 170px;
+  }
 }
 
 body div.outline div#content article.program p.image img {
@@ -1095,11 +1308,25 @@ body div.outline div#content article.program ul.info {
   vertical-align: top;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.program ul.info {
+    margin: 40px 0;
+    width: 320px;
+  }
+}
+
 body div.outline div#content article.program ul.info li {
   display: inline-block;
   margin-right: 20px;
   font-size: 26px;
   color: #C7C7C7;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.program ul.info li {
+    margin-right: 5px;
+    font-size: 20px;
+  }
 }
 
 body div.outline div#content article.program ul.info li strong {
@@ -1117,10 +1344,24 @@ body div.outline div#content article.program p.price {
   width: 354px;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.program p.price {
+    margin: 38px 0;
+    font-size: 23px;
+    width: 232px;
+  }
+}
+
 body div.outline div#content article.seatmap {
   background: #15151F;
   position: relative;
   padding: 50px 0 80px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.seatmap {
+    padding: 30px 0 60px;
+  }
 }
 
 body div.outline div#content article.seatmap h3 {
@@ -1131,10 +1372,24 @@ body div.outline div#content article.seatmap h3 {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.seatmap h3 {
+    font-size: 24px;
+    margin: 0 0 40px;
+  }
+}
+
 body div.outline div#content article.seatmap div.legend {
   position: absolute;
   right: 45px;
   top: 60px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.seatmap div.legend {
+    right: 30px;
+    top: 50px;
+  }
 }
 
 body div.outline div#content article.seatmap div.legend span {
@@ -1142,6 +1397,12 @@ body div.outline div#content article.seatmap div.legend span {
   font-size: 26px;
   color: #C7C7C7;
   line-height: 1;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.seatmap div.legend span {
+    font-size: 22px;
+  }
 }
 
 body div.outline div#content article.seatmap div.legend span::before {
@@ -1155,16 +1416,41 @@ body div.outline div#content article.seatmap div.legend span::before {
   background: #F1592A;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.seatmap div.legend span::before {
+    width: 20px;
+    height: 20px;
+  }
+}
+
 body div.outline div#content article.seatmap.hall01 div.map-outline {
   width: 1004px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.seatmap.hall01 div.map-outline {
+    width: 688px;
+  }
 }
 
 body div.outline div#content article.seatmap.hall02 div.map-outline {
   width: 988px;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.seatmap.hall02 div.map-outline {
+    width: 666px;
+  }
+}
+
 body div.outline div#content article.seatmap.hall03 div.map-outline {
   width: 398px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content article.seatmap.hall03 div.map-outline {
+    width: 274px;
+  }
 }
 
 body div.outline div#content article.seatmap div.map-outline {
@@ -1193,6 +1479,15 @@ body div.outline div#content article.seatmap div.map-outline ul#seatsView li {
   border-radius: 3px;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.seatmap div.map-outline ul#seatsView li {
+    width: 15px;
+    height: 15px;
+    font-size: 9px;
+    line-height: 15px;
+  }
+}
+
 body div.outline div#content article.seatmap div.map-outline ul#seatsView li.active {
   background: #F1592A;
   color: #fff;
@@ -1209,7 +1504,7 @@ body div.outline div#content article.seatmap div.map-outline ul#seatsView li.m_b
 }
 
 body div.outline div#content article.seatmap div.map-outline ul#seatsView li.wheel2 {
-  width: 44px;
+  width: 30px;
 }
 
 body div.outline div#content article.ticket-print button {
@@ -1255,6 +1550,12 @@ body div.outline div#content article.ticket-info ul li {
   line-height: 1.6;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content article.ticket-info ul li {
+    font-size: 22px;
+  }
+}
+
 body div.outline div#content.sub h2 {
   text-align: center;
   font-size: 72px;
@@ -1264,11 +1565,25 @@ body div.outline div#content.sub h2 {
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub h2 {
+    font-size: 54px;
+    margin: 90px 0;
+  }
+}
+
 body div.outline div#content.sub h2 small {
   display: block;
   margin: 10px;
   font-size: 38px;
   color: #fff;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub h2 small {
+    margin: 8px;
+    font-size: 28px;
+  }
 }
 
 body div.outline div#content.sub section.sub-numcheck div.container {
@@ -1307,6 +1622,13 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset lab
   color: #999;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-numcheck div.container fieldset label[for="number"]::after {
+    font-size: 42px;
+    margin-left: 210px;
+  }
+}
+
 body div.outline div#content.sub section.sub-numcheck div.container fieldset input[type="text"] {
   display: block;
   position: relative;
@@ -1324,6 +1646,15 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset inp
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-numcheck div.container fieldset input[type="text"] {
+    width: 520px;
+    height: 90px;
+    border-radius: 20px;
+    font-size: 32px;
+  }
+}
+
 body div.outline div#content.sub section.sub-numcheck div.container fieldset i.information {
   display: block;
   text-align: center;
@@ -1333,12 +1664,26 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset i.i
   margin-bottom: 60px;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-numcheck div.container fieldset i.information {
+    font-size: 24px;
+    margin-bottom: 50px;
+  }
+}
+
 body div.outline div#content.sub section.sub-numcheck div.container fieldset div.message {
   background: transparent;
   color: transparent;
   text-align: center;
   padding: 40px 0;
   font-size: 40px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-numcheck div.container fieldset div.message {
+    padding: 30px 0;
+    font-size: 30px;
+  }
 }
 
 body div.outline div#content.sub section.sub-numcheck div.container fieldset div.message.on {
@@ -1377,12 +1722,24 @@ body div.outline div#content.sub section.sub-list div.container p.ticket-text {
   background: rgba(0, 0, 0, 0.5);
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-list div.container p.ticket-text {
+    font-size: 26px;
+  }
+}
+
 body div.outline div#content.sub section.sub-list div.container ul.list {
   position: relative;
   list-style: none;
   margin: 0;
   padding: 0;
   height: 1228px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-list div.container ul.list {
+    height: 876px;
+  }
 }
 
 body div.outline div#content.sub section.sub-list div.container ul.list::after {
@@ -1398,6 +1755,15 @@ body div.outline div#content.sub section.sub-list div.container ul.list::after {
   box-shadow: 0 -60px 50px 0 rgba(0, 0, 0, 0.8) inset;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-list div.container ul.list::after {
+    bottom: 120px;
+    height: 80px;
+    -webkit-box-shadow: 0 -40px 30px 0 rgba(0, 0, 0, 0.8) inset;
+    box-shadow: 0 -40px 30px 0 rgba(0, 0, 0, 0.8) inset;
+  }
+}
+
 body div.outline div#content.sub section.sub-list div.container ul.list li {
   position: relative;
   background: #fff;
@@ -1409,8 +1775,22 @@ body div.outline div#content.sub section.sub-list div.container ul.list li {
   box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-list div.container ul.list li {
+    border-radius: 10px;
+    padding: 20px;
+    margin: 0 35px 15px;
+  }
+}
+
 body div.outline div#content.sub section.sub-list div.container ul.list li:first-child {
   margin-top: 50px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-list div.container ul.list li:first-child {
+    margin-top: 30px;
+  }
 }
 
 body div.outline div#content.sub section.sub-list div.container ul.list li a h3 {
@@ -1419,6 +1799,12 @@ body div.outline div#content.sub section.sub-list div.container ul.list li a h3 
   font-weight: 600;
   padding: 0;
   color: #222;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-list div.container ul.list li a h3 {
+    font-size: 36px;
+  }
 }
 
 body div.outline div#content.sub section.sub-list div.container ul.list li a h3 small {
@@ -1430,6 +1816,14 @@ body div.outline div#content.sub section.sub-list div.container ul.list li a h3 
   border-top: 1px solid #555;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-list div.container ul.list li a h3 small {
+    font-size: 28px;
+    margin-top: 15px;
+    padding-top: 15px;
+  }
+}
+
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.count,
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.name {
   display: inline-block;
@@ -1438,10 +1832,23 @@ body div.outline div#content.sub section.sub-list div.container ul.list li a p.n
   margin: 6px 20px 0 0;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-list div.container ul.list li a p.count,
+  body div.outline div#content.sub section.sub-list div.container ul.list li a p.name {
+    font-size: 24px;
+  }
+}
+
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.num {
   font-size: 34px;
   color: #0077A8;
   margin: 0;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-list div.container ul.list li a p.num {
+    font-size: 24px;
+  }
 }
 
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.seat {
@@ -1450,6 +1857,12 @@ body div.outline div#content.sub section.sub-list div.container ul.list li a p.s
   color: #333;
   margin: 6px 0 0;
   padding: 0 240px 0 0;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-list div.container ul.list li a p.seat {
+    font-size: 24px;
+  }
 }
 
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.label {
@@ -1464,6 +1877,17 @@ body div.outline div#content.sub section.sub-list div.container ul.list li a p.l
   color: #fff;
   width: 234px;
   line-height: 82px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-list div.container ul.list li a p.label {
+    right: 20px;
+    bottom: 20px;
+    border-radius: 10px;
+    font-size: 24px;
+    width: 180px;
+    line-height: 64px;
+  }
 }
 
 body div.outline div#content.sub section.sub-list div.container ul.list li.used {
@@ -1504,9 +1928,21 @@ body div.outline div#content.sub section.sub-printing div.container i {
   margin: 180px 0 30px;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-printing div.container i {
+    font-size: 200px;
+  }
+}
+
 body div.outline div#content.sub section.sub-printing div.container h2 {
   font-size: 72px;
   margin: 60px 0 0;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-printing div.container h2 {
+    font-size: 52px;
+  }
 }
 
 body div.outline div#content.sub section.sub-printing div.container h2 small {
@@ -1522,6 +1958,12 @@ body div.outline div#content.sub section.sub-result div.container {
 body div.outline div#content.sub section.sub-result div.container h2 {
   font-size: 72px;
   margin: 512px 0 30px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-result div.container h2 {
+    font-size: 52px;
+  }
 }
 
 body div.outline div#content.sub section.sub-result div.container h2::before {
@@ -1545,6 +1987,12 @@ body div.outline div#content.sub section.sub-result div.container h2 small {
 body div.outline div#content.sub section.sub-result div.container p {
   font-size: 40px;
   color: #CECECE;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-result div.container p {
+    font-size: 32px;
+  }
 }
 
 body div.outline div#content.sub section.sub-result.error div.container h2 {
@@ -1604,6 +2052,15 @@ body div.outline div#content.sub section.sub-admin-login div.container fieldset 
   font-weight: 600;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-admin-login div.container fieldset button.submit {
+    width: 290px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 40px;
+  }
+}
+
 body div.outline div#content.sub section.sub-admin-login div.container fieldset button.submit:active {
   background: #CB4921;
   -webkit-transition: all 0s linear;
@@ -1623,6 +2080,15 @@ body div.outline div#content.sub section.sub-admin-login div.container fieldset 
   color: #fff;
   font-size: 50px;
   font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-admin-login div.container fieldset button.cancle {
+    width: 190px;
+    height: 100px;
+    border-radius: 20px;
+    font-size: 40px;
+  }
 }
 
 body div.outline div#content.sub section.sub-admin-login div.container fieldset button.cancle:active {
@@ -1722,6 +2188,12 @@ body div.outline div#content.sub section.sub-admin div.container div.tool-area {
   color: #fff;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-admin div.container div.tool-area {
+    padding: 20px 0;
+  }
+}
+
 body div.outline div#content.sub section.sub-admin div.container div.tool-area label {
   display: inline-block;
   vertical-align: top;
@@ -1730,8 +2202,22 @@ body div.outline div#content.sub section.sub-admin div.container div.tool-area l
   line-height: 70px;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-admin div.container div.tool-area label {
+    line-height: 60px;
+    padding: 0 15px 0 0;
+    font-size: 18px;
+  }
+}
+
 body div.outline div#content.sub section.sub-admin div.container div.tool-area input + label {
   padding-left: 50px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-admin div.container div.tool-area input + label {
+    padding-left: 30px;
+  }
 }
 
 body div.outline div#content.sub section.sub-admin div.container div.tool-area u {
@@ -1741,6 +2227,14 @@ body div.outline div#content.sub section.sub-admin div.container div.tool-area u
   font-size: 22px;
   line-height: 70px;
   text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-admin div.container div.tool-area u {
+    line-height: 60px;
+    padding: 0 10px;
+    font-size: 18px;
+  }
 }
 
 body div.outline div#content.sub section.sub-admin div.container div.tool-area input {
@@ -1755,8 +2249,22 @@ body div.outline div#content.sub section.sub-admin div.container div.tool-area i
   width: 180px;
 }
 
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-admin div.container div.tool-area input {
+    width: 120px;
+    font-size: 20px;
+    height: 60px;
+  }
+}
+
 body div.outline div#content.sub section.sub-admin div.container div.tool-area input.text {
   width: 260px;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-admin div.container div.tool-area input.text {
+    width: 156px;
+  }
 }
 
 body div.outline div#content.sub section.sub-admin div.container div.tool-area button {
@@ -1768,6 +2276,13 @@ body div.outline div#content.sub section.sub-admin div.container div.tool-area b
   border: none;
   background: #0077A8;
   font-size: 0;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-admin div.container div.tool-area button {
+    width: 50px;
+    height: 60px;
+  }
 }
 
 body div.outline div#content.sub section.sub-admin div.container div.tool-area button i {
