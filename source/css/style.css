@@ -627,60 +627,100 @@ button {
 }
 
 /* Modal */
-article.layer-popup {
+article.layer-pop {
   display: none;
+  position: fixed;
+  z-index: 10000;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.8);
 }
 
-@media all and (min-width: 1200px) {
-  article.layer-popup {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 12vh;
-    z-index: 1000;
-    right: 0;
-    text-align: center;
-  }
-  article.layer-popup .container {
-    text-align: center;
-  }
-  article.layer-popup .container div.outline {
-    font-size: 0;
-    -webkit-box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
-    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.25);
-    display: inline-block;
-    margin: 10px;
-  }
-  article.layer-popup .container div.outline a {
-    display: block;
-    font-size: 0;
-  }
-  article.layer-popup .container div.outline a img {
-    max-width: 1000px;
-  }
-  article.layer-popup .container div.outline div.check {
-    background: #222;
-    color: #fff;
-    font-size: 14px;
-    padding: 10px;
-    text-align: left;
-    position: relative;
-  }
-  article.layer-popup .container div.outline div.check input {
-    width: 16px;
-    height: 16px;
-    vertical-align: bottom;
-  }
-  article.layer-popup .container div.outline div.check button {
-    position: absolute;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    border: none;
-    background: #555;
-    color: #fff;
-    padding: 0 10px;
-  }
+article.layer-pop.on {
+  display: block;
+}
+
+article.layer-pop div.card div.layer-outline {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -335px 0 0 -417px;
+  padding: 40px 0 0;
+  background: #fff;
+  width: 834px;
+  height: 670px;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+article.layer-pop div.card div.layer-outline h2 {
+  font-size: 54px;
+  font-weight: 600;
+  color: #786443;
+}
+
+article.layer-pop div.card div.layer-outline h2::before {
+  display: block;
+  width: 147px;
+  height: 210px;
+  margin: 0 auto 30px;
+  background: url(../images/icon-card.svg) no-repeat center/100% auto;
+  content: "";
+}
+
+article.layer-pop div.card div.layer-outline h2 span {
+  display: block;
+}
+
+article.layer-pop div.card div.layer-outline h2 small {
+  display: block;
+  font-size: 34px;
+  font-weight: 400;
+  color: #333;
+  margin: 30px 0 0;
+}
+
+article.layer-pop div.notice div.layer-outline {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  margin: -450px 0 0 -417px;
+  padding: 80px 0 0;
+  background: #fff;
+  width: 834px;
+  height: 900px;
+  border-radius: 24px;
+  -webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.8);
+  box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.8);
+  text-align: center;
+}
+
+article.layer-pop div.notice div.layer-outline > i {
+  font-size: 220px;
+  color: #786443;
+  opacity: .5;
+}
+
+article.layer-pop div.notice div.layer-outline h2 {
+  font-size: 54px;
+  font-weight: 600;
+  color: #786443;
+}
+
+article.layer-pop div.notice div.layer-outline h2 span {
+  display: block;
+}
+
+article.layer-pop div.notice div.layer-outline h2 small {
+  display: block;
+  font-size: 34px;
+  font-weight: 400;
+  color: #333;
+  margin: 30px 0 0;
 }
 
 /* basic */
@@ -724,6 +764,7 @@ body div.outline {
   display: block;
   width: 100%;
   min-height: 100vh;
+  max-height: 100vh;
   min-width: 1080px;
   max-width: 1080px;
   overflow: hidden;
