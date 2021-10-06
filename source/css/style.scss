@@ -1675,10 +1675,122 @@ body {
                             }
                         }
 
+                        div.btn-area {
+                            min-height:120px;
+                            padding:25px 0;
+                            color:#fff;
+        
+                            @media (max-width: 768px) {
+                                padding:20px 0;
+        
+                            } 
+
+
+                            button {
+                                height:70px;
+                                vertical-align:top;
+                                margin-left:10px;
+                                border-radius:10px;
+                                border:none;
+                                background:#000;
+                                font-size:22px;
+                                padding:0 20px;
+                                
+                                &.main {
+                                    background:#0077A8;
+                                }
+
+                            }
+                        }
+
                         div.table-area {
                             height:1260px;
                             background:#000000;
                             overflow-y:scroll;
+                        }
+
+                        div.board-write {
+                            padding:30px 0 0;
+
+                            input[type="text"] {
+                                width:100%;
+                                height:80px;
+                                padding:0 30px;
+                                font-size:22px;
+                                background:#555;
+                                color:#fff;
+                                border:none;
+                                border-radius:20px;
+                                margin-bottom:30px;
+                                @include drop-shadow($x:0,$y: 10px, $blur: 20px, $spread: 0, $alpha: 0.6);
+                                
+
+                                &::placeholder {
+                                    color:#ccc;
+                                }
+
+                            }
+
+                            textarea {
+                                width:100%;
+                                height:580px;
+                                padding:30px;
+                                font-size:22px;
+                                background:#555;
+                                color:#fff;
+                                border:none;
+                                border-radius:20px;
+                                @include drop-shadow($x:0,$y: 10px, $blur: 20px, $spread: 0, $alpha: 0.6);
+                                
+
+                                &::placeholder {
+                                    color:#ccc;
+                                }
+
+                            }
+
+                            div.button-area {
+                                font-size:0;
+                                text-align:center;
+                                padding:30px 0 50px;
+                                
+                                div.left,
+                                div.right {
+                                    display:inline-block;
+                                    width:49%;
+                                    font-size:22px;
+
+                                    button {
+                                        padding:20px;
+                                        margin:0 4px; 
+                                        border:none;
+                                        border-radius:10px;
+                                        background:#888;
+                                        color:#fff;
+                                        @include drop-shadow($x:0,$y: 10px, $blur: 20px, $spread: 0, $alpha: 0.6);
+
+                                        &.sub {
+                                            background:#36720E;
+                                        }
+
+                                        &.main {
+                                            background:#0077A8;
+                                            padding:25px 60px;
+                                            font-size:24px;
+                                        }
+                                        
+                                    }
+                                }
+
+                                div.left {
+                                    text-align:left;
+                                }
+
+                                div.right {
+                                    text-align:right;
+                                }
+                            }
+
                         }
 
                         ul {
@@ -1689,7 +1801,6 @@ body {
 
                             li {
                                 display:inline-block;
-                                width:calc(100% / 4);
                                 padding:1px;
 
                                 a {
@@ -1727,6 +1838,18 @@ body {
                                     a {
                                         border-radius:0 0 36px 0;
                                     }
+                                }
+                            }
+
+                            &.item4 {
+                                li {
+                                    width:calc(100% / 4);
+                                }
+                            }
+
+                            &.item3 {
+                                li {
+                                    width:calc(100% / 3);
                                 }
                             }
                         }

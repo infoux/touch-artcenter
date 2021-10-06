@@ -2330,10 +2330,145 @@ body div.outline div#content.sub section.sub-admin div.container div.tool-area b
   font-size: 32px;
 }
 
+body div.outline div#content.sub section.sub-admin div.container div.btn-area {
+  min-height: 120px;
+  padding: 25px 0;
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  body div.outline div#content.sub section.sub-admin div.container div.btn-area {
+    padding: 20px 0;
+  }
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.btn-area button {
+  height: 70px;
+  vertical-align: top;
+  margin-left: 10px;
+  border-radius: 10px;
+  border: none;
+  background: #000;
+  font-size: 22px;
+  padding: 0 20px;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.btn-area button.main {
+  background: #0077A8;
+}
+
 body div.outline div#content.sub section.sub-admin div.container div.table-area {
   height: 1260px;
   background: #000000;
   overflow-y: scroll;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write {
+  padding: 30px 0 0;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type="text"] {
+  width: 100%;
+  height: 80px;
+  padding: 0 30px;
+  font-size: 22px;
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  margin-bottom: 30px;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type="text"]::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type="text"]:-ms-input-placeholder {
+  color: #ccc;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type="text"]::-ms-input-placeholder {
+  color: #ccc;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type="text"]::placeholder {
+  color: #ccc;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write textarea {
+  width: 100%;
+  height: 580px;
+  padding: 30px;
+  font-size: 22px;
+  background: #555;
+  color: #fff;
+  border: none;
+  border-radius: 20px;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write textarea::-webkit-input-placeholder {
+  color: #ccc;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write textarea:-ms-input-placeholder {
+  color: #ccc;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write textarea::-ms-input-placeholder {
+  color: #ccc;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write textarea::placeholder {
+  color: #ccc;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area {
+  font-size: 0;
+  text-align: center;
+  padding: 30px 0 50px;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left,
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right {
+  display: inline-block;
+  width: 49%;
+  font-size: 22px;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left button,
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right button {
+  padding: 20px;
+  margin: 0 4px;
+  border: none;
+  border-radius: 10px;
+  background: #888;
+  color: #fff;
+  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+  box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left button.sub,
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right button.sub {
+  background: #36720E;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left button.main,
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right button.main {
+  background: #0077A8;
+  padding: 25px 60px;
+  font-size: 24px;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left {
+  text-align: left;
+}
+
+body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right {
+  text-align: right;
 }
 
 body div.outline div#content.sub section.sub-admin div.container ul {
@@ -2345,7 +2480,6 @@ body div.outline div#content.sub section.sub-admin div.container ul {
 
 body div.outline div#content.sub section.sub-admin div.container ul li {
   display: inline-block;
-  width: calc(100% / 4);
   padding: 1px;
 }
 
@@ -2378,6 +2512,14 @@ body div.outline div#content.sub section.sub-admin div.container ul li:first-chi
 
 body div.outline div#content.sub section.sub-admin div.container ul li:last-child a {
   border-radius: 0 0 36px 0;
+}
+
+body div.outline div#content.sub section.sub-admin div.container ul.item4 li {
+  width: calc(100% / 4);
+}
+
+body div.outline div#content.sub section.sub-admin div.container ul.item3 li {
+  width: calc(100% / 3);
 }
 
 body div.outline div#content.sub section.sub-admin.error div.container h2 {
