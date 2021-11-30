@@ -1548,6 +1548,10 @@ body div.outline div#content article.seatmap div.map-outline ul#seatsView li.whe
   width: 30px;
 }
 
+body div.outline div#content article.seatmap div.map-outline ul#seatsView li.wheel3 {
+  width: 44px;
+}
+
 body div.outline div#content article.ticket-print button {
   display: block;
   margin: 60px auto 0;
