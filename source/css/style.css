@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -1578,8 +1579,75 @@ body div.outline div#content article.ticket-print button.check {
   color: #484751;
 }
 
+body div.outline div#content article.ticket-select {
+  padding: 60px 60px 0;
+  font-size: 0;
+  text-align: center;
+}
+
+body div.outline div#content article.ticket-select strong {
+  display: block;
+  color: #fff;
+  font-size: 42px;
+  font-weight: 400;
+  margin: 0 10px 30px;
+}
+
+body div.outline div#content article.ticket-select div.box {
+  padding-top: 20px;
+  max-height: 326px;
+  overflow-y: scroll;
+}
+
+body div.outline div#content article.ticket-select div.box input {
+  display: none;
+}
+
+body div.outline div#content article.ticket-select div.box label {
+  display: inline-block;
+  position: relative;
+  font-size: 32px;
+  color: #fff;
+  border: 1px solid #fff;
+  line-height: 80px;
+  padding: 0 30px 0 70px;
+  border-radius: 20px;
+  margin: 0 13px 26px;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(255, 255, 255, .2);transform: ;msFilter:;'%3E%3Cpath d='m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z'%3E%3C/path%3E%3C/svg%3E") no-repeat left 16px center/40px auto;
+}
+
+body div.outline div#content article.ticket-select div.box label.printed {
+  background-color: rgba(255, 255, 255, 0.2);
+}
+
+body div.outline div#content article.ticket-select div.box label.printed::before {
+  content: "재출력";
+  display: block;
+  position: absolute;
+  left: -10px;
+  top: -17px;
+  color: #000;
+  background: #fff;
+  line-height: 36px;
+  font-size: 20px;
+  padding: 0 14px;
+  border-radius: 36px;
+}
+
+body div.outline div#content article.ticket-select div.box input:checked + label {
+  border-color: #FCB834;
+  color: #FCB834;
+  background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(252, 184, 52, 1);transform: ;msFilter:;'%3E%3Cpath d='m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z'%3E%3C/path%3E%3C/svg%3E") no-repeat rgba(0, 0, 0, 0.3) left 16px center/40px auto;
+  -webkit-box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
+  box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
+}
+
+body div.outline div#content article.ticket-select div.box input:checked + label::before {
+  background: #FCB834;
+}
+
 body div.outline div#content article.ticket-info {
-  padding: 60px 0 0;
+  padding: 40px 0 0;
 }
 
 body div.outline div#content article.ticket-info ul {
