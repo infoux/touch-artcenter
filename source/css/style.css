@@ -6,29 +6,26 @@
  *    user zoom.
  */
 html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
+  font-family: sans-serif; /* 1 */
+  -ms-text-size-adjust: 100%; /* 2 */
+  -webkit-text-size-adjust: 100%; /* 2 */
 }
 
 /**
-   * Remove default margin.
-   */
+ * Remove default margin.
+ */
 body {
   margin: 0;
 }
 
 /* HTML5 display definitions
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Correct `block` display not defined for any HTML5 element in IE 8/9.
-   * Correct `block` display not defined for `details` or `summary` in IE 10/11
-   * and Firefox.
-   * Correct `block` display not defined for `main` in IE 11.
-   */
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
 article,
 aside,
 details,
@@ -46,105 +43,103 @@ summary {
 }
 
 /**
-   * 1. Correct `inline-block` display not defined in IE 8/9.
-   * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
-   */
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
 audio,
 canvas,
 progress,
 video {
-  display: inline-block;
-  /* 1 */
-  vertical-align: baseline;
-  /* 2 */
+  display: inline-block; /* 1 */
+  vertical-align: baseline; /* 2 */
 }
 
 /**
-   * Prevent modern browsers from displaying `audio` without controls.
-   * Remove excess height in iOS 5 devices.
-   */
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
 audio:not([controls]) {
   display: none;
   height: 0;
 }
 
 /**
-   * Address `[hidden]` styling not present in IE 8/9/10.
-   * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
-   */
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
 [hidden],
 template {
   display: none;
 }
 
 /* Links
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Remove the gray background color from active links in IE 10.
-   */
+ * Remove the gray background color from active links in IE 10.
+ */
 a {
   background-color: transparent;
 }
 
 /**
-   * Improve readability when focused and also mouse hovered in all browsers.
-   */
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
 a:active,
 a:hover {
   outline: 0;
 }
 
 /* Text-level semantics
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
-   */
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
 abbr[title] {
   border-bottom: 1px dotted;
 }
 
 /**
-   * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
-   */
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
 b,
 strong {
   font-weight: bold;
 }
 
 /**
-   * Address styling not present in Safari and Chrome.
-   */
+ * Address styling not present in Safari and Chrome.
+ */
 dfn {
   font-style: italic;
 }
 
 /**
-   * Address variable `h1` font-size and margin within `section` and `article`
-   * contexts in Firefox 4+, Safari, and Chrome.
-   */
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
 h1 {
   font-size: 2em;
   margin: 0.67em 0;
 }
 
 /**
-   * Address styling not present in IE 8/9.
-   */
+ * Address styling not present in IE 8/9.
+ */
 mark {
   background: #ff0;
   color: #000;
 }
 
 /**
-   * Address inconsistent and variable font size in all browsers.
-   */
+ * Address inconsistent and variable font size in all browsers.
+ */
 small {
   font-size: 80%;
 }
 
 /**
-   * Prevent `sub` and `sup` affecting `line-height` in all browsers.
-   */
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
 sub,
 sup {
   font-size: 75%;
@@ -162,49 +157,48 @@ sub {
 }
 
 /* Embedded content
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Remove border when inside `a` element in IE 8/9/10.
-   */
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
 img {
   border: 0;
 }
 
 /**
-   * Correct overflow not hidden in IE 9/10/11.
-   */
+ * Correct overflow not hidden in IE 9/10/11.
+ */
 svg:not(:root) {
   overflow: hidden;
 }
 
 /* Grouping content
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Address margin not present in IE 8/9 and Safari.
-   */
+ * Address margin not present in IE 8/9 and Safari.
+ */
 figure {
   margin: 1em 40px;
 }
 
 /**
-   * Address differences between Firefox and other browsers.
-   */
+ * Address differences between Firefox and other browsers.
+ */
 hr {
-  -webkit-box-sizing: content-box;
-          box-sizing: content-box;
+  box-sizing: content-box;
   height: 0;
 }
 
 /**
-   * Contain overflow in all browsers.
-   */
+ * Contain overflow in all browsers.
+ */
 pre {
   overflow: auto;
 }
 
 /**
-   * Address odd `em`-unit font size rendering in all browsers.
-   */
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
 code,
 kbd,
 pre,
@@ -214,76 +208,71 @@ samp {
 }
 
 /* Forms
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Known limitation: by default, Chrome and Safari on OS X allow very limited
-   * styling of `select`, unless a `border` property is set.
-   */
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
 /**
-   * 1. Correct color not being inherited.
-   *    Known issue: affects color of disabled elements.
-   * 2. Correct font properties not being inherited.
-   * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
-   */
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
 button,
 input,
 optgroup,
 select,
 textarea {
-  color: inherit;
-  /* 1 */
-  font: inherit;
-  /* 2 */
-  margin: 0;
-  /* 3 */
+  color: inherit; /* 1 */
+  font: inherit; /* 2 */
+  margin: 0; /* 3 */
 }
 
 /**
-   * Address `overflow` set to `hidden` in IE 8/9/10/11.
-   */
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
 button {
   overflow: visible;
 }
 
 /**
-   * Address inconsistent `text-transform` inheritance for `button` and `select`.
-   * All other form control elements do not inherit `text-transform` values.
-   * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
-   * Correct `select` style inheritance in Firefox.
-   */
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
 button,
 select {
   text-transform: none;
 }
 
 /**
-   * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
-   *    and `video` controls.
-   * 2. Correct inability to style clickable `input` types in iOS.
-   * 3. Improve usability and consistency of cursor style between image-type
-   *    `input` and others.
-   */
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
 button,
-html input[type="button"],
-input[type="reset"],
-input[type="submit"] {
-  -webkit-appearance: button;
-  /* 2 */
-  cursor: pointer;
-  /* 3 */
+html input[type=button],
+input[type=reset],
+input[type=submit] {
+  -webkit-appearance: button; /* 2 */
+  cursor: pointer; /* 3 */
 }
 
 /**
-   * Re-set default cursor for disabled elements.
-   */
+ * Re-set default cursor for disabled elements.
+ */
 button[disabled],
 html input[disabled] {
   cursor: default;
 }
 
 /**
-   * Remove inner padding and border in Firefox 4+.
-   */
+ * Remove inner padding and border in Firefox 4+.
+ */
 button::-moz-focus-inner,
 input::-moz-focus-inner {
   border: 0;
@@ -291,65 +280,59 @@ input::-moz-focus-inner {
 }
 
 /**
-   * Address Firefox 4+ setting `line-height` on `input` using `!important` in
-   * the UA stylesheet.
-   */
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
 input {
   line-height: normal;
 }
 
 /**
-   * It's recommended that you don't attempt to style these elements.
-   * Firefox's implementation doesn't respect box-sizing, padding, or width.
-   *
-   * 1. Address box sizing set to `content-box` in IE 8/9/10.
-   * 2. Remove excess padding in IE 8/9/10.
-   */
-input[type="checkbox"],
-input[type="radio"] {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type=checkbox],
+input[type=radio] {
+  box-sizing: border-box; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
-   * Fix the cursor style for Chrome's increment/decrement buttons. For certain
-   * `font-size` values of the `input`, it causes the cursor style of the
-   * decrement button to change from `default` to `text`.
-   */
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
   height: auto;
 }
 
 /**
-   * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
-   * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
-   *    (include `-moz` to future-proof).
-   */
-input[type="search"] {
-  -webkit-appearance: textfield;
-  /* 1 */
-  -webkit-box-sizing: content-box;
-  /* 2 */
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type=search] {
+  -webkit-appearance: textfield; /* 1 */ /* 2 */
   box-sizing: content-box;
 }
 
 /**
-   * Remove inner padding and search cancel button in Safari and Chrome on OS X.
-   * Safari (but not Chrome) clips the cancel button when the search input has
-   * padding (and `textfield` appearance).
-   */
-input[type="search"]::-webkit-search-cancel-button,
-input[type="search"]::-webkit-search-decoration {
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type=search]::-webkit-search-cancel-button,
+input[type=search]::-webkit-search-decoration {
   -webkit-appearance: none;
 }
 
 /**
-   * Define consistent border, margin, and padding.
-   */
+ * Define consistent border, margin, and padding.
+ */
 fieldset {
   border: 1px solid #c0c0c0;
   margin: 0 2px;
@@ -357,36 +340,34 @@ fieldset {
 }
 
 /**
-   * 1. Correct `color` not being inherited in IE 8/9/10/11.
-   * 2. Remove padding so people aren't caught out if they zero out fieldsets.
-   */
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
 legend {
-  border: 0;
-  /* 1 */
-  padding: 0;
-  /* 2 */
+  border: 0; /* 1 */
+  padding: 0; /* 2 */
 }
 
 /**
-   * Remove default vertical scrollbar in IE 8/9/10/11.
-   */
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
 textarea {
   overflow: auto;
 }
 
 /**
-   * Don't inherit the `font-weight` (applied by a rule above).
-   * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
-   */
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
 optgroup {
   font-weight: bold;
 }
 
 /* Tables
-     ========================================================================== */
+   ========================================================================== */
 /**
-   * Remove most spacing between table cells.
-   */
+ * Remove most spacing between table cells.
+ */
 table {
   border-collapse: collapse;
   border-spacing: 0;
@@ -398,44 +379,38 @@ th {
 }
 
 @font-face {
-  font-family: 'S-CoreDream';
+  font-family: "S-CoreDream";
   src: url("../font/S-CoreDream-4Regular.woff") format("woff");
   font-weight: 400;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'S-CoreDream';
+  font-family: "S-CoreDream";
   src: url("../font/S-CoreDream-5Medium.woff") format("woff");
   font-weight: 500;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'S-CoreDream';
+  font-family: "S-CoreDream";
   src: url("../font/S-CoreDream-6Bold.woff") format("woff");
   font-weight: 600;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'S-CoreDream';
+  font-family: "S-CoreDream";
   src: url("../font/S-CoreDream-8Heavy.woff") format("woff");
   font-weight: 800;
   font-style: normal;
 }
-
 @font-face {
-  font-family: 'S-CoreDream';
+  font-family: "S-CoreDream";
   src: url("../font/S-CoreDream-9Black.woff") format("woff");
   font-weight: 900;
   font-style: normal;
 }
-
 div#content.sub01 div.sub-head {
   background: #74C8FF;
 }
-
 div#content.sub01 div.sub-head.fix {
   background: rgba(116, 200, 255, 0.8);
 }
@@ -443,7 +418,6 @@ div#content.sub01 div.sub-head.fix {
 div#content.sub02 div.sub-head {
   background: #91DCD2;
 }
-
 div#content.sub02 div.sub-head.fix {
   background: rgba(145, 220, 210, 0.8);
 }
@@ -451,7 +425,6 @@ div#content.sub02 div.sub-head.fix {
 div#content.sub03 div.sub-head {
   background: #88C46F;
 }
-
 div#content.sub03 div.sub-head.fix {
   background: rgba(136, 196, 111, 0.8);
 }
@@ -459,7 +432,6 @@ div#content.sub03 div.sub-head.fix {
 div#content.sub04 div.sub-head {
   background: #FFCE48;
 }
-
 div#content.sub04 div.sub-head.fix {
   background: rgba(255, 206, 72, 0.8);
 }
@@ -467,7 +439,6 @@ div#content.sub04 div.sub-head.fix {
 div#content.sub05 div.sub-head {
   background: #8FABE3;
 }
-
 div#content.sub05 div.sub-head.fix {
   background: rgba(143, 171, 227, 0.8);
 }
@@ -481,11 +452,9 @@ div#content.sub05 div.sub-head.fix {
   padding: 0 !important;
   width: 100%;
 }
-
 .pagenation a {
   background: white;
 }
-
 .pagenation a,
 .pagenation strong {
   overflow: hidden;
@@ -498,16 +467,14 @@ div#content.sub05 div.sub-head.fix {
   line-height: 22px;
   margin: 0 2px;
 }
-
 @media (min-width: 1200px) {
   .pagenation a,
-  .pagenation strong {
+.pagenation strong {
     width: 32px;
     line-height: 30px;
     font-size: 16px;
   }
 }
-
 .pagenation a.jump, .pagenation a.move,
 .pagenation strong.jump,
 .pagenation strong.move {
@@ -515,7 +482,6 @@ div#content.sub05 div.sub-head.fix {
   position: relative;
   border: 1px solid #ccc;
 }
-
 .pagenation a.jump i, .pagenation a.move i,
 .pagenation strong.jump i,
 .pagenation strong.move i {
@@ -524,10 +490,8 @@ div#content.sub05 div.sub-head.fix {
   top: 50%;
   color: #a5a5a5;
   font-size: 18px;
-  -webkit-transform: translateY(-50%) translateX(-50%);
-          transform: translateY(-50%) translateX(-50%);
+  transform: translateY(-50%) translateX(-50%);
 }
-
 .pagenation .active,
 .pagenation strong {
   color: #fff;
@@ -538,31 +502,22 @@ div#content.sub05 div.sub-head.fix {
 }
 
 * {
-  -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
 
-input[type="password"] {
+input[type=password] {
   font-family: sans-serif;
 }
-
-input[type="password"]::-webkit-input-placeholder {
+input[type=password]::-moz-placeholder {
   font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 }
-
-input[type="password"]:-ms-input-placeholder {
+input[type=password]:-ms-input-placeholder {
   font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 }
-
-input[type="password"]::-ms-input-placeholder {
+input[type=password]::placeholder {
   font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
 }
-
-input[type="password"]::placeholder {
-  font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
-}
-
-input[type="password"]::-ms-reveal {
+input[type=password]::-ms-reveal {
   display: none;
 }
 
@@ -591,21 +546,22 @@ input,
 select,
 textarea {
   border-radius: 0;
+  -moz-background-clip: padding;
+  -webkit-background-clip: padding-box;
   background-clip: padding-box;
   /*
-        @media all and (max-width: 1199px) {
-            appearance: none;
-            -moz-appearance: none;
-            -ms-appearance: none;
-            -webkit-appearance: none;
+         @media all and (max-width: 1199px) {
+             appearance: none;
+             -moz-appearance: none;
+             -ms-appearance: none;
+             -webkit-appearance: none;
 
-            &::-ms-expand {
-                display: none;
-            }
-        }
-    */
+             &::-ms-expand {
+                 display: none;
+             }
+         }
+     */
 }
-
 input::-ms-clear,
 select::-ms-clear,
 textarea::-ms-clear {
@@ -617,7 +573,6 @@ a {
   color: #404040;
   -webkit-tap-highlight-color: transparent;
 }
-
 a:focus {
   outline: none;
 }
@@ -638,11 +593,9 @@ article.layer-pop {
   bottom: 0;
   background: rgba(0, 0, 0, 0.8);
 }
-
 article.layer-pop.on {
   display: block;
 }
-
 article.layer-pop div.card div.layer-outline {
   position: absolute;
   left: 50%;
@@ -653,17 +606,14 @@ article.layer-pop div.card div.layer-outline {
   width: 834px;
   height: 670px;
   border-radius: 24px;
-  -webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.8);
   box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.8);
   text-align: center;
 }
-
 article.layer-pop div.card div.layer-outline h2 {
   font-size: 54px;
   font-weight: 600;
   color: #786443;
 }
-
 article.layer-pop div.card div.layer-outline h2::before {
   display: block;
   width: 147px;
@@ -672,11 +622,9 @@ article.layer-pop div.card div.layer-outline h2::before {
   background: url(../images/icon-card.svg) no-repeat center/100% auto;
   content: "";
 }
-
 article.layer-pop div.card div.layer-outline h2 span {
   display: block;
 }
-
 article.layer-pop div.card div.layer-outline h2 small {
   display: block;
   font-size: 34px;
@@ -684,7 +632,6 @@ article.layer-pop div.card div.layer-outline h2 small {
   color: #333;
   margin: 30px 0 0;
 }
-
 article.layer-pop div.notice div.layer-outline {
   position: absolute;
   left: 50%;
@@ -695,27 +642,22 @@ article.layer-pop div.notice div.layer-outline {
   width: 834px;
   height: 900px;
   border-radius: 24px;
-  -webkit-box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.8);
   box-shadow: 0 30px 30px 0 rgba(0, 0, 0, 0.8);
   text-align: center;
 }
-
 article.layer-pop div.notice div.layer-outline > i {
   font-size: 220px;
   color: #786443;
-  opacity: .5;
+  opacity: 0.5;
 }
-
 article.layer-pop div.notice div.layer-outline h2 {
   font-size: 54px;
   font-weight: 600;
   color: #786443;
 }
-
 article.layer-pop div.notice div.layer-outline h2 span {
   display: block;
 }
-
 article.layer-pop div.notice div.layer-outline h2 small {
   display: block;
   font-size: 34px;
@@ -726,7 +668,6 @@ article.layer-pop div.notice div.layer-outline h2 small {
 
 /* basic */
 * {
-  -webkit-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
 
@@ -741,15 +682,10 @@ html {
 html,
 body {
   font-family: "S-CoreDream", "Malgun Gothic", "apple sd gothic neo", sans-serif;
-  -webkit-touch-callout: none;
-  /* iOS Safari */
-  -webkit-user-select: none;
-  /* Chrome/Safari/Opera */
-  /* Konqueror */
-  -moz-user-select: none;
-  /* Firefox */
-  -ms-user-select: none;
-  /* Internet Explorer/Edge*/
+  -webkit-touch-callout: none; /* iOS Safari */
+  -webkit-user-select: none; /* Chrome/Safari/Opera */ /* Konqueror */
+  -moz-user-select: none; /* Firefox */
+  -ms-user-select: none; /* Internet Explorer/Edge*/
   user-select: none;
 }
 
@@ -760,7 +696,6 @@ body .container {
   vertical-align: top;
   padding: 0;
 }
-
 body div.outline {
   display: block;
   width: 100%;
@@ -773,42 +708,18 @@ body div.outline {
   background: url(../images/background.png) no-repeat center/100% 100%;
   /* header */
 }
-
-@media (max-width: 768px) {
-  body div.outline {
-    min-width: 768px;
-    max-width: 768px;
-  }
-}
-
 body div.outline header {
   padding: 0 45px;
 }
-
-@media (max-width: 768px) {
-  body div.outline header {
-    padding: 0 25px;
-  }
-}
-
 body div.outline header .container {
   position: relative;
   height: 147px;
   padding-top: 60px;
   border-bottom: 3px solid #707070;
 }
-
-@media (max-width: 768px) {
-  body div.outline header .container {
-    height: 110px;
-    padding-top: 30px;
-  }
-}
-
 body div.outline header .container h1 {
   margin: 0;
 }
-
 body div.outline header .container h1 a {
   display: inline-block;
   color: #fff;
@@ -816,14 +727,6 @@ body div.outline header .container h1 a {
   font-weight: 500;
   font-size: 46px;
 }
-
-@media (max-width: 768px) {
-  body div.outline header .container h1 a {
-    line-height: 51px;
-    font-size: 30px;
-  }
-}
-
 body div.outline header .container a.admin {
   display: block;
   position: absolute;
@@ -834,15 +737,6 @@ body div.outline header .container a.admin {
   font-size: 0;
   background: url(../images/logo.svg) no-repeat center/100% auto;
 }
-
-@media (max-width: 768px) {
-  body div.outline header .container a.admin {
-    top: 40px;
-    width: 220px;
-    height: 32px;
-  }
-}
-
 body div.outline div#content {
   display: inline-block;
   width: 100%;
@@ -850,74 +744,41 @@ body div.outline div#content {
   text-align: center;
   /* MAIN */
 }
-
 body div.outline div#content.main h2 {
   display: none;
 }
-
 body div.outline div#content.main section.main-slider {
   padding: 320px 0 220px;
   margin: 0 0 100px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.main section.main-slider {
-    padding: 210px 0 160px;
-    margin: 0 0 70px;
-  }
-}
-
 body div.outline div#content.main section.main-slider div.swiper-slide {
   display: inline-block;
   vertical-align: top;
   width: 352px;
   height: 496.77px;
-  opacity: .5;
+  opacity: 0.5;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.main section.main-slider div.swiper-slide {
-    width: 270px;
-    height: 390px;
-  }
-}
-
 body div.outline div#content.main section.main-slider div.swiper-slide img {
   width: 100%;
   height: 100%;
 }
-
 body div.outline div#content.main section.main-slider div.swiper-slide.swiper-slide-active {
-  -webkit-transform: scale(1.5) !important;
-          transform: scale(1.5) !important;
+  transform: scale(1.5) !important;
   opacity: 1;
-  -webkit-box-shadow: 0 70px 70px 0 rgba(0, 0, 0, 0.6);
   box-shadow: 0 70px 70px 0 rgba(0, 0, 0, 0.6);
 }
-
 body div.outline div#content.main section.main-slider div.swiper-pagination span.swiper-pagination-bullet {
   width: 23px;
   height: 23px;
   margin: 0 10px;
   background: #A7A7A7;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.main section.main-slider div.swiper-pagination span.swiper-pagination-bullet {
-    width: 16px;
-    height: 16px;
-    margin: 0 7px;
-  }
-}
-
 body div.outline div#content.main section.main-slider div.swiper-pagination span.swiper-pagination-bullet.swiper-pagination-bullet-active {
   background: #FCB034;
 }
-
 body div.outline div#content.main section.main-buttons div.container {
   text-align: center;
 }
-
 body div.outline div#content.main section.main-buttons div.container div.info-text {
   color: #FCB034;
   font-size: 30px;
@@ -925,33 +786,17 @@ body div.outline div#content.main section.main-buttons div.container div.info-te
   word-break: keep-all;
   margin-bottom: 40px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.main section.main-buttons div.container div.info-text {
-    font-size: 22px;
-    margin-bottom: 30px;
-  }
-}
-
 body div.outline div#content.main section.main-buttons div.container > ul {
   list-style: none;
   margin: 0;
   padding: 0 100px;
   font-size: 0;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.main section.main-buttons div.container > ul {
-    padding: 0 60px;
-  }
-}
-
 body div.outline div#content.main section.main-buttons div.container > ul li {
   display: inline-block;
   vertical-align: top;
   width: 50%;
 }
-
 body div.outline div#content.main section.main-buttons div.container > ul li > a {
   display: block;
   font-size: 32px;
@@ -960,81 +805,38 @@ body div.outline div#content.main section.main-buttons div.container > ul li > a
   padding: 30px 0;
   margin: 2px;
   height: 266px;
-  -webkit-box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.main section.main-buttons div.container > ul li > a {
-    font-size: 24px;
-    padding: 20px 0;
-    height: 220px;
-  }
-}
-
 body div.outline div#content.main section.main-buttons div.container > ul li > a:active {
   color: #fff;
-  -webkit-box-shadow: 0 20px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 20px 0 0 rgba(0, 0, 0, 0.25) inset;
-  -webkit-transition: all 0s linear;
   transition: all 0s linear;
 }
-
 body div.outline div#content.main section.main-buttons div.container > ul li > a i {
   display: block;
   font-size: 100px;
   margin: 0 0 10px;
-  opacity: .5;
+  opacity: 0.5;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.main section.main-buttons div.container > ul li > a i {
-    font-size: 90px;
-  }
-}
-
 body div.outline div#content.main section.main-buttons div.container > ul li > a strong {
   display: block;
   font-weight: 600;
   font-size: 40px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.main section.main-buttons div.container > ul li > a strong {
-    font-size: 30px;
-  }
-}
-
 body div.outline div#content.main section.main-buttons div.container > ul li.num a {
   background: #519127;
   border-radius: 30px 0 0 30px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.main section.main-buttons div.container > ul li.num a {
-    border-radius: 20px 0 0 20px;
-  }
-}
-
 body div.outline div#content.main section.main-buttons div.container > ul li.num a:active {
   background: #36720E;
 }
-
 body div.outline div#content.main section.main-buttons div.container > ul li.phone a {
   background: #277291;
   border-radius: 0 30px 30px 0;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.main section.main-buttons div.container > ul li.phone a {
-    border-radius: 0 20px 20px 0;
-  }
-}
-
 body div.outline div#content.main section.main-buttons div.container > ul li.phone a:active {
   background: #145570;
 }
-
 body div.outline div#content article.float-bar {
   position: fixed;
   left: 0;
@@ -1045,13 +847,6 @@ body div.outline div#content article.float-bar {
   background: #303030;
   font-size: 0;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.float-bar {
-    height: 120px;
-  }
-}
-
 body div.outline div#content article.float-bar a.home {
   display: inline-block;
   vertical-align: top;
@@ -1062,22 +857,11 @@ body div.outline div#content article.float-bar a.home {
   line-height: 186px;
   text-align: center;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.float-bar a.home {
-    width: 120px;
-    line-height: 120px;
-  }
-}
-
 body div.outline div#content article.float-bar a.home:active {
   background: #000;
-  -webkit-transition: all 0s linear;
   transition: all 0s linear;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
-
 body div.outline div#content article.float-bar a.home i {
   position: relative;
   top: 30px;
@@ -1085,14 +869,6 @@ body div.outline div#content article.float-bar a.home i {
   font-size: 76px;
   margin: 0;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.float-bar a.home i {
-    top: 20px;
-    font-size: 56px;
-  }
-}
-
 body div.outline div#content article.float-bar button.main-btn {
   display: inline-block;
   vertical-align: top;
@@ -1106,23 +882,11 @@ body div.outline div#content article.float-bar button.main-btn {
   color: #fff;
   font-weight: 600;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.float-bar button.main-btn {
-    width: calc(100% - 120px);
-    font-size: 36px;
-    height: 120px;
-  }
-}
-
 body div.outline div#content article.float-bar button.main-btn:active {
   background: #B34422;
-  -webkit-transition: all 0s linear;
   transition: all 0s linear;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
-
 body div.outline div#content article.keypad {
   background: #15151F;
   color: #fff;
@@ -1131,19 +895,11 @@ body div.outline div#content article.keypad {
   margin-bottom: 30px;
   text-align: center;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.keypad {
-    padding: 12px 118px;
-  }
-}
-
 body div.outline div#content article.keypad p {
   display: inline-block;
   vertical-align: top;
   margin: 0;
 }
-
 body div.outline div#content article.keypad p button {
   border: none;
   border-radius: 36px;
@@ -1155,96 +911,44 @@ body div.outline div#content article.keypad p button {
   font-weight: 600;
   background: #555;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.keypad p button {
-    border-radius: 26px;
-    margin: 8px;
-    width: 90px;
-    height: 90px;
-    font-size: 44px;
-  }
-}
-
 body div.outline div#content article.keypad p button:active {
   background: #504F57;
-  -webkit-transition: all 0s linear;
   transition: all 0s linear;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
-
 body div.outline div#content article.keypad p button.del {
   background: #8B4242;
   width: 330px;
   font-size: 40px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.keypad p button.del {
-    width: 248px;
-    font-size: 34px;
-  }
-}
-
 body div.outline div#content article.keypad p button.back {
   background: #4B4759;
   width: 330px;
   font-size: 0;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.keypad p button.back {
-    width: 248px;
-  }
-}
-
 body div.outline div#content article.keypad p button.back i {
   font-size: 80px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.keypad p button.back i {
-    font-size: 60px;
-  }
-}
-
 body div.outline div#content article.messages {
   padding: 0 40px;
   text-align: center;
   border-radius: 20px;
 }
-
 body div.outline div#content article.messages i {
   font-size: 300px;
   color: #15151F;
   margin: 0 0 60px;
 }
-
 body div.outline div#content article.messages p {
   margin: 0 0 10px;
   font-size: 40px;
   color: #CECECE;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.messages p {
-    font-size: 34px;
-  }
-}
-
 body div.outline div#content article.messages.alert {
   background: #060610;
   border-radius: 0;
   padding: 30px 0;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.messages.alert {
-    padding: 20px 0;
-  }
-}
-
 body div.outline div#content article.messages.alert h3 {
   display: block;
   font-size: 35px;
@@ -1252,45 +956,22 @@ body div.outline div#content article.messages.alert h3 {
   font-weight: 600;
   color: #85828F;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.messages.alert h3 {
-    font-size: 24px;
-  }
-}
-
 body div.outline div#content article.messages.alert p {
   display: none;
 }
-
 body div.outline div#content article.messages.alert.on h3 {
   display: none;
 }
-
 body div.outline div#content article.messages.alert.on p {
   display: block;
   margin: 0;
   font-size: 35px;
   color: #FCB134;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.messages.alert.on p {
-    font-size: 24px;
-  }
-}
-
 body div.outline div#content article.program {
   padding: 30px 45px 30px 220px;
   position: relative;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.program {
-    padding: 20px 30px 20px 180px;
-  }
-}
-
 body div.outline div#content article.program h3 {
   margin: 0;
   font-size: 40px;
@@ -1298,13 +979,6 @@ body div.outline div#content article.program h3 {
   font-weight: 600;
   color: #fff;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.program h3 {
-    font-size: 30px;
-  }
-}
-
 body div.outline div#content article.program h3 small {
   font-weight: 400;
   display: block;
@@ -1312,13 +986,6 @@ body div.outline div#content article.program h3 small {
   padding: 10px 0 0;
   color: #FCB134;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.program h3 small {
-    font-size: 20px;
-  }
-}
-
 body div.outline div#content article.program p.image {
   position: absolute;
   left: 45px;
@@ -1327,20 +994,10 @@ body div.outline div#content article.program p.image {
   width: 143px;
   height: 202px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.program p.image {
-    left: 30px;
-    width: 120px;
-    height: 170px;
-  }
-}
-
 body div.outline div#content article.program p.image img {
   width: 100%;
   height: 100%;
 }
-
 body div.outline div#content article.program ul.info {
   display: inline-block;
   list-style: none;
@@ -1349,32 +1006,15 @@ body div.outline div#content article.program ul.info {
   width: 456px;
   vertical-align: top;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.program ul.info {
-    margin: 40px 0;
-    width: 320px;
-  }
-}
-
 body div.outline div#content article.program ul.info li {
   display: inline-block;
   margin-right: 20px;
   font-size: 26px;
   color: #C7C7C7;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.program ul.info li {
-    margin-right: 5px;
-    font-size: 20px;
-  }
-}
-
 body div.outline div#content article.program ul.info li strong {
   font-weight: 400;
 }
-
 body div.outline div#content article.program p.price {
   display: inline-block;
   vertical-align: top;
@@ -1385,27 +1025,11 @@ body div.outline div#content article.program p.price {
   font-weight: 600;
   width: 354px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.program p.price {
-    margin: 38px 0;
-    font-size: 23px;
-    width: 232px;
-  }
-}
-
 body div.outline div#content article.seatmap {
   background: #15151F;
   position: relative;
   padding: 50px 0 80px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.seatmap {
-    padding: 30px 0 60px;
-  }
-}
-
 body div.outline div#content article.seatmap h3 {
   text-align: center;
   font-size: 32px;
@@ -1413,40 +1037,17 @@ body div.outline div#content article.seatmap h3 {
   margin: 0 0 50px;
   color: #fff;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.seatmap h3 {
-    font-size: 24px;
-    margin: 0 0 40px;
-  }
-}
-
 body div.outline div#content article.seatmap div.legend {
   position: absolute;
   right: 45px;
   top: 60px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.seatmap div.legend {
-    right: 30px;
-    top: 50px;
-  }
-}
-
 body div.outline div#content article.seatmap div.legend span {
   display: inline-block;
   font-size: 26px;
   color: #C7C7C7;
   line-height: 1;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.seatmap div.legend span {
-    font-size: 22px;
-  }
-}
-
 body div.outline div#content article.seatmap div.legend span::before {
   display: inline-block;
   vertical-align: top;
@@ -1457,56 +1058,25 @@ body div.outline div#content article.seatmap div.legend span::before {
   border-radius: 5px;
   background: #F1592A;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.seatmap div.legend span::before {
-    width: 20px;
-    height: 20px;
-  }
-}
-
 body div.outline div#content article.seatmap.hall01 div.map-outline {
   width: 1004px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.seatmap.hall01 div.map-outline {
-    width: 688px;
-  }
-}
-
 body div.outline div#content article.seatmap.hall02 div.map-outline {
   width: 988px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.seatmap.hall02 div.map-outline {
-    width: 666px;
-  }
-}
-
 body div.outline div#content article.seatmap.hall03 div.map-outline {
   width: 398px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.seatmap.hall03 div.map-outline {
-    width: 274px;
-  }
-}
-
 body div.outline div#content article.seatmap div.map-outline {
   text-align: center;
   margin: 0 auto;
 }
-
 body div.outline div#content article.seatmap div.map-outline ul#seatsView {
   list-style: none;
   margin: 0;
   padding: 0;
   font-size: 0;
 }
-
 body div.outline div#content article.seatmap div.map-outline ul#seatsView li {
   font-size: 12px;
   display: inline-block;
@@ -1520,39 +1090,24 @@ body div.outline div#content article.seatmap div.map-outline ul#seatsView li {
   color: #555555;
   border-radius: 3px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.seatmap div.map-outline ul#seatsView li {
-    width: 15px;
-    height: 15px;
-    font-size: 9px;
-    line-height: 15px;
-  }
-}
-
 body div.outline div#content article.seatmap div.map-outline ul#seatsView li.active {
   background: #F1592A;
   color: #fff;
   border-color: #423B84;
 }
-
 body div.outline div#content article.seatmap div.map-outline ul#seatsView li.l_blank, body div.outline div#content article.seatmap div.map-outline ul#seatsView li.m_blank, body div.outline div#content article.seatmap div.map-outline ul#seatsView li.seat-line {
   background: transparent;
   border-color: transparent;
 }
-
 body div.outline div#content article.seatmap div.map-outline ul#seatsView li.m_blank {
   color: #82958F;
 }
-
 body div.outline div#content article.seatmap div.map-outline ul#seatsView li.wheel2 {
   width: 44px;
 }
-
 body div.outline div#content article.seatmap div.map-outline ul#seatsView li.wheel3 {
   width: 66px;
 }
-
 body div.outline div#content article.ticket-print button {
   display: block;
   margin: 60px auto 0;
@@ -1565,26 +1120,20 @@ body div.outline div#content article.ticket-print button {
   font-size: 50px;
   font-weight: 600;
 }
-
 body div.outline div#content article.ticket-print button:active {
   background: #CB4921;
-  -webkit-transition: all 0s linear;
   transition: all 0s linear;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
-
 body div.outline div#content article.ticket-print button.check {
   background: #23222B;
   color: #484751;
 }
-
 body div.outline div#content article.ticket-select {
   padding: 60px 60px 0;
   font-size: 0;
   text-align: center;
 }
-
 body div.outline div#content article.ticket-select strong {
   display: block;
   color: #fff;
@@ -1592,17 +1141,14 @@ body div.outline div#content article.ticket-select strong {
   font-weight: 400;
   margin: 0 10px 30px;
 }
-
 body div.outline div#content article.ticket-select div.box {
   padding-top: 20px;
   max-height: 326px;
   overflow-y: scroll;
 }
-
 body div.outline div#content article.ticket-select div.box input {
   display: none;
 }
-
 body div.outline div#content article.ticket-select div.box label {
   display: inline-block;
   position: relative;
@@ -1615,11 +1161,9 @@ body div.outline div#content article.ticket-select div.box label {
   margin: 0 13px 26px;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(255, 255, 255, .2);transform: ;msFilter:;'%3E%3Cpath d='m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z'%3E%3C/path%3E%3C/svg%3E") no-repeat left 16px center/40px auto;
 }
-
 body div.outline div#content article.ticket-select div.box label.printed {
   background-color: rgba(255, 255, 255, 0.2);
 }
-
 body div.outline div#content article.ticket-select div.box label.printed::before {
   content: "재출력";
   display: block;
@@ -1633,42 +1177,29 @@ body div.outline div#content article.ticket-select div.box label.printed::before
   padding: 0 14px;
   border-radius: 36px;
 }
-
 body div.outline div#content article.ticket-select div.box input:checked + label {
   border-color: #FCB834;
   color: #FCB834;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' style='fill: rgba(252, 184, 52, 1);transform: ;msFilter:;'%3E%3Cpath d='m10 15.586-3.293-3.293-1.414 1.414L10 18.414l9.707-9.707-1.414-1.414z'%3E%3C/path%3E%3C/svg%3E") no-repeat rgba(0, 0, 0, 0.3) left 16px center/40px auto;
-  -webkit-box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
 }
-
 body div.outline div#content article.ticket-select div.box input:checked + label::before {
   background: #FCB834;
 }
-
 body div.outline div#content article.ticket-info {
   padding: 40px 0 0;
 }
-
 body div.outline div#content article.ticket-info ul {
   margin: 0;
   padding: 0;
   list-style: none;
   text-align: center;
 }
-
 body div.outline div#content article.ticket-info ul li {
   font-size: 26px;
   color: #fff;
   line-height: 1.6;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content article.ticket-info ul li {
-    font-size: 22px;
-  }
-}
-
 body div.outline div#content.sub h2 {
   text-align: center;
   font-size: 72px;
@@ -1677,54 +1208,33 @@ body div.outline div#content.sub h2 {
   color: #FCB034;
   text-shadow: 0 3px 6px rgba(0, 0, 0, 0.25);
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub h2 {
-    font-size: 54px;
-    margin: 90px 0;
-  }
-}
-
 body div.outline div#content.sub h2 small {
   display: block;
   margin: 10px;
   font-size: 38px;
   color: #fff;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub h2 small {
-    margin: 8px;
-    font-size: 28px;
-  }
-}
-
 body div.outline div#content.sub section.sub-numcheck div.container {
   padding: 0;
 }
-
 body div.outline div#content.sub section.sub-numcheck div.container fieldset {
   border: none;
   padding: 0;
   margin: 0;
   border: none;
 }
-
 body div.outline div#content.sub section.sub-numcheck div.container fieldset legend {
   display: none;
 }
-
 body div.outline div#content.sub section.sub-numcheck div.container fieldset label {
   display: none;
 }
-
-body div.outline div#content.sub section.sub-numcheck div.container fieldset label[for="number"] {
+body div.outline div#content.sub section.sub-numcheck div.container fieldset label[for=number] {
   display: block;
   font-size: 0;
   position: relative;
 }
-
-body div.outline div#content.sub section.sub-numcheck div.container fieldset label[for="number"]::after {
+body div.outline div#content.sub section.sub-numcheck div.container fieldset label[for=number]::after {
   content: "T";
   position: absolute;
   z-index: 10;
@@ -1734,15 +1244,7 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset lab
   font-size: 50px;
   color: #999;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-numcheck div.container fieldset label[for="number"]::after {
-    font-size: 42px;
-    margin-left: 210px;
-  }
-}
-
-body div.outline div#content.sub section.sub-numcheck div.container fieldset input[type="text"] {
+body div.outline div#content.sub section.sub-numcheck div.container fieldset input[type=text] {
   display: block;
   position: relative;
   height: 110px;
@@ -1758,16 +1260,6 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset inp
   background: #15151F;
   color: #fff;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-numcheck div.container fieldset input[type="text"] {
-    width: 520px;
-    height: 90px;
-    border-radius: 20px;
-    font-size: 32px;
-  }
-}
-
 body div.outline div#content.sub section.sub-numcheck div.container fieldset i.information {
   display: block;
   text-align: center;
@@ -1776,14 +1268,6 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset i.i
   font-size: 30px;
   margin-bottom: 60px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-numcheck div.container fieldset i.information {
-    font-size: 24px;
-    margin-bottom: 50px;
-  }
-}
-
 body div.outline div#content.sub section.sub-numcheck div.container fieldset div.message {
   background: transparent;
   color: transparent;
@@ -1791,19 +1275,10 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset div
   padding: 40px 0;
   font-size: 40px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-numcheck div.container fieldset div.message {
-    padding: 30px 0;
-    font-size: 30px;
-  }
-}
-
 body div.outline div#content.sub section.sub-numcheck div.container fieldset div.message.on {
   background: #000;
   color: #FCB134;
 }
-
 body div.outline div#content.sub section.sub-numcheck div.container fieldset button.submit {
   display: block;
   margin: 60px auto 0;
@@ -1816,15 +1291,11 @@ body div.outline div#content.sub section.sub-numcheck div.container fieldset but
   font-size: 50px;
   font-weight: 600;
 }
-
 body div.outline div#content.sub section.sub-numcheck div.container fieldset button.submit:active {
   background: #CB4921;
-  -webkit-transition: all 0s linear;
   transition: all 0s linear;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
-
 body div.outline div#content.sub section.sub-list div.container p.ticket-text {
   font-size: 32px;
   font-weight: 600;
@@ -1834,13 +1305,6 @@ body div.outline div#content.sub section.sub-list div.container p.ticket-text {
   line-height: 120px;
   background: rgba(0, 0, 0, 0.5);
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-list div.container p.ticket-text {
-    font-size: 26px;
-  }
-}
-
 body div.outline div#content.sub section.sub-list div.container ul.list {
   position: relative;
   list-style: none;
@@ -1848,13 +1312,6 @@ body div.outline div#content.sub section.sub-list div.container ul.list {
   padding: 0;
   height: 1228px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-list div.container ul.list {
-    height: 876px;
-  }
-}
-
 body div.outline div#content.sub section.sub-list div.container ul.list::after {
   content: "";
   display: block;
@@ -1864,19 +1321,8 @@ body div.outline div#content.sub section.sub-list div.container ul.list::after {
   right: -100px;
   bottom: 185px;
   height: 120px;
-  -webkit-box-shadow: 0 -60px 50px 0 rgba(0, 0, 0, 0.8) inset;
   box-shadow: 0 -60px 50px 0 rgba(0, 0, 0, 0.8) inset;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-list div.container ul.list::after {
-    bottom: 120px;
-    height: 80px;
-    -webkit-box-shadow: 0 -40px 30px 0 rgba(0, 0, 0, 0.8) inset;
-    box-shadow: 0 -40px 30px 0 rgba(0, 0, 0, 0.8) inset;
-  }
-}
-
 body div.outline div#content.sub section.sub-list div.container ul.list li {
   position: relative;
   background: #fff;
@@ -1884,28 +1330,11 @@ body div.outline div#content.sub section.sub-list div.container ul.list li {
   padding: 30px;
   margin: 0 45px 15px;
   font-size: 0;
-  -webkit-box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
   box-shadow: 0 10px 9px 0 rgba(0, 0, 0, 0.25);
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-list div.container ul.list li {
-    border-radius: 10px;
-    padding: 20px;
-    margin: 0 35px 15px;
-  }
-}
-
 body div.outline div#content.sub section.sub-list div.container ul.list li:first-child {
   margin-top: 50px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-list div.container ul.list li:first-child {
-    margin-top: 30px;
-  }
-}
-
 body div.outline div#content.sub section.sub-list div.container ul.list li a h3 {
   font-size: 42px;
   margin: 0 0 0;
@@ -1913,13 +1342,6 @@ body div.outline div#content.sub section.sub-list div.container ul.list li a h3 
   padding: 0;
   color: #222;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-list div.container ul.list li a h3 {
-    font-size: 36px;
-  }
-}
-
 body div.outline div#content.sub section.sub-list div.container ul.list li a h3 small {
   display: block;
   font-size: 34px;
@@ -1928,15 +1350,6 @@ body div.outline div#content.sub section.sub-list div.container ul.list li a h3 
   padding-top: 20px;
   border-top: 1px solid #555;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-list div.container ul.list li a h3 small {
-    font-size: 28px;
-    margin-top: 15px;
-    padding-top: 15px;
-  }
-}
-
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.count,
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.name {
   display: inline-block;
@@ -1944,26 +1357,11 @@ body div.outline div#content.sub section.sub-list div.container ul.list li a p.n
   color: #333;
   margin: 6px 20px 0 0;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-list div.container ul.list li a p.count,
-  body div.outline div#content.sub section.sub-list div.container ul.list li a p.name {
-    font-size: 24px;
-  }
-}
-
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.num {
   font-size: 34px;
   color: #0077A8;
   margin: 0;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-list div.container ul.list li a p.num {
-    font-size: 24px;
-  }
-}
-
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.seat {
   display: block;
   font-size: 30px;
@@ -1971,13 +1369,6 @@ body div.outline div#content.sub section.sub-list div.container ul.list li a p.s
   margin: 6px 0 0;
   padding: 0 240px 0 0;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-list div.container ul.list li a p.seat {
-    font-size: 24px;
-  }
-}
-
 body div.outline div#content.sub section.sub-list div.container ul.list li a p.label {
   position: absolute;
   right: 30px;
@@ -1991,94 +1382,52 @@ body div.outline div#content.sub section.sub-list div.container ul.list li a p.l
   width: 234px;
   line-height: 82px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-list div.container ul.list li a p.label {
-    right: 20px;
-    bottom: 20px;
-    border-radius: 10px;
-    font-size: 24px;
-    width: 180px;
-    line-height: 64px;
-  }
-}
-
 body div.outline div#content.sub section.sub-list div.container ul.list li.used {
   background: #C1C1C1;
 }
-
 body div.outline div#content.sub section.sub-list div.container ul.list li.used a h3 {
   color: #777;
 }
-
 body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.count,
 body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.seat,
 body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.name,
 body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.num {
   color: #777;
 }
-
 body div.outline div#content.sub section.sub-list div.container ul.list li.used a p.label {
   background: #959595;
   color: #C1C1C1;
 }
-
 body div.outline div#content.sub section.sub-seat div.container {
   padding-top: 30px;
 }
-
 body div.outline div#content.sub section.sub-seat div.container h2 {
   display: none;
 }
-
 body div.outline div#content.sub section.sub-printing div.container {
   text-align: center;
 }
-
 body div.outline div#content.sub section.sub-printing div.container i {
   font-size: 280px;
   color: #fff;
   margin: 180px 0 30px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-printing div.container i {
-    font-size: 200px;
-  }
-}
-
 body div.outline div#content.sub section.sub-printing div.container h2 {
   font-size: 72px;
   margin: 60px 0 0;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-printing div.container h2 {
-    font-size: 52px;
-  }
-}
-
 body div.outline div#content.sub section.sub-printing div.container h2 small {
   display: block;
   color: #fff;
   margin-top: 10px;
 }
-
 body div.outline div#content.sub section.sub-result div.container {
   text-align: center;
 }
-
 body div.outline div#content.sub section.sub-result div.container h2 {
   font-size: 72px;
   margin: 512px 0 30px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-result div.container h2 {
-    font-size: 52px;
-  }
-}
-
 body div.outline div#content.sub section.sub-result div.container h2::before {
   display: block;
   position: absolute;
@@ -2090,37 +1439,25 @@ body div.outline div#content.sub section.sub-result div.container h2::before {
   height: 138px;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='387.724' height='137.341' viewBox='0 0 387.724 137.341'%3E%3Cg transform='translate(-239.809 -97.57)'%3E%3Cpath d='M252.656,135.889s72.707,51.741,203.556,1.618C566.056,95.439,596.289,97.589,596.289,97.589l22.026,39.919,9.217,36.682s-69.449,3.765-163.261,32.372C313.879,252.417,239.809,174.19,239.809,174.19Z' transform='translate(0 0)' fill='%23fca500'/%3E%3Cpath d='M245.727,125.9s72.291,45.314,190.2,6.471c0,0-91.437,20.233-173.067-34.794Z' transform='translate(10.206 0.01)' fill='%23ffd000'/%3E%3Cpath d='M252.637,176.848l-12.828-45.611s41.575,38.028,124.713,45.611Z' transform='translate(0 58.063)' fill='%23e33c0b'/%3E%3Cpath d='M297.04,177.536s35.663-4.964,84.652-21.882C444.174,134.08,525.8,130.838,525.8,130.838l-16.127,46.7Z' transform='translate(98.704 57.375)' fill='%23e33c0b'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
 }
-
 body div.outline div#content.sub section.sub-result div.container h2 small {
   display: block;
   color: #fff;
   margin-top: 10px;
 }
-
 body div.outline div#content.sub section.sub-result div.container p {
   font-size: 40px;
   color: #CECECE;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-result div.container p {
-    font-size: 32px;
-  }
-}
-
 body div.outline div#content.sub section.sub-result.error div.container h2 {
   color: #F1592A;
 }
-
 body div.outline div#content.sub section.sub-result.error div.container h2::before {
   display: none;
 }
-
 body div.outline div#content.sub section.sub-admin-login div.container {
   padding: 0;
   text-align: center;
 }
-
 body div.outline div#content.sub section.sub-admin-login div.container fieldset {
   text-align: center;
   border: none;
@@ -2128,16 +1465,13 @@ body div.outline div#content.sub section.sub-admin-login div.container fieldset 
   margin: 0;
   border: none;
 }
-
 body div.outline div#content.sub section.sub-admin-login div.container fieldset legend {
   display: none;
 }
-
 body div.outline div#content.sub section.sub-admin-login div.container fieldset label {
   display: none;
 }
-
-body div.outline div#content.sub section.sub-admin-login div.container fieldset input[type="password"] {
+body div.outline div#content.sub section.sub-admin-login div.container fieldset input[type=password] {
   display: block;
   height: 110px;
   border: 1px solid #645F64;
@@ -2151,7 +1485,6 @@ body div.outline div#content.sub section.sub-admin-login div.container fieldset 
   background: #15151F;
   color: #fff;
 }
-
 body div.outline div#content.sub section.sub-admin-login div.container fieldset button.submit {
   display: inline-block;
   margin: 60px 20px 0 0;
@@ -2164,24 +1497,11 @@ body div.outline div#content.sub section.sub-admin-login div.container fieldset 
   font-size: 50px;
   font-weight: 600;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-admin-login div.container fieldset button.submit {
-    width: 290px;
-    height: 100px;
-    border-radius: 20px;
-    font-size: 40px;
-  }
-}
-
 body div.outline div#content.sub section.sub-admin-login div.container fieldset button.submit:active {
   background: #CB4921;
-  -webkit-transition: all 0s linear;
   transition: all 0s linear;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
-
 body div.outline div#content.sub section.sub-admin-login div.container fieldset button.cancle {
   display: inline-block;
   margin: 60px 0 0;
@@ -2194,34 +1514,19 @@ body div.outline div#content.sub section.sub-admin-login div.container fieldset 
   font-size: 50px;
   font-weight: 600;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-admin-login div.container fieldset button.cancle {
-    width: 190px;
-    height: 100px;
-    border-radius: 20px;
-    font-size: 40px;
-  }
-}
-
 body div.outline div#content.sub section.sub-admin-login div.container fieldset button.cancle:active {
   background: #0D0D26;
-  -webkit-transition: all 0s linear;
   transition: all 0s linear;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
-
 body div.outline div#content.sub section.sub-admin-main div.container {
   text-align: center;
   padding: 0 45px;
 }
-
 body div.outline div#content.sub section.sub-admin-main div.container h2 {
   font-size: 0;
   margin: 562px 0 30px;
 }
-
 body div.outline div#content.sub section.sub-admin-main div.container h2::before {
   display: block;
   position: absolute;
@@ -2233,20 +1538,17 @@ body div.outline div#content.sub section.sub-admin-main div.container h2::before
   height: 138px;
   background: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='387.724' height='137.341' viewBox='0 0 387.724 137.341'%3E%3Cg transform='translate(-239.809 -97.57)'%3E%3Cpath d='M252.656,135.889s72.707,51.741,203.556,1.618C566.056,95.439,596.289,97.589,596.289,97.589l22.026,39.919,9.217,36.682s-69.449,3.765-163.261,32.372C313.879,252.417,239.809,174.19,239.809,174.19Z' transform='translate(0 0)' fill='%23fca500'/%3E%3Cpath d='M245.727,125.9s72.291,45.314,190.2,6.471c0,0-91.437,20.233-173.067-34.794Z' transform='translate(10.206 0.01)' fill='%23ffd000'/%3E%3Cpath d='M252.637,176.848l-12.828-45.611s41.575,38.028,124.713,45.611Z' transform='translate(0 58.063)' fill='%23e33c0b'/%3E%3Cpath d='M297.04,177.536s35.663-4.964,84.652-21.882C444.174,134.08,525.8,130.838,525.8,130.838l-16.127,46.7Z' transform='translate(98.704 57.375)' fill='%23e33c0b'/%3E%3C/g%3E%3C/svg%3E%0A") no-repeat center/100% auto;
 }
-
 body div.outline div#content.sub section.sub-admin-main div.container ul {
   list-style: none;
   margin: 0;
   padding: 0;
   font-size: 0;
 }
-
 body div.outline div#content.sub section.sub-admin-main div.container ul li {
   display: inline-block;
-  width: calc(100% / 4);
+  width: 25%;
   padding: 1px;
 }
-
 body div.outline div#content.sub section.sub-admin-main div.container ul li a {
   display: block;
   padding: 30px 0;
@@ -2255,58 +1557,40 @@ body div.outline div#content.sub section.sub-admin-main div.container ul li a {
   font-size: 22px;
   font-weight: 600;
 }
-
 body div.outline div#content.sub section.sub-admin-main div.container ul li a:hover, body div.outline div#content.sub section.sub-admin-main div.container ul li a.active {
   background: #323232;
-  -webkit-transition: all 0s linear;
   transition: all 0s linear;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
-
 body div.outline div#content.sub section.sub-admin-main div.container ul li a i {
   display: block;
   font-size: 60px;
   margin: 0 0 20px;
 }
-
 body div.outline div#content.sub section.sub-admin-main div.container ul li:first-child a {
   border-radius: 36px 0 0 36px;
 }
-
 body div.outline div#content.sub section.sub-admin-main div.container ul li:last-child a {
   border-radius: 0 36px 36px 0;
 }
-
 body div.outline div#content.sub section.sub-admin-main.error div.container h2 {
   color: #F1592A;
 }
-
 body div.outline div#content.sub section.sub-admin-main.error div.container h2::before {
   display: none;
 }
-
 body div.outline div#content.sub section.sub-admin div.container {
   text-align: center;
   padding: 0 45px;
 }
-
 body div.outline div#content.sub section.sub-admin div.container h2 {
   display: none;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.tool-area {
   min-height: 120px;
   padding: 25px 0;
   color: #fff;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-admin div.container div.tool-area {
-    padding: 20px 0;
-  }
-}
-
 body div.outline div#content.sub section.sub-admin div.container div.tool-area label {
   display: inline-block;
   vertical-align: top;
@@ -2314,25 +1598,9 @@ body div.outline div#content.sub section.sub-admin div.container div.tool-area l
   font-size: 22px;
   line-height: 70px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-admin div.container div.tool-area label {
-    line-height: 60px;
-    padding: 0 15px 0 0;
-    font-size: 18px;
-  }
-}
-
 body div.outline div#content.sub section.sub-admin div.container div.tool-area input + label {
   padding-left: 50px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-admin div.container div.tool-area input + label {
-    padding-left: 30px;
-  }
-}
-
 body div.outline div#content.sub section.sub-admin div.container div.tool-area u {
   display: inline-block;
   vertical-align: top;
@@ -2341,15 +1609,6 @@ body div.outline div#content.sub section.sub-admin div.container div.tool-area u
   line-height: 70px;
   text-decoration: none;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-admin div.container div.tool-area u {
-    line-height: 60px;
-    padding: 0 10px;
-    font-size: 18px;
-  }
-}
-
 body div.outline div#content.sub section.sub-admin div.container div.tool-area input {
   height: 70px;
   font-size: 22px;
@@ -2361,25 +1620,9 @@ body div.outline div#content.sub section.sub-admin div.container div.tool-area i
   text-align: center;
   width: 180px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-admin div.container div.tool-area input {
-    width: 120px;
-    font-size: 20px;
-    height: 60px;
-  }
-}
-
 body div.outline div#content.sub section.sub-admin div.container div.tool-area input.text {
   width: 260px;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-admin div.container div.tool-area input.text {
-    width: 156px;
-  }
-}
-
 body div.outline div#content.sub section.sub-admin div.container div.tool-area button {
   height: 70px;
   width: 70px;
@@ -2390,30 +1633,14 @@ body div.outline div#content.sub section.sub-admin div.container div.tool-area b
   background: #0077A8;
   font-size: 0;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-admin div.container div.tool-area button {
-    width: 50px;
-    height: 60px;
-  }
-}
-
 body div.outline div#content.sub section.sub-admin div.container div.tool-area button i {
   font-size: 32px;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.btn-area {
   min-height: 120px;
   padding: 25px 0;
   color: #fff;
 }
-
-@media (max-width: 768px) {
-  body div.outline div#content.sub section.sub-admin div.container div.btn-area {
-    padding: 20px 0;
-  }
-}
-
 body div.outline div#content.sub section.sub-admin div.container div.btn-area button {
   height: 70px;
   vertical-align: top;
@@ -2424,22 +1651,18 @@ body div.outline div#content.sub section.sub-admin div.container div.btn-area bu
   font-size: 22px;
   padding: 0 20px;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.btn-area button.main {
   background: #0077A8;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.table-area {
   height: 1260px;
   background: #000000;
   overflow-y: scroll;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.board-write {
   padding: 30px 0 0;
 }
-
-body div.outline div#content.sub section.sub-admin div.container div.board-write input[type="text"] {
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type=text] {
   width: 100%;
   height: 80px;
   padding: 0 30px;
@@ -2449,26 +1672,17 @@ body div.outline div#content.sub section.sub-admin div.container div.board-write
   border: none;
   border-radius: 20px;
   margin-bottom: 30px;
-  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
 }
-
-body div.outline div#content.sub section.sub-admin div.container div.board-write input[type="text"]::-webkit-input-placeholder {
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type=text]::-moz-placeholder {
   color: #ccc;
 }
-
-body div.outline div#content.sub section.sub-admin div.container div.board-write input[type="text"]:-ms-input-placeholder {
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type=text]:-ms-input-placeholder {
   color: #ccc;
 }
-
-body div.outline div#content.sub section.sub-admin div.container div.board-write input[type="text"]::-ms-input-placeholder {
+body div.outline div#content.sub section.sub-admin div.container div.board-write input[type=text]::placeholder {
   color: #ccc;
 }
-
-body div.outline div#content.sub section.sub-admin div.container div.board-write input[type="text"]::placeholder {
-  color: #ccc;
-}
-
 body div.outline div#content.sub section.sub-admin div.container div.board-write textarea {
   width: 100%;
   height: 580px;
@@ -2478,39 +1692,28 @@ body div.outline div#content.sub section.sub-admin div.container div.board-write
   color: #fff;
   border: none;
   border-radius: 20px;
-  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
 }
-
-body div.outline div#content.sub section.sub-admin div.container div.board-write textarea::-webkit-input-placeholder {
+body div.outline div#content.sub section.sub-admin div.container div.board-write textarea::-moz-placeholder {
   color: #ccc;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.board-write textarea:-ms-input-placeholder {
   color: #ccc;
 }
-
-body div.outline div#content.sub section.sub-admin div.container div.board-write textarea::-ms-input-placeholder {
-  color: #ccc;
-}
-
 body div.outline div#content.sub section.sub-admin div.container div.board-write textarea::placeholder {
   color: #ccc;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area {
   font-size: 0;
   text-align: center;
   padding: 30px 0 50px;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left,
 body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right {
   display: inline-block;
   width: 49%;
   font-size: 22px;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left button,
 body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right button {
   padding: 20px;
@@ -2519,42 +1722,34 @@ body div.outline div#content.sub section.sub-admin div.container div.board-write
   border-radius: 10px;
   background: #888;
   color: #fff;
-  -webkit-box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
   box-shadow: 0 10px 20px 0 rgba(0, 0, 0, 0.6);
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left button.sub,
 body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right button.sub {
   background: #36720E;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left button.main,
 body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right button.main {
   background: #0077A8;
   padding: 25px 60px;
   font-size: 24px;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.left {
   text-align: left;
 }
-
 body div.outline div#content.sub section.sub-admin div.container div.board-write div.button-area div.right {
   text-align: right;
 }
-
 body div.outline div#content.sub section.sub-admin div.container ul {
   list-style: none;
   margin: 10px 0 0;
   padding: 0;
   font-size: 0;
 }
-
 body div.outline div#content.sub section.sub-admin div.container ul li {
   display: inline-block;
   padding: 1px;
 }
-
 body div.outline div#content.sub section.sub-admin div.container ul li a {
   display: block;
   padding: 30px 0;
@@ -2563,50 +1758,37 @@ body div.outline div#content.sub section.sub-admin div.container ul li a {
   font-size: 22px;
   font-weight: 600;
 }
-
 body div.outline div#content.sub section.sub-admin div.container ul li a:hover, body div.outline div#content.sub section.sub-admin div.container ul li a.active {
   background: #323232;
-  -webkit-transition: all 0s linear;
   transition: all 0s linear;
-  -webkit-box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
   box-shadow: 0 10px 0 0 rgba(0, 0, 0, 0.25) inset;
 }
-
 body div.outline div#content.sub section.sub-admin div.container ul li a i {
   display: block;
   font-size: 60px;
   margin: 0 0 20px;
 }
-
 body div.outline div#content.sub section.sub-admin div.container ul li:first-child a {
   border-radius: 0 0 0 36px;
 }
-
 body div.outline div#content.sub section.sub-admin div.container ul li:last-child a {
   border-radius: 0 0 36px 0;
 }
-
 body div.outline div#content.sub section.sub-admin div.container ul.item4 li {
-  width: calc(100% / 4);
+  width: 25%;
 }
-
 body div.outline div#content.sub section.sub-admin div.container ul.item3 li {
-  width: calc(100% / 3);
+  width: 33.3333333333%;
 }
-
 body div.outline div#content.sub section.sub-admin.error div.container h2 {
   color: #F1592A;
 }
-
 body div.outline div#content.sub section.sub-admin.error div.container h2::before {
   display: none;
 }
-
 body div.outline footer#footer {
   text-align: center;
 }
-
 body div.outline footer#footer div.container {
   text-align: center;
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
